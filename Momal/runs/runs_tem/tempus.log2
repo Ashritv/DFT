@@ -1,0 +1,181 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+Options:	
+Date:		Thu Apr  3 15:01:01 2025
+Host:		APL2.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_205207_j6re4g'.
+<CMD> read_lib ../../lib/NangateOpenCellLibrary_slow_conditional_ccs.lib
+<CMD> read_verilog ../../netlist/momal_scan.v
+<CMD> set_top_module
+#% Begin Load MMMC data ... (date=04/03 15:02:43, mem=752.0M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=04/03 15:02:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=752.4M, current mem=752.4M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_205207.tcl
+Reading default_emulate_libset_max timing library '/home/01fe21bec241/Momal/lib/NangateOpenCellLibrary_slow_conditional_ccs.lib' ...
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=40.0M, fe_cpu=0.19min, fe_real=1.72min, fe_mem=808.8M) ***
+#% Begin Load netlist data ... (date=04/03 15:02:44, mem=764.4M)
+*** Begin netlist parsing (mem=806.8M) ***
+Reading verilog netlist '../../netlist/momal_scan.v'
+
+*** Memory Usage v#1 (Current mem = 973.816M, initial mem = 299.711M) ***
+*** End netlist parsing (cpu=0:00:00.3, real=0:00:00.0, mem=973.8M) ***
+#% End Load netlist data ... (date=04/03 15:02:44, total cpu=0:00:00.4, real=0:00:00.0, peak res=894.5M, current mem=877.4M)
+Top level cell is momal.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell momal ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 57579 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1205.762M, initial mem = 299.711M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:12.4, real=0:01:44, peak res=1388.1M, current mem=1388.1M)
+Total number of combinational cells: 92
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X16 INV_X2 INV_X32 INV_X8 INV_X4
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUF_X16 BUF_X32
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+**WARN: (IMPSGN-1003):	This module contains 57579 instances, it failed to display, click reload button in schmatic viewer will display it.
+<CMD> read_sdc ../../sdc/momal.sdc
+Current (total cpu=0:00:13.1, real=0:01:55, peak res=1425.0M, current mem=1371.6M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'tck' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 3).
+
+INFO (CTE): Reading of timing constraints file ../../sdc/momal.sdc completed, with 1 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1381.5M, current mem=1381.5M)
+Current (total cpu=0:00:13.1, real=0:01:55, peak res=1425.0M, current mem=1381.5M)
+invalid command name "read_scan_def"
+<CMD> read_def -scan ../../scan_def/momal_scan_def.txt
+
+Usage: read_def [-help] [<defFile>] [-force_create_phy_inst] [-keepPinGeometry] [-preserve_shape] [-rdl_orientation <orientation>]
+                [-rdl_placement <(x y)>] [-read_flat_data <dir>] [-skip_pg] [-skip_signal] [-top] [-topcell_orientation <orientation>]
+                [-topcell_placement <(x y)>] [-write_flat_data <dir>] [-rdl_def <string> ] [-top_scope | -top_scope_ignore_block_internal_nets_on_boundary_path ]
+
+**ERROR: (IMPTCM-48):	"-scan" is not a legal option for command "read_def". Either the current option or an option prior to it is not specified correctly.
+
+<CMD> read_def ../../scan_def/momal_scan_def.txt
+read_def cannot be used in timer mode
+<CMD> read_scan_control_file ../../scan_def/momal_scan_def.txt
+save out the reporting file "scanChain.rpt"
+<CMD> report_timing -max_paths 50
+**WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+AAE DB initialization (MEM=1617.24 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: momal
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1672.33)
+/dev/null
+End delay calculation. (MEM=1710.51 CPU=0:00:07.8 REAL=0:00:08.0)
+End delay calculation (fullDC). (MEM=1710.51 CPU=0:00:08.2 REAL=0:00:09.0)
+No constrained timing paths found.
+Design may not be constrained or  library is missing timing information.
+
+<CMD> report_timing 
+No constrained timing paths found.
+Design may not be constrained or  library is missing timing information.
+
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 1662.512M, initial mem = 299.711M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSGN-1003          1  %s                                       
+WARNING   IMPESI-3468          1  User needs to specify -equivalent_wavefo...
+ERROR     IMPTCM-48            1  "%s" is not a legal option for command "...
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+*** Message Summary: 3 warning(s), 1 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:01:05, real=0:18:29, mem=1662.5M) ---

@@ -1,0 +1,211 @@
+[04/08 15:45:22      0s] 
+[04/08 15:45:22      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[04/08 15:45:22      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/08 15:45:22      0s] 
+[04/08 15:45:22      0s] Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+[04/08 15:45:22      0s] Options:	
+[04/08 15:45:22      0s] Date:		Tue Apr  8 15:45:22 2025
+[04/08 15:45:22      0s] Host:		APL2.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+[04/08 15:45:22      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/08 15:45:22      0s] 
+[04/08 15:45:22      0s] License:
+[04/08 15:45:23      0s] 		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+[04/08 15:45:23      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/08 15:45:30      6s] @(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/08 15:45:30      6s] @(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+[04/08 15:45:30      6s] @(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/08 15:45:30      6s] @(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+[04/08 15:45:30      6s] @(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+[04/08 15:45:30      6s] @(#)CDS: CPE v20.20-p009
+[04/08 15:45:30      6s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[04/08 15:45:30      6s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/08 15:45:30      6s] @(#)CDS: RCDB 11.15.0
+[04/08 15:45:30      6s] @(#)CDS: STYLUS 21.10-d018_1 (08/28/2020 09:14 PDT)
+[04/08 15:45:30      6s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[04/08 15:45:30      6s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_150393_vnNcKm'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_150393_vnNcKm'.
+[04/08 15:46:24      9s] <CMD> read_lib ../../lib/NangateOpenCellLibrary_slow_conditional_ccs.lib
+[04/08 15:46:38     10s] <CMD> read_verilog ../../netlist/momal_scan.v
+[04/08 15:46:45     11s] <CMD> set_top_module
+[04/08 15:46:45     11s] #% Begin Load MMMC data ... (date=04/08 15:46:45, mem=771.9M)
+[04/08 15:46:46     11s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[04/08 15:46:46     11s] #% End Load MMMC data ... (date=04/08 15:46:46, total cpu=0:00:00.0, real=0:00:01.0, peak res=772.5M, current mem=772.5M)
+[04/08 15:46:46     11s] Loading view definition file from .ssv_emulate_view_definition_150393.tcl
+[04/08 15:46:46     11s] Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Momal/lib/NangateOpenCellLibrary_slow_conditional_ccs.lib' ...
+[04/08 15:46:46     11s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[04/08 15:46:46     11s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:00.0, peak res=858.8M, current mem=780.9M)
+[04/08 15:46:46     11s] *** End library_loading (cpu=0.01min, real=0.00min, mem=37.0M, fe_cpu=0.20min, fe_real=1.40min, fe_mem=813.9M) ***
+[04/08 15:46:46     11s] #% Begin Load netlist data ... (date=04/08 15:46:46, mem=780.9M)
+[04/08 15:46:46     12s] *** Begin netlist parsing (mem=813.9M) ***
+[04/08 15:46:46     12s] Reading verilog netlist '../../netlist/momal_scan.v'
+[04/08 15:46:46     12s] 
+[04/08 15:46:46     12s] *** Memory Usage v#1 (Current mem = 973.918M, initial mem = 299.711M) ***
+[04/08 15:46:46     12s] *** End netlist parsing (cpu=0:00:00.3, real=0:00:00.0, mem=973.9M) ***
+[04/08 15:46:46     12s] #% End Load netlist data ... (date=04/08 15:46:46, total cpu=0:00:00.4, real=0:00:00.0, peak res=910.9M, current mem=893.7M)
+[04/08 15:46:46     12s] Top level cell is momal.
+[04/08 15:46:47     12s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/08 15:46:47     12s] late library set: default_emulate_libset_max
+[04/08 15:46:47     12s] early library set: default_emulate_libset_min
+[04/08 15:46:47     12s] Completed consistency checks. Status: Successful
+[04/08 15:46:47     12s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/08 15:46:47     12s] late library set: default_emulate_libset_max
+[04/08 15:46:47     12s] early library set: default_emulate_libset_min
+[04/08 15:46:47     12s] Completed consistency checks. Status: Successful
+[04/08 15:46:47     12s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:01.0, peak res=927.4M, current mem=927.4M)
+[04/08 15:46:47     12s] Building hierarchical netlist for Cell momal ...
+[04/08 15:46:47     12s] *** Netlist is unique.
+[04/08 15:46:47     12s] ** info: there are 135 modules.
+[04/08 15:46:47     12s] ** info: there are 57579 stdCell insts.
+[04/08 15:46:47     12s] 
+[04/08 15:46:47     12s] *** Memory Usage v#1 (Current mem = 1205.863M, initial mem = 299.711M) ***
+[04/08 15:46:47     12s] Set Default Net Delay as 1000 ps.
+[04/08 15:46:47     12s] Set Default Net Load as 0.5 pF. 
+[04/08 15:46:47     12s] Set Default Input Pin Transition as 0.1 ps.
+[04/08 15:46:47     12s] Extraction setup Started 
+[04/08 15:46:47     12s] Summary of Active RC-Corners : 
+[04/08 15:46:47     12s]  
+[04/08 15:46:47     12s]  Analysis View: default_emulate_view
+[04/08 15:46:47     12s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:46:47     12s]     RC-Corner Index       : 0
+[04/08 15:46:47     12s]     RC-Corner Temperature : 25 Celsius
+[04/08 15:46:47     12s]     RC-Corner Cap Table   : ''
+[04/08 15:46:47     12s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:46:47     12s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/08 15:46:47     12s] late library set: default_emulate_libset_max
+[04/08 15:46:47     12s] early library set: default_emulate_libset_min
+[04/08 15:46:47     12s] Completed consistency checks. Status: Successful
+[04/08 15:46:47     12s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1402.1M, current mem=1191.1M)
+[04/08 15:46:47     12s] Reading timing constraints file '/dev/null' ...
+[04/08 15:46:47     12s] Current (total cpu=0:00:12.8, real=0:01:25, peak res=1408.4M, current mem=1408.4M)
+[04/08 15:46:47     12s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/08 15:46:47     12s] Creating Cell Server ...(0, 1, 1, 1)
+[04/08 15:46:47     12s] Summary for sequential cells identification: 
+[04/08 15:46:47     12s]   Identified SBFF number: 16
+[04/08 15:46:47     12s]   Identified MBFF number: 0
+[04/08 15:46:47     12s]   Identified SB Latch number: 0
+[04/08 15:46:47     12s]   Identified MB Latch number: 0
+[04/08 15:46:47     12s]   Not identified SBFF number: 0
+[04/08 15:46:47     12s]   Not identified MBFF number: 0
+[04/08 15:46:47     12s]   Not identified SB Latch number: 0
+[04/08 15:46:47     12s]   Not identified MB Latch number: 0
+[04/08 15:46:47     12s]   Number of sequential cells which are not FFs: 13
+[04/08 15:46:47     12s] Total number of combinational cells: 92
+[04/08 15:46:47     12s] Total number of sequential cells: 29
+[04/08 15:46:47     12s] Total number of tristate cells: 6
+[04/08 15:46:47     12s] Total number of level shifter cells: 0
+[04/08 15:46:47     12s] Total number of power gating cells: 0
+[04/08 15:46:47     12s] Total number of isolation cells: 0
+[04/08 15:46:47     12s] Total number of power switch cells: 0
+[04/08 15:46:47     12s] Total number of pulse generator cells: 0
+[04/08 15:46:47     12s] Total number of always on buffers: 0
+[04/08 15:46:47     12s] Total number of retention cells: 0
+[04/08 15:46:47     12s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+[04/08 15:46:47     12s] Total number of usable buffers: 7
+[04/08 15:46:47     12s] List of unusable buffers:
+[04/08 15:46:47     12s] Total number of unusable buffers: 0
+[04/08 15:46:47     12s] List of usable inverters: INV_X1 INV_X16 INV_X2 INV_X32 INV_X8 INV_X4
+[04/08 15:46:47     12s] Total number of usable inverters: 6
+[04/08 15:46:47     12s] List of unusable inverters:
+[04/08 15:46:47     12s] Total number of unusable inverters: 0
+[04/08 15:46:47     12s] List of identified usable delay cells: BUF_X16 BUF_X32
+[04/08 15:46:47     12s] Total number of identified usable delay cells: 2
+[04/08 15:46:47     12s] List of identified unusable delay cells:
+[04/08 15:46:47     12s] Total number of identified unusable delay cells: 0
+[04/08 15:46:47     12s] Creating Cell Server, finished. 
+[04/08 15:46:47     12s] 
+[04/08 15:46:47     12s] Deleting Cell Server ...
+[04/08 15:46:47     12s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1437.5M, current mem=1437.5M)
+[04/08 15:46:47     12s] Creating Cell Server ...(0, 0, 0, 0)
+[04/08 15:46:47     12s] Summary for sequential cells identification: 
+[04/08 15:46:47     12s]   Identified SBFF number: 16
+[04/08 15:46:47     12s]   Identified MBFF number: 0
+[04/08 15:46:47     12s]   Identified SB Latch number: 0
+[04/08 15:46:47     12s]   Identified MB Latch number: 0
+[04/08 15:46:47     12s]   Not identified SBFF number: 0
+[04/08 15:46:47     12s]   Not identified MBFF number: 0
+[04/08 15:46:47     12s]   Not identified SB Latch number: 0
+[04/08 15:46:47     12s]   Not identified MB Latch number: 0
+[04/08 15:46:47     12s]   Number of sequential cells which are not FFs: 13
+[04/08 15:46:47     12s]  Visiting view : default_emulate_view
+[04/08 15:46:47     12s]    : PowerDomain = none : Weighted F : unweighted  = 28.40 (1.000) with rcCorner = 0
+[04/08 15:46:47     12s]    : PowerDomain = none : Weighted F : unweighted  = 28.40 (1.000) with rcCorner = -1
+[04/08 15:46:47     12s]  Visiting view : default_emulate_view
+[04/08 15:46:47     12s]    : PowerDomain = none : Weighted F : unweighted  = 28.40 (1.000) with rcCorner = 0
+[04/08 15:46:47     12s]    : PowerDomain = none : Weighted F : unweighted  = 28.40 (1.000) with rcCorner = -1
+[04/08 15:46:47     12s] Creating Cell Server, finished. 
+[04/08 15:46:47     12s] 
+[04/08 15:46:47     12s] Extraction setup Started 
+[04/08 15:46:47     12s] Summary of Active RC-Corners : 
+[04/08 15:46:47     12s]  
+[04/08 15:46:47     12s]  Analysis View: default_emulate_view
+[04/08 15:46:47     12s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:46:47     12s]     RC-Corner Index       : 0
+[04/08 15:46:47     12s]     RC-Corner Temperature : 125 Celsius
+[04/08 15:46:47     12s]     RC-Corner Cap Table   : ''
+[04/08 15:46:47     12s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:46:47     12s] Extraction setup Started 
+[04/08 15:46:47     12s] Summary of Active RC-Corners : 
+[04/08 15:46:47     12s]  
+[04/08 15:46:47     12s]  Analysis View: default_emulate_view
+[04/08 15:46:47     12s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:46:47     12s]     RC-Corner Index       : 0
+[04/08 15:46:47     12s]     RC-Corner Temperature : 125 Celsius
+[04/08 15:46:47     12s]     RC-Corner Cap Table   : ''
+[04/08 15:46:47     12s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:46:47     12s] Extraction setup Started 
+[04/08 15:46:47     12s] Summary of Active RC-Corners : 
+[04/08 15:46:47     12s]  
+[04/08 15:46:47     12s]  Analysis View: default_emulate_view
+[04/08 15:46:47     12s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:46:47     12s]     RC-Corner Index       : 0
+[04/08 15:46:47     12s]     RC-Corner Temperature : 125 Celsius
+[04/08 15:46:47     12s]     RC-Corner Cap Table   : ''
+[04/08 15:46:47     12s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:46:47     12s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:46:47     12s] **WARN: (IMPSGN-1003):	This module contains 57579 instances, it failed to display, click reload button in schmatic viewer will display it.
+[04/08 15:47:01     13s] <CMD> read_sdc ../../sdc/momal.sdc
+[04/08 15:47:01     13s] Current (total cpu=0:00:13.8, real=0:01:39, peak res=1438.0M, current mem=1392.7M)
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_cfclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 7).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_rclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 7).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_sclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 7).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'tck' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 7).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_cfclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 8).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_rclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 8).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_sclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 8).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'tck' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 8).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_cfclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 9).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_rclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 9).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_sclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 9).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'tck' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 9).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_cfclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 10).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_rclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 10).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'in_sclk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 10).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] **WARN: (TCLNL-330):	set_input_delay on clock root 'tck' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../../sdc/momal.sdc, Line 10).
+[04/08 15:47:01     13s] 
+[04/08 15:47:01     13s] INFO (CTE): Reading of timing constraints file ../../sdc/momal.sdc completed, with 16 WARNING
+[04/08 15:47:01     13s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1402.7M, current mem=1402.7M)
+[04/08 15:47:01     13s] Current (total cpu=0:00:13.8, real=0:01:39, peak res=1438.0M, current mem=1402.7M)
+[04/08 15:47:20     14s] couldn't open "scan_report.txt": no such file or directory
