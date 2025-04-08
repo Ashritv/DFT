@@ -273,3 +273,15 @@ viaInitial ends at Tue Apr  8 16:00:13 2025
 [04/08 16:00:31     18s] --- UnitsPerDBU = 0.5000
 [04/08 16:00:31     18s] defIn read 10000 lines...
 [04/08 16:00:31     18s] DEF file '../../scan_def/momal_scan_def.txt' is parsed, current time is Tue Apr  8 16:00:31 2025.
+[04/08 16:26:39    111s] <CMD> exit
+[04/08 16:26:39    111s] 
+[04/08 16:26:39    111s] *** Memory Usage v#1 (Current mem = 1561.418M, initial mem = 299.711M) ***
+[04/08 16:26:39    111s] 
+[04/08 16:26:39    111s] *** Summary of all messages that are not suppressed in this session:
+[04/08 16:26:39    111s] Severity  ID               Count  Summary                                  
+[04/08 16:26:39    111s] WARNING   IMPDF-64             1  UnitsPerDBU is not unity (you may have r...
+[04/08 16:26:39    111s] WARNING   IMPSGN-1003          1  %s                                       
+[04/08 16:26:39    111s] WARNING   IMPVL-159          268  Pin '%s' of cell '%s' is defined in LEF ...
+[04/08 16:26:39    111s] *** Message Summary: 270 warning(s), 0 error(s)
+[04/08 16:26:39    111s] 
+[04/08 16:26:39    111s] --- Ending "Tempus Timing Signoff Solution" (totcpu=0:01:52, real=0:29:10, mem=1561.4M) ---
