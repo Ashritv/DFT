@@ -1,0 +1,32 @@
+----> SPEF : Standard Parasitic Exchange format
+
+Parasitics are the non-ideal, unintended electrical characteristics inherent in a circuit’s physical structure and these elements, which are not explicitly designed into the circuit, arise from the layout and manufacturing process.
+
+
+Incorporating Parasitic Data
+SPEF files contain detailed information about parasitic capacitances, resistances, and sometimes inductances extracted from the physical layout. When you run read_spef, Tempus uses this data to update the netlist with accurate parasitic parameters. This ensures that the computed delays on interconnects are much closer to what is observed in silicon.
+
+Improving Timing Accuracy
+
+Delay Computation: With parasitics loaded, the tool can calculate delays on nets using more realistic models rather than relying solely on estimated or default delay values.
+
+Signal Integrity: Parasitic capacitors and resistors impact rise/fall times and overall signal integrity. Incorporating them directly into the timing analysis helps in identifying potential timing violations that might be hidden if parasitics were ignored.
+
+Alignment with Extracted Physical Data
+SPEF files are generated from the physical design tools during the extraction phase (typically using tools like StarRC or similar extraction tools). By reading the SPEF file, Tempus aligns its timing analysis with the physical characteristics of the routed design, leading to a better correlation between simulation and silicon performance.
+
+Interconnect Modeling: Detailed RC network analysis on nets.
+
+Corner Analysis: Adjust delays based on variations in parasitic effects for different process-voltage-temperature (PVT) corners.
+
+De-Rating and Crosstalk Analysis: In some flows, understanding parasitic coupling is key to predicting crosstalk and de-rating factors.
+
+
+
+----> SDF File : Delay data
+
+An SDF file contains details about the absolute delays for all cells and interconnects, including IR drop and crosstalk impact. It annotates user-specified delay information from the SDF file into the timing system. You can use the read_sdf command to supply pre calculated delays and timing check values from an external delay calculator, or from a previous Tempus session. 
+
+In Tempus, you can use the read_sdf command to read in a SDF file and then the timing analysis engine will use the delays annotated from this SDF file.
+
+----> LEF/DEF : Physical Data
