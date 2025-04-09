@@ -1,0 +1,297 @@
+[04/09 17:08:33      0s] 
+[04/09 17:08:33      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[04/09 17:08:33      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/09 17:08:33      0s] 
+[04/09 17:08:33      0s] Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+[04/09 17:08:33      0s] Options:	
+[04/09 17:08:33      0s] Date:		Wed Apr  9 17:08:33 2025
+[04/09 17:08:33      0s] Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+[04/09 17:08:33      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/09 17:08:33      0s] 
+[04/09 17:08:33      0s] License:
+[04/09 17:08:34      0s] 		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+[04/09 17:08:34      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/09 17:08:41      6s] @(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/09 17:08:41      6s] @(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+[04/09 17:08:41      6s] @(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/09 17:08:41      6s] @(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+[04/09 17:08:41      6s] @(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+[04/09 17:08:41      6s] @(#)CDS: CPE v20.20-p009
+[04/09 17:08:41      6s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[04/09 17:08:41      6s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/09 17:08:41      6s] @(#)CDS: RCDB 11.15.0
+[04/09 17:08:41      6s] @(#)CDS: STYLUS 21.10-d018_1 (08/28/2020 09:14 PDT)
+[04/09 17:08:41      6s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[04/09 17:08:41      6s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_5963_nLAa3U'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_5963_nLAa3U'.
+[04/09 17:08:53      7s] <CMD> read_lib ../lib/slow.lib
+[04/09 17:09:01      7s] <CMD> read_lib -lef ../lef/NangateOpenCellLibrary.lef
+[04/09 17:09:13      8s] <CMD> read_verilog ../netlist/vorca1.v
+[04/09 17:09:17      8s] <CMD> set_top_module
+[04/09 17:09:17      8s] #% Begin Load MMMC data ... (date=04/09 17:09:17, mem=752.5M)
+[04/09 17:09:17      8s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[04/09 17:09:17      8s] #% End Load MMMC data ... (date=04/09 17:09:17, total cpu=0:00:00.0, real=0:00:00.0, peak res=753.0M, current mem=753.0M)
+[04/09 17:09:17      8s] 
+[04/09 17:09:17      8s] Loading LEF file ../lef/NangateOpenCellLibrary.lef ...
+[04/09 17:09:17      8s] Set DBUPerIGU to M2 pitch 380.
+[04/09 17:09:17      8s] 
+[04/09 17:09:17      8s] viaInitial starts at Wed Apr  9 17:09:17 2025
+viaInitial ends at Wed Apr  9 17:09:17 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[04/09 17:09:17      8s] Loading view definition file from .ssv_emulate_view_definition_5963.tcl
+[04/09 17:09:17      8s] Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Vorca_explore_tempus/lib/slow.lib' ...
+[04/09 17:09:18      9s] Read 479 cells in library 'slow' 
+[04/09 17:09:18      9s] Ending "PreSetAnalysisView" (total cpu=0:00:00.3, real=0:00:01.0, peak res=851.6M, current mem=804.9M)
+[04/09 17:09:18      9s] *** End library_loading (cpu=0.00min, real=0.02min, mem=29.0M, fe_cpu=0.15min, fe_real=0.75min, fe_mem=847.7M) ***
+[04/09 17:09:18      9s] #% Begin Load netlist data ... (date=04/09 17:09:18, mem=804.9M)
+[04/09 17:09:18      9s] *** Begin netlist parsing (mem=847.7M) ***
+[04/09 17:09:18      9s] Reading verilog netlist '../netlist/vorca1.v'
+[04/09 17:09:18      9s] 
+[04/09 17:09:18      9s] *** Memory Usage v#1 (Current mem = 973.785M, initial mem = 299.711M) ***
+[04/09 17:09:18      9s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=973.8M) ***
+[04/09 17:09:18      9s] #% End Load netlist data ... (date=04/09 17:09:18, total cpu=0:00:00.2, real=0:00:00.0, peak res=886.6M, current mem=878.8M)
+[04/09 17:09:18      9s] Top level cell is vorca.
+[04/09 17:09:18      9s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/09 17:09:18      9s] late library set: default_emulate_libset_max
+[04/09 17:09:18      9s] early library set: default_emulate_libset_min
+[04/09 17:09:18      9s] Completed consistency checks. Status: Successful
+[04/09 17:09:18      9s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/09 17:09:18      9s] late library set: default_emulate_libset_max
+[04/09 17:09:18      9s] early library set: default_emulate_libset_min
+[04/09 17:09:18      9s] Completed consistency checks. Status: Successful
+[04/09 17:09:18      9s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=931.0M, current mem=931.0M)
+[04/09 17:09:18      9s] Building hierarchical netlist for Cell vorca ...
+[04/09 17:09:18      9s] *** Netlist is unique.
+[04/09 17:09:18      9s] Setting Std. cell height to 2800 DBU (smallest ABS library cell).
+[04/09 17:09:18      9s] ** info: there are 615 modules.
+[04/09 17:09:18      9s] ** info: there are 1038 stdCell insts.
+[04/09 17:09:18      9s] 
+[04/09 17:09:18      9s] *** Memory Usage v#1 (Current mem = 1204.816M, initial mem = 299.711M) ***
+[04/09 17:09:18      9s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/09 17:09:18      9s] Generated pitch 0.84 in metal9 is different from 1.6 defined in technology file in unpreferred direction.
+[04/09 17:09:18      9s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in unpreferred direction.
+[04/09 17:09:18      9s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/09 17:09:18      9s] Generated pitch 0.28 in metal7 is different from 0.8 defined in technology file in unpreferred direction.
+[04/09 17:09:18      9s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/09 17:09:18      9s] Generated pitch 0.14 in metal4 is different from 0.28 defined in technology file in unpreferred direction.
+[04/09 17:09:18      9s] Set Default Net Delay as 1000 ps.
+[04/09 17:09:18      9s] Set Default Net Load as 0.5 pF. 
+[04/09 17:09:18      9s] Set Default Input Pin Transition as 0.1 ps.
+[04/09 17:09:18      9s] Extraction setup Started 
+[04/09 17:09:18      9s] Summary of Active RC-Corners : 
+[04/09 17:09:18      9s]  
+[04/09 17:09:18      9s]  Analysis View: default_emulate_view
+[04/09 17:09:18      9s]     RC-Corner Name        : default_emulate_rc_corner
+[04/09 17:09:18      9s]     RC-Corner Index       : 0
+[04/09 17:09:18      9s]     RC-Corner Temperature : 25 Celsius
+[04/09 17:09:18      9s]     RC-Corner Cap Table   : ''
+[04/09 17:09:18      9s]     RC-Corner PostRoute Res Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute Cap Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute XCap Factor       : 1
+[04/09 17:09:18      9s] LayerId::1 widthSet size::1
+[04/09 17:09:18      9s] LayerId::2 widthSet size::1
+[04/09 17:09:18      9s] LayerId::3 widthSet size::1
+[04/09 17:09:18      9s] LayerId::4 widthSet size::1
+[04/09 17:09:18      9s] LayerId::5 widthSet size::1
+[04/09 17:09:18      9s] LayerId::6 widthSet size::1
+[04/09 17:09:18      9s] LayerId::7 widthSet size::1
+[04/09 17:09:18      9s] LayerId::8 widthSet size::1
+[04/09 17:09:18      9s] LayerId::9 widthSet size::1
+[04/09 17:09:18      9s] LayerId::10 widthSet size::1
+[04/09 17:09:18      9s] Initializing multi-corner resistance tables ...
+[04/09 17:09:18      9s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/09 17:09:18      9s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/09 17:09:18      9s] late library set: default_emulate_libset_max
+[04/09 17:09:18      9s] early library set: default_emulate_libset_min
+[04/09 17:09:18      9s] Completed consistency checks. Status: Successful
+[04/09 17:09:18      9s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1254.8M, current mem=1041.4M)
+[04/09 17:09:18      9s] Reading timing constraints file '/dev/null' ...
+[04/09 17:09:18      9s] Current (total cpu=0:00:09.5, real=0:00:45.0, peak res=1262.6M, current mem=1262.6M)
+[04/09 17:09:18      9s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/09 17:09:18      9s] Creating Cell Server ...(0, 1, 1, 1)
+[04/09 17:09:18      9s] Summary for sequential cells identification: 
+[04/09 17:09:18      9s]   Identified SBFF number: 0
+[04/09 17:09:18      9s]   Identified MBFF number: 0
+[04/09 17:09:18      9s]   Identified SB Latch number: 0
+[04/09 17:09:18      9s]   Identified MB Latch number: 0
+[04/09 17:09:18      9s]   Not identified SBFF number: 0
+[04/09 17:09:18      9s]   Not identified MBFF number: 0
+[04/09 17:09:18      9s]   Not identified SB Latch number: 0
+[04/09 17:09:18      9s]   Not identified MB Latch number: 0
+[04/09 17:09:18      9s]   Number of sequential cells which are not FFs: 0
+[04/09 17:09:18      9s] Total number of combinational cells: 0
+[04/09 17:09:18      9s] Total number of sequential cells: 0
+[04/09 17:09:18      9s] Total number of tristate cells: 0
+[04/09 17:09:18      9s] Total number of level shifter cells: 0
+[04/09 17:09:18      9s] Total number of power gating cells: 0
+[04/09 17:09:18      9s] Total number of isolation cells: 0
+[04/09 17:09:18      9s] Total number of power switch cells: 0
+[04/09 17:09:18      9s] Total number of pulse generator cells: 0
+[04/09 17:09:18      9s] Total number of always on buffers: 0
+[04/09 17:09:18      9s] Total number of retention cells: 0
+[04/09 17:09:18      9s] List of usable buffers:
+[04/09 17:09:18      9s] Total number of usable buffers: 0
+[04/09 17:09:18      9s] List of unusable buffers:
+[04/09 17:09:18      9s] Total number of unusable buffers: 0
+[04/09 17:09:18      9s] List of usable inverters:
+[04/09 17:09:18      9s] Total number of usable inverters: 0
+[04/09 17:09:18      9s] List of unusable inverters:
+[04/09 17:09:18      9s] Total number of unusable inverters: 0
+[04/09 17:09:18      9s] List of identified usable delay cells:
+[04/09 17:09:18      9s] Total number of identified usable delay cells: 0
+[04/09 17:09:18      9s] List of identified unusable delay cells:
+[04/09 17:09:18      9s] Total number of identified unusable delay cells: 0
+[04/09 17:09:18      9s] Creating Cell Server, finished. 
+[04/09 17:09:18      9s] 
+[04/09 17:09:18      9s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[04/09 17:09:18      9s] Deleting Cell Server ...
+[04/09 17:09:18      9s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1291.5M, current mem=1291.5M)
+[04/09 17:09:18      9s] Creating Cell Server ...(0, 0, 0, 0)
+[04/09 17:09:18      9s] Summary for sequential cells identification: 
+[04/09 17:09:18      9s]   Identified SBFF number: 0
+[04/09 17:09:18      9s]   Identified MBFF number: 0
+[04/09 17:09:18      9s]   Identified SB Latch number: 0
+[04/09 17:09:18      9s]   Identified MB Latch number: 0
+[04/09 17:09:18      9s]   Not identified SBFF number: 0
+[04/09 17:09:18      9s]   Not identified MBFF number: 0
+[04/09 17:09:18      9s]   Not identified SB Latch number: 0
+[04/09 17:09:18      9s]   Not identified MB Latch number: 0
+[04/09 17:09:18      9s]   Number of sequential cells which are not FFs: 0
+[04/09 17:09:18      9s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[04/09 17:09:18      9s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[04/09 17:09:18      9s]  Visiting view : default_emulate_view
+[04/09 17:09:18      9s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[04/09 17:09:18      9s]    : PowerDomain = none : no stdDelay from this view
+[04/09 17:09:18      9s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/09 17:09:18      9s]  Visiting view : default_emulate_view
+[04/09 17:09:18      9s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[04/09 17:09:18      9s]    : PowerDomain = none : no stdDelay from this view
+[04/09 17:09:18      9s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/09 17:09:18      9s] *INFO : stdDelay is calculated as zero; using legacy method.
+[04/09 17:09:18      9s] *INFO : stdSlew is calculated as zero; using legacy method.
+[04/09 17:09:18      9s] Creating Cell Server, finished. 
+[04/09 17:09:18      9s] 
+[04/09 17:09:18      9s] Extraction setup Started 
+[04/09 17:09:18      9s] Summary of Active RC-Corners : 
+[04/09 17:09:18      9s]  
+[04/09 17:09:18      9s]  Analysis View: default_emulate_view
+[04/09 17:09:18      9s]     RC-Corner Name        : default_emulate_rc_corner
+[04/09 17:09:18      9s]     RC-Corner Index       : 0
+[04/09 17:09:18      9s]     RC-Corner Temperature : 125 Celsius
+[04/09 17:09:18      9s]     RC-Corner Cap Table   : ''
+[04/09 17:09:18      9s]     RC-Corner PostRoute Res Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute Cap Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute XCap Factor       : 1
+[04/09 17:09:18      9s] LayerId::1 widthSet size::1
+[04/09 17:09:18      9s] LayerId::2 widthSet size::1
+[04/09 17:09:18      9s] LayerId::3 widthSet size::1
+[04/09 17:09:18      9s] LayerId::4 widthSet size::1
+[04/09 17:09:18      9s] LayerId::5 widthSet size::1
+[04/09 17:09:18      9s] LayerId::6 widthSet size::1
+[04/09 17:09:18      9s] LayerId::7 widthSet size::1
+[04/09 17:09:18      9s] LayerId::8 widthSet size::1
+[04/09 17:09:18      9s] LayerId::9 widthSet size::1
+[04/09 17:09:18      9s] LayerId::10 widthSet size::1
+[04/09 17:09:18      9s] Initializing multi-corner resistance tables ...
+[04/09 17:09:18      9s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/09 17:09:18      9s] Extraction setup Started 
+[04/09 17:09:18      9s] Summary of Active RC-Corners : 
+[04/09 17:09:18      9s]  
+[04/09 17:09:18      9s]  Analysis View: default_emulate_view
+[04/09 17:09:18      9s]     RC-Corner Name        : default_emulate_rc_corner
+[04/09 17:09:18      9s]     RC-Corner Index       : 0
+[04/09 17:09:18      9s]     RC-Corner Temperature : 125 Celsius
+[04/09 17:09:18      9s]     RC-Corner Cap Table   : ''
+[04/09 17:09:18      9s]     RC-Corner PostRoute Res Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute Cap Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute XCap Factor       : 1
+[04/09 17:09:18      9s] LayerId::1 widthSet size::1
+[04/09 17:09:18      9s] LayerId::2 widthSet size::1
+[04/09 17:09:18      9s] LayerId::3 widthSet size::1
+[04/09 17:09:18      9s] LayerId::4 widthSet size::1
+[04/09 17:09:18      9s] LayerId::5 widthSet size::1
+[04/09 17:09:18      9s] LayerId::6 widthSet size::1
+[04/09 17:09:18      9s] LayerId::7 widthSet size::1
+[04/09 17:09:18      9s] LayerId::8 widthSet size::1
+[04/09 17:09:18      9s] LayerId::9 widthSet size::1
+[04/09 17:09:18      9s] LayerId::10 widthSet size::1
+[04/09 17:09:18      9s] Initializing multi-corner resistance tables ...
+[04/09 17:09:18      9s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/09 17:09:18      9s] Extraction setup Started 
+[04/09 17:09:18      9s] Summary of Active RC-Corners : 
+[04/09 17:09:18      9s]  
+[04/09 17:09:18      9s]  Analysis View: default_emulate_view
+[04/09 17:09:18      9s]     RC-Corner Name        : default_emulate_rc_corner
+[04/09 17:09:18      9s]     RC-Corner Index       : 0
+[04/09 17:09:18      9s]     RC-Corner Temperature : 125 Celsius
+[04/09 17:09:18      9s]     RC-Corner Cap Table   : ''
+[04/09 17:09:18      9s]     RC-Corner PostRoute Res Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute Cap Factor        : 1
+[04/09 17:09:18      9s]     RC-Corner PostRoute XCap Factor       : 1
+[04/09 17:09:18      9s] LayerId::1 widthSet size::1
+[04/09 17:09:18      9s] LayerId::2 widthSet size::1
+[04/09 17:09:18      9s] LayerId::3 widthSet size::1
+[04/09 17:09:18      9s] LayerId::4 widthSet size::1
+[04/09 17:09:18      9s] LayerId::5 widthSet size::1
+[04/09 17:09:18      9s] LayerId::6 widthSet size::1
+[04/09 17:09:18      9s] LayerId::7 widthSet size::1
+[04/09 17:09:18      9s] LayerId::8 widthSet size::1
+[04/09 17:09:18      9s] LayerId::9 widthSet size::1
+[04/09 17:09:18      9s] LayerId::10 widthSet size::1
+[04/09 17:09:18      9s] Initializing multi-corner resistance tables ...
+[04/09 17:09:18      9s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/09 17:09:19      9s] Loading  (vorca)
+[04/09 17:09:19      9s] Traverse HInst (vorca)
+[04/09 17:09:35     10s] <CMD> report_clock_gating_check 
+[04/09 17:09:36     10s] **WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+[04/09 17:09:36     10s] AAE DB initialization (MEM=1486.8 CPU=0:00:00.0 REAL=0:00:00.0) 
+[04/09 17:09:36     10s] #################################################################################
+[04/09 17:09:36     10s] # Design Name: vorca
+[04/09 17:09:36     10s] # Design Mode: 65nm
+[04/09 17:09:36     10s] # Analysis Mode: MMMC OCV 
+[04/09 17:09:36     10s] # Parasitics Mode: No SPEF/RCDB 
+[04/09 17:09:36     10s] # Signoff Settings: SI Off 
+[04/09 17:09:36     10s] #################################################################################
+[04/09 17:09:36     10s] Topological Sorting (REAL = 0:00:00.0, MEM = 1514.6M, InitMEM = 1514.6M)
+[04/09 17:09:36     10s] Start delay calculation (fullDC) (1 T). (MEM=1514.57)
+[04/09 17:09:36     10s] Start AAE Lib Loading. (MEM=1514.57)
+[04/09 17:09:36     10s] End AAE Lib Loading. (MEM=1514.57 CPU=0:00:00.0 Real=0:00:00.0)
+[04/09 17:09:36     10s] End AAE Lib Interpolated Model. (MEM=1514.57 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/09 17:09:36     10s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/09 17:09:36     10s] End delay calculation. (MEM=1526.28 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/09 17:09:36     10s] End delay calculation (fullDC). (MEM=1526.28 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/09 17:09:36     10s] *** CDM Built up (cpu=0:00:00.3  real=0:00:00.0  mem= 1526.3M) ***
+[04/09 17:10:03     12s] <CMD> report_fanout -from clk
+[04/09 17:10:45     13s] <CMD> report_fanout -from clk -pin_levels 1
+[04/09 17:10:48     13s] <CMD> report_fanout -from clk -pin_levels 2
+[04/09 17:15:22     25s] <CMD> read_sdc ../sdc/simple_sdc.sdc
+[04/09 17:15:22     25s] Current (total cpu=0:00:25.4, real=0:06:49, peak res=1295.9M, current mem=1209.2M)
+[04/09 17:15:23     25s] INFO (CTE): Constraints read successfully.
+[04/09 17:15:23     25s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:01.0, peak res=1209.2M, current mem=1189.6M)
+[04/09 17:15:23     25s] Current (total cpu=0:00:25.4, real=0:06:50, peak res=1295.9M, current mem=1189.6M)
+[04/09 17:15:38     26s] <CMD> report_clock_gating_check 
+[04/09 17:15:38     26s] #################################################################################
+[04/09 17:15:38     26s] # Design Name: vorca
+[04/09 17:15:38     26s] # Design Mode: 65nm
+[04/09 17:15:38     26s] # Analysis Mode: MMMC OCV 
+[04/09 17:15:38     26s] # Parasitics Mode: No SPEF/RCDB 
+[04/09 17:15:38     26s] # Signoff Settings: SI Off 
+[04/09 17:15:38     26s] #################################################################################
+[04/09 17:15:38     26s] Topological Sorting (REAL = 0:00:00.0, MEM = 1482.3M, InitMEM = 1482.3M)
+[04/09 17:15:38     26s] Start delay calculation (fullDC) (1 T). (MEM=1482.3)
+[04/09 17:15:39     26s] End AAE Lib Interpolated Model. (MEM=1482.3 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/09 17:15:39     26s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/09 17:15:39     26s] End delay calculation. (MEM=1530 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/09 17:15:39     26s] End delay calculation (fullDC). (MEM=1530 CPU=0:00:00.1 REAL=0:00:01.0)
+[04/09 17:15:39     26s] *** CDM Built up (cpu=0:00:00.2  real=0:00:01.0  mem= 1530.0M) ***
+[04/09 17:18:24     34s] <CMD> report_fanout -from clk -pin_levels 3
+[04/09 17:20:17     41s] <CMD> report_fanout -from clk -clock_tree 
+[04/09 17:20:17     41s] **ERROR: (TCLCMD-1132):	'-from' and '-clock_tree' cannot be specified together with command 'report_fanout'
+
+[04/09 17:20:37     42s] <CMD> report_fanout -clock_tree  
+[04/09 17:21:52     47s] <CMD> report_fanout -from clk -pin_levels 5
+[04/09 17:22:46     50s] <CMD> report_fanin -to n_write_reg/CK
