@@ -4,14 +4,14 @@ set sram_i[sizeof_collection [get_cells -of_objects sram_sp_*]]
 set rf_i [sizeof_collection [get_cells -of_objects rf_2p_*]]
 puts "Total mem cells = [expr {$sram_i + $rf_i}]"
 
-	#  sram_sp_32768d_33w_16m_8b - 6 -->(lm_mem_1 to 6)
-	#  sram_sp_16384d_36w_16m_8b - 4 -->(U_edlm_mem_1 to 4) 
-	#   rf_2p_136d_74w_1m_4b - 4 
-	#   rf_2p_256d_76w_1m_4b - 4
-	#   rf_2p_512d_76w_2m_4b - 4
-	#   sram_sp_512d_32w_4m_2b - 2
+	#  sram_sp_32768d_33w_16m_8b - 6  -->(lm_mem_1 to 6)
+	#  sram_sp_16384d_36w_16m_8b - 4  -->(U_edlm_mem_1 to 4) 
+	#   rf_2p_136d_74w_1m_4b - 8  -->(U_pcie_sw_2pram160x82_inst_0_ to 3)
+	#   rf_2p_256d_76w_1m_4b - 4  -->(tx_buf_x16_x8_x4_U_pcie_ip_tx_buf_0_ to 3)
+	#   rf_2p_512d_76w_2m_4b - 4  -->(rx_buf_x16_x16_U_pcie_ip_rx_buf_0_ to 3)
+	#   sram_sp_512d_32w_4m_2b - 2  -->(U_mem)
 
-	#  Total instance count = 24  
+	#  Total instance count = 28  
 
 #2) List of Memory Configurations (type of memories) that have been instantiated
 
