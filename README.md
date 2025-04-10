@@ -1,2 +1,2 @@
 # DFT
-Everything about DFT learnt during internship at CICS lab 
+Everything about DFT (Design For Testability) learnt during internship at CICS lab 
