@@ -1,0 +1,240 @@
+#######################################################
+#                                                     
+#  Tempus Timing Signoff Solution Command Logging File                     
+#  Created on Fri Apr 11 14:38:50 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+#@(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+#@(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+#@(#)CDS: CPE v20.20-p009
+
+read_lib ../lib/slow.lib
+read_verilog ../netlist/vorca_fixed.v
+set_top_module
+read_sdc ../sdc/simple_sdc.sdc
+selectObject Net {f32_mux_1_data[5]}
+ui::getColorByName red
+deselectObject Net {f32_mux_1_data[5]}
+selectObject Module u_survik
+load_timing_debug_report -name default_report top.mtarpt
+selectInst f32_mux_1_data_reg_5_
+selectInst f32_mux_1_data_reg_5_
+deselectInst f32_mux_1_data_reg_5_
+selectInst U422
+deselectInst U422
+selectInst U422
+selectInst f32_mux_1_data_reg_5_
+deselectInst f32_mux_1_data_reg_5_
+selectInst U151
+selectInst U151
+deselectObject Module u_survik
+selectObject Net {i_hb_sup[0]}
+selectObject Net {i_hb_sup[1]}
+selectObject Net {i_hb_sup[2]}
+ui::getColorByName red
+deselectObject Net {i_hb_sup[0]}
+deselectObject Net {i_hb_sup[1]}
+deselectObject Net {i_hb_sup[2]}
+selectObject Net {i_hisbuf1_3[0]}
+selectObject Net {i_hisbuf1_3[1]}
+selectObject Net {i_hisbuf1_3[2]}
+selectObject Net {i_hisbuf1_3[3]}
+selectObject Net {i_hisbuf1_3[4]}
+selectObject Net {i_hisbuf1_3[5]}
+selectObject Net {i_hisbuf1_3[6]}
+selectObject Net {i_hisbuf1_3[7]}
+selectObject Net {i_hisbuf1_3[8]}
+selectObject Net {i_hisbuf1_3[9]}
+selectObject Net {i_hisbuf1_3[10]}
+selectObject Net {i_hisbuf1_3[11]}
+selectObject Net {i_hisbuf1_3[12]}
+selectObject Net {i_hisbuf1_3[13]}
+selectObject Net {i_hisbuf1_3[14]}
+selectObject Net {i_hisbuf1_3[15]}
+selectObject Net {i_hisbuf1_3[16]}
+selectObject Net {i_hisbuf1_3[17]}
+selectObject Net {i_hisbuf1_3[18]}
+selectObject Net {i_hisbuf1_3[19]}
+selectObject Net {i_hisbuf1_3[20]}
+selectObject Net {i_hisbuf1_3[21]}
+selectObject Net {i_hisbuf1_3[22]}
+selectObject Net {i_hisbuf1_3[23]}
+deselectObject Net {i_hisbuf1_3[0]}
+deselectObject Net {i_hisbuf1_3[1]}
+deselectObject Net {i_hisbuf1_3[2]}
+deselectObject Net {i_hisbuf1_3[3]}
+deselectObject Net {i_hisbuf1_3[4]}
+deselectObject Net {i_hisbuf1_3[5]}
+deselectObject Net {i_hisbuf1_3[6]}
+deselectObject Net {i_hisbuf1_3[7]}
+deselectObject Net {i_hisbuf1_3[8]}
+deselectObject Net {i_hisbuf1_3[9]}
+deselectObject Net {i_hisbuf1_3[10]}
+deselectObject Net {i_hisbuf1_3[11]}
+deselectObject Net {i_hisbuf1_3[12]}
+deselectObject Net {i_hisbuf1_3[13]}
+deselectObject Net {i_hisbuf1_3[14]}
+deselectObject Net {i_hisbuf1_3[15]}
+deselectObject Net {i_hisbuf1_3[16]}
+deselectObject Net {i_hisbuf1_3[17]}
+deselectObject Net {i_hisbuf1_3[18]}
+deselectObject Net {i_hisbuf1_3[19]}
+deselectObject Net {i_hisbuf1_3[20]}
+deselectObject Net {i_hisbuf1_3[21]}
+deselectObject Net {i_hisbuf1_3[22]}
+deselectObject Net {i_hisbuf1_3[23]}
+selectObject Net {i_hisbuf1_3[0]}
+selectObject Net {i_hisbuf1_3[1]}
+selectObject Net {i_hisbuf1_3[2]}
+selectObject Net {i_hisbuf1_3[3]}
+selectObject Net {i_hisbuf1_3[4]}
+selectObject Net {i_hisbuf1_3[5]}
+selectObject Net {i_hisbuf1_3[6]}
+selectObject Net {i_hisbuf1_3[7]}
+selectObject Net {i_hisbuf1_3[8]}
+selectObject Net {i_hisbuf1_3[9]}
+selectObject Net {i_hisbuf1_3[10]}
+selectObject Net {i_hisbuf1_3[11]}
+selectObject Net {i_hisbuf1_3[12]}
+selectObject Net {i_hisbuf1_3[13]}
+selectObject Net {i_hisbuf1_3[14]}
+selectObject Net {i_hisbuf1_3[15]}
+selectObject Net {i_hisbuf1_3[16]}
+selectObject Net {i_hisbuf1_3[17]}
+selectObject Net {i_hisbuf1_3[18]}
+selectObject Net {i_hisbuf1_3[19]}
+selectObject Net {i_hisbuf1_3[20]}
+selectObject Net {i_hisbuf1_3[21]}
+selectObject Net {i_hisbuf1_3[22]}
+selectObject Net {i_hisbuf1_3[23]}
+deselectObject Net {i_hisbuf1_3[0]}
+deselectObject Net {i_hisbuf1_3[1]}
+deselectObject Net {i_hisbuf1_3[2]}
+deselectObject Net {i_hisbuf1_3[3]}
+deselectObject Net {i_hisbuf1_3[4]}
+deselectObject Net {i_hisbuf1_3[5]}
+deselectObject Net {i_hisbuf1_3[6]}
+deselectObject Net {i_hisbuf1_3[7]}
+deselectObject Net {i_hisbuf1_3[8]}
+deselectObject Net {i_hisbuf1_3[9]}
+deselectObject Net {i_hisbuf1_3[10]}
+deselectObject Net {i_hisbuf1_3[11]}
+deselectObject Net {i_hisbuf1_3[12]}
+deselectObject Net {i_hisbuf1_3[13]}
+deselectObject Net {i_hisbuf1_3[14]}
+deselectObject Net {i_hisbuf1_3[15]}
+deselectObject Net {i_hisbuf1_3[16]}
+deselectObject Net {i_hisbuf1_3[17]}
+deselectObject Net {i_hisbuf1_3[18]}
+deselectObject Net {i_hisbuf1_3[19]}
+deselectObject Net {i_hisbuf1_3[20]}
+deselectObject Net {i_hisbuf1_3[21]}
+deselectObject Net {i_hisbuf1_3[22]}
+deselectObject Net {i_hisbuf1_3[23]}
+selectObject Net {i_hb_sup[1]}
+deselectObject Net {i_hb_sup[1]}
+selectInst U263
+deselectInst U263
+selectObject Pin U263/A1
+deselectObject Net {i_hb_sup[1]}
+selectObject Net {i_hb_sup[1]}
+deselectObject Net {i_hb_sup[1]}
+selectObject Net {i_hb_sup[1]}
+deselectObject Net {i_hb_sup[1]}
+selectInst U263
+deselectInst U263
+selectInst U263
+deselectInst U263
+selectObject Net n188
+ui::getColorByName red
+deselectObject Net n188
+selectObject Net n188_inv
+deselectObject Net n188_inv
+selectObject Net n188_inv
+ui::getColorByName red
+deselectObject Net n188_inv
+selectInst U264
+deselectInst U264
+selectObject Net n194
+ui::getColorByName red
+deselectObject Net n194
+selectObject Net n198
+ui::getColorByName red
+deselectObject Net n198
+selectObject Net N423
+ui::getColorByName red
+deselectObject Net N423
+selectInst f32_mux_0_data_reg_1_
+ui::getColorByName red
+ui::getColorByName red
+ui::getColorByName red
+ui::getColorByName red
+deselectInst f32_mux_0_data_reg_15_
+deselectObject Net net121966
+deselectObject Module clk_gate_mux
+deselectObject Net clk
+deselectObject IO_Pin clk
+deselectObject Net n129
+deselectInst U15
+deselectObject Net n126
+deselectInst U13
+deselectObject Net i_reset_
+deselectObject IO_Pin i_reset_
+deselectInst f32_mux_0_data_reg_1_
+selectObject Net N437
+selectObject Pin f32_mux_0_data_reg_1_/D
+zoomSelected
+selectObject Pin f32_mux_0_data_reg_1_/D
+zoomSelected
+deselectObject Pin f32_mux_0_data_reg_1_/D
+selectObject Pin U92/A
+zoomSelected
+deselectObject Pin U92/A
+selectInst U92
+zoomSelected
+deselectInst U92
+selectObject Pin U92/A
+zoomSelected
+selectObject Pin U92/A
+zoomSelected
+deselectInst U46
+selectObject Pin U46/A0
+zoomSelected
+selectObject Pin U46/A0
+zoomSelected
+deselectInst U264
+selectInst U264
+zoomSelected
+deselectInst U264
+selectObject Pin U264/B0
+zoomSelected
+deselectObject Pin U264/B0
+selectObject Pin U264/B0
+zoomSelected
+selectObject Pin U264/B0
+zoomSelected
+deselectInst U264_INV
+selectObject Pin U264_INV/A
+zoomSelected
+deselectObject Pin U264_INV/A
+selectObject Pin U264_INV/A
+zoomSelected
+selectObject Pin U264_INV/A
+zoomSelected
+deselectInst U263
+selectObject Pin U263/A1
+zoomSelected
+selectObject Pin U263/A1
+zoomSelected
+deselectObject Pin U263/A1
+selectObject Net clk
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin scan_enable
+zoomSelected
+stop_gui
+exit

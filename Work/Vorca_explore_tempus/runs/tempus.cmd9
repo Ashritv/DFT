@@ -1,0 +1,84 @@
+#######################################################
+#                                                     
+#  Tempus Timing Signoff Solution Command Logging File                     
+#  Created on Fri Apr 11 15:08:14 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+#@(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+#@(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+#@(#)CDS: CPE v20.20-p009
+
+read_lib ../lib/slow.lib
+read_verilog ../netlist/vorca_fixed.v
+set_top_module
+read_sdc ../sdc/simple_sdc.sdc
+selectObject IO_Pin {o_rd_data[0]}
+selectObject IO_Pin {o_rd_data[1]}
+selectObject IO_Pin {o_rd_data[2]}
+selectObject IO_Pin {o_rd_data[3]}
+selectObject IO_Pin {o_rd_data[4]}
+selectObject IO_Pin {o_rd_data[5]}
+selectObject IO_Pin {o_rd_data[6]}
+selectObject IO_Pin {o_rd_data[7]}
+selectObject IO_Pin {o_rd_data[8]}
+selectObject IO_Pin {o_rd_data[9]}
+selectObject IO_Pin {o_rd_data[10]}
+selectObject IO_Pin {o_rd_data[11]}
+selectObject IO_Pin {o_rd_data[12]}
+selectObject IO_Pin {o_rd_data[13]}
+selectObject IO_Pin {o_rd_data[14]}
+selectObject IO_Pin {o_rd_data[15]}
+selectObject IO_Pin {o_rd_data[16]}
+selectObject IO_Pin {o_rd_data[17]}
+selectObject IO_Pin {o_rd_data[18]}
+selectObject IO_Pin {o_rd_data[19]}
+selectObject IO_Pin {o_rd_data[20]}
+selectObject IO_Pin {o_rd_data[21]}
+selectObject IO_Pin {o_rd_data[22]}
+selectObject IO_Pin {o_rd_data[23]}
+selectObject IO_Pin {o_rd_data[24]}
+selectObject IO_Pin {o_rd_data[25]}
+selectObject IO_Pin {o_rd_data[26]}
+selectObject IO_Pin {o_rd_data[27]}
+selectObject IO_Pin {o_rd_data[28]}
+selectObject IO_Pin {o_rd_data[29]}
+selectObject IO_Pin {o_rd_data[30]}
+selectObject IO_Pin {o_rd_data[31]}
+deselectObject IO_Pin {o_rd_data[0]}
+deselectObject IO_Pin {o_rd_data[1]}
+deselectObject IO_Pin {o_rd_data[2]}
+deselectObject IO_Pin {o_rd_data[3]}
+deselectObject IO_Pin {o_rd_data[4]}
+deselectObject IO_Pin {o_rd_data[5]}
+deselectObject IO_Pin {o_rd_data[6]}
+deselectObject IO_Pin {o_rd_data[7]}
+deselectObject IO_Pin {o_rd_data[8]}
+deselectObject IO_Pin {o_rd_data[9]}
+deselectObject IO_Pin {o_rd_data[10]}
+deselectObject IO_Pin {o_rd_data[11]}
+deselectObject IO_Pin {o_rd_data[12]}
+deselectObject IO_Pin {o_rd_data[13]}
+deselectObject IO_Pin {o_rd_data[14]}
+deselectObject IO_Pin {o_rd_data[15]}
+deselectObject IO_Pin {o_rd_data[16]}
+deselectObject IO_Pin {o_rd_data[17]}
+deselectObject IO_Pin {o_rd_data[18]}
+deselectObject IO_Pin {o_rd_data[19]}
+deselectObject IO_Pin {o_rd_data[20]}
+deselectObject IO_Pin {o_rd_data[21]}
+deselectObject IO_Pin {o_rd_data[22]}
+deselectObject IO_Pin {o_rd_data[23]}
+deselectObject IO_Pin {o_rd_data[24]}
+deselectObject IO_Pin {o_rd_data[25]}
+deselectObject IO_Pin {o_rd_data[26]}
+deselectObject IO_Pin {o_rd_data[27]}
+deselectObject IO_Pin {o_rd_data[28]}
+deselectObject IO_Pin {o_rd_data[29]}
+deselectObject IO_Pin {o_rd_data[30]}
+deselectObject IO_Pin {o_rd_data[31]}
+stop_gui
+exit

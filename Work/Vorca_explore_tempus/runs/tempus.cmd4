@@ -1,0 +1,37 @@
+#######################################################
+#                                                     
+#  Tempus Timing Signoff Solution Command Logging File                     
+#  Created on Fri Apr 11 09:50:27 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+#@(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+#@(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+#@(#)CDS: CPE v20.20-p009
+
+read_lib ../lib/slow.lib
+read_lib -lef ../lef/NangateOpenCellLibrary.lef
+read_verilog ../netlist/vorca1.v
+set_top_module
+report_clock_gating_check 
+create_clock -name sclk -period 1 [get_ports clk]
+report_clock_gating_check 
+report_fanout -from clk -pin_levels 3
+report_timing
+get_time_unit
+report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+selectInst f32_mux_1_data_reg_5_
+deselectInst f32_mux_1_data_reg_5_
+selectInst f32_mux_1_data_reg_6_
+selectInst U422
+deselectInst U422
+selectObject Net {f32_mux_1_data[5]}
+deselectObject Net {f32_mux_1_data[5]}
+selectInst f32_mux_1_data_reg_5_
+deselectInst f32_mux_1_data_reg_5_
+selectObject Net {f32_mux_1_data[5]}
+exit

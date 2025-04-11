@@ -1,0 +1,71 @@
+#######################################################
+#                                                     
+#  Tempus Timing Signoff Solution Command Logging File                     
+#  Created on Fri Apr 11 17:41:09 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+#@(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+#@(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+#@(#)CDS: CPE v20.20-p009
+
+read_lib ../lib/slow.lib
+read_verilog ../netlist/vorca_fixed.v
+set_top_module
+read_sdc ../sdc/simple_sdc.sdc
+load_timing_debug_report -name default_report top.mtarpt
+selectObject Pin f32_mux_1_data_reg_5_/Q
+selectObject Pin f32_mux_1_data_reg_5_/Q
+selectObject Pin f32_mux_1_data_reg_5_/Q
+selectObject Pin f32_mux_1_data_reg_5_/Q
+selectObject Pin f32_mux_1_data_reg_5_/Q
+deselectObject Pin f32_mux_1_data_reg_5_/Q
+selectObject Pin f32_mux_1_data_reg_5_/Q
+selectObject Pin f32_mux_1_data_reg_5_/Q
+ui::getColorByName blue
+ui::getColorByName blue
+selectObject Pin f32_mux_1_data_reg_5_/Q
+ui::getColorByName blue
+selectInst f32_mux_0_data_reg_1_
+selectInst f32_mux_0_data_reg_1_
+deselectInst f32_mux_0_data_reg_1_
+selectInst f32_mux_0_data_reg_1_
+selectInst f32_mux_0_data_reg_1_
+deselectInst f32_mux_0_data_reg_1_
+selectInst U92
+selectInst U92
+deselectInst U92
+selectObject Pin U46/B0
+selectObject Pin U46/B0
+deselectObject Pin U46/B0
+selectObject Pin U34/A
+deselectObject Pin U34/A
+selectObject Pin U34/B
+selectObject Pin U34/B
+deselectObject Pin U34/B
+selectInst U12
+selectObject Pin U12/A
+selectObject Pin U12/A
+deselectObject Pin U12/A
+selectInst U34
+selectInst U34
+selectObject Net n852
+deselectObject Net n852
+selectObject Pin U46/A0
+selectObject Pin U46/A0
+selectObject Pin U46/A0
+deselectObject Pin U46/A0
+selectObject Pin U264/B0
+selectObject Pin U264/B0
+selectObject Pin U264/B0
+deselectObject Pin U264/B0
+selectObject Pin U264_INV/A
+selectObject Pin U264_INV/A
+deselectObject Pin U264_INV/A
+selectObject Pin U263/A1
+selectObject Pin U263/A1
+stop_gui
+exit

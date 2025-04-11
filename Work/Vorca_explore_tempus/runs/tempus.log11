@@ -1,0 +1,266 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+Options:	
+Date:		Fri Apr 11 17:11:30 2025
+Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_136668_bjs7GG'.
+<CMD> stop_gui
+<CMD> read_lib ../lib/slow.lib
+<CMD> read_verilog ../netlist/vorca_fixed.v
+<CMD> set_top_module
+#% Begin Load MMMC data ... (date=04/11 17:12:32, mem=759.6M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=04/11 17:12:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=760.2M, current mem=760.2M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_136668.tcl
+Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.00min, real=0.02min, mem=29.0M, fe_cpu=0.18min, fe_real=1.05min, fe_mem=807.2M) ***
+#% Begin Load netlist data ... (date=04/11 17:12:33, mem=767.7M)
+*** Begin netlist parsing (mem=805.2M) ***
+Reading verilog netlist '../netlist/vorca_fixed.v'
+Module BUFX1 is not defined and will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 957.270M, initial mem = 299.711M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=957.3M) ***
+#% End Load netlist data ... (date=04/11 17:12:33, total cpu=0:00:00.2, real=0:00:00.0, peak res=874.5M, current mem=866.7M)
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (UI-418):	Undefined cells that are instantiated in the netlist are allowed because load_netlist_ignore_undefined_cell is true. Unexpected results may occur due to missing library data or missing netlist data. For accurate results, provide a consistent library and netlist.
+Top level cell is vorca.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+1 empty module found.
+Building hierarchical netlist for Cell vorca ...
+*** Netlist is NOT unique.
+** info: there are 483 modules.
+** info: there are 1047 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1171.215M, initial mem = 299.711M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:11.1, real=0:01:03, peak res=1231.8M, current mem=1231.8M)
+Total number of combinational cells: 316
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVXL INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X4 DLY4X1
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Loading  (vorca)
+Traverse HInst (vorca)
+<CMD> read_sdc ../sdc/vorc_sdc.sdc
+Current (total cpu=0:00:12.0, real=0:01:12, peak res=1263.6M, current mem=1229.8M)
+
+Usage: set_input_delay [-help] <delay_value> <port_or_pin_list> [-add_delay] [-clock <clock_name>] [-clock_fall] [-fall] [-level_sensitive] [-max]
+                       [-min] [-network_latency_included] [-reference_pin <pin_name>] [-rise] [-source_latency_included]
+
+**ERROR: (IMPTCM-48):	"0x7" is not a legal option for command "set_input_delay". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_reset_' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_sw_init' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[7]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[6]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[5]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[4]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[3]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[2]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[1]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_addr[0]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_strb' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[31]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[30]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[29]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[28]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[27]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[26]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[25]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[24]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_output_delay' command to port 'i_wr_data[23]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+Message <TCLCMD-979> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File ../sdc/vorc_sdc.sdc, Line 3).
+
+INFO (CTE): Reading of timing constraints file ../sdc/vorc_sdc.sdc completed, with 0 Warnings and 21 Errors.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1239.6M, current mem=1239.6M)
+Current (total cpu=0:00:12.0, real=0:01:12, peak res=1263.6M, current mem=1239.6M)
+<CMD> read_sdc ../sdc/vorc_sdc.sdc
+Current (total cpu=0:00:30.0, real=0:06:39, peak res=1263.6M, current mem=1239.6M)
+**WARN: (TCLCMD-1594):	A clock with name sclk was already defined in the design. Previously defined clock definition of sclk will be overwritten. (File ../sdc/vorc_sdc.sdc, Line 1).
+
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'sclk' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once. (File ../sdc/vorc_sdc.sdc, Line 1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../sdc/vorc_sdc.sdc, Line 2).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../sdc/vorc_sdc.sdc, Line 2).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../sdc/vorc_sdc.sdc, Line 3).
+
+INFO (CTE): Reading of timing constraints file ../sdc/vorc_sdc.sdc completed, with 4 Warnings and 2 Errors.
+WARNING (CTE-25): Line: 2 of File ../sdc/vorc_sdc.sdc : Skipped unsupported command: get_ports{0x11}
+
+
+WARNING (CTE-25): Line: 3 of File ../sdc/vorc_sdc.sdc : Skipped unsupported command: get_ports{0x13}
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1240.0M, current mem=1240.0M)
+Current (total cpu=0:00:30.0, real=0:06:39, peak res=1263.6M, current mem=1240.0M)
+<CMD> read_sdc ../sdc/vorc_sdc.sdc
+Current (total cpu=0:00:34.2, real=0:07:54, peak res=1263.6M, current mem=1240.0M)
+**WARN: (TCLCMD-1594):	A clock with name sclk was already defined in the design. Previously defined clock definition of sclk will be overwritten. (File ../sdc/vorc_sdc.sdc, Line 1).
+
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'sclk' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once. (File ../sdc/vorc_sdc.sdc, Line 1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '[all_inputs]' (File ../sdc/vorc_sdc.sdc, Line 2).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match '[all_inputs]' (File ../sdc/vorc_sdc.sdc, Line 2).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../sdc/vorc_sdc.sdc, Line 2).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../sdc/vorc_sdc.sdc, Line 2).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '[all_inputs]' (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match '[all_inputs]' (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../sdc/vorc_sdc.sdc, Line 3).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../sdc/vorc_sdc.sdc, Line 3).
+
+INFO (CTE): Reading of timing constraints file ../sdc/vorc_sdc.sdc completed, with 6 Warnings and 4 Errors.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1240.3M, current mem=1240.3M)
+Current (total cpu=0:00:34.2, real=0:07:54, peak res=1263.6M, current mem=1240.3M)
+<CMD> read_sdc ../sdc/vorc_sdc.sdc
+Current (total cpu=0:00:40.6, real=0:09:50, peak res=1263.6M, current mem=1240.3M)
+**WARN: (TCLCMD-1594):	A clock with name sclk was already defined in the design. Previously defined clock definition of sclk will be overwritten. (File ../sdc/vorc_sdc.sdc, Line 1).
+
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'sclk' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once. (File ../sdc/vorc_sdc.sdc, Line 1).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../sdc/vorc_sdc.sdc, Line 2).
+
+INFO (CTE): Reading of timing constraints file ../sdc/vorc_sdc.sdc completed, with 3 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1240.8M, current mem=1240.8M)
+Current (total cpu=0:00:40.6, real=0:09:50, peak res=1263.6M, current mem=1240.8M)
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 1443.340M, initial mem = 299.711M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   UI-418               1  Undefined cells that are instantiated in...
+ERROR     IMPSYC-2             2  Timing information is not defined for ce...
+WARNING   IMPDB-2504           1  Unable to find netlist cell in the desig...
+ERROR     IMPTCM-48            1  "%s" is not a legal option for command "...
+WARNING   TCLCMD-513           6  The software could not find a matching o...
+ERROR     TCLCMD-917           2  Cannot find '%s' that match '%s'         
+WARNING   TCLCMD-958           3  Previously defined source objects for cl...
+ERROR     TCLCMD-979        1975  Cannot apply the '%s' command to port '%...
+WARNING   TCLCMD-1594          3  A clock with name %s was already defined...
+ERROR     TCLNL-312            4  %s: Invalid list of pins: '%s'           
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+*** Message Summary: 15 warning(s), 1984 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:01:19, real=0:21:23, mem=1443.3M) ---

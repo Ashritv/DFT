@@ -1,0 +1,53 @@
+#######################################################
+#                                                     
+#  Tempus Timing Signoff Solution Command Logging File                     
+#  Created on Fri Apr 11 11:13:09 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+#@(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+#@(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+#@(#)CDS: CPE v20.20-p009
+
+read_lib ../lib/slow.lib
+read_lib -lef ../lef/NangateOpenCellLibrary.lef
+read_verilog ../netlist/vorca_fixed.v
+set_top_module
+load_timing_debug_report -name default_report top.mtarpt
+selectInst f32_mux_1_data_reg_4_
+deselectInst f32_mux_1_data_reg_4_
+selectInst f32_mux_1_data_reg_4_
+selectInst f32_mux_1_data_reg_4_
+deselectInst f32_mux_1_data_reg_4_
+selectInst f32_mux_1_data_reg_4_
+selectInst f32_mux_1_data_reg_4_
+selectInst f32_mux_1_data_reg_4_
+report_clock_gating_check 
+read_sdc ../sdc/simple_sdc.sdc
+report_clock_gating_check 
+selectObject Module clk_gate_data
+deselectObject Module clk_gate_data
+selectObject Module clk_gate_data
+deselectObject Module clk_gate_data
+selectObject Module clk_gate_data
+deselectObject Module clk_gate_data
+selectObject Module clk_gate_data
+deselectObject Module clk_gate_data
+selectObject Module clk_gate_data
+selectInst clk_gate_data/g15__2398
+deselectInst clk_gate_data/g15__2398
+selectInst clk_gate_data/g15__2398
+deselectInst clk_gate_data/g15__2398
+selectInst clk_gate_data/g17__5107
+deselectInst clk_gate_data/g17__5107
+selectInst clk_gate_data/g17__5107
+deselectInst clk_gate_data/g17__5107
+selectInst clk_gate_data/lat_reg
+deselectInst clk_gate_data/lat_reg
+selectInst clk_gate_data/g15__2398
+redraw
+deselectInst clk_gate_data/g15__2398
+selectInst clk_gate_data/g15__2398

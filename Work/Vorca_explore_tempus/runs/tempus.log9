@@ -1,0 +1,252 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+Options:	
+Date:		Fri Apr 11 15:08:06 2025
+Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_129737_CbsrB9'.
+<CMD> read_lib ../lib/slow.lib
+invalid command name "read_veriog"
+<CMD> read_verilog ../netlist/vorca_fixed.v
+<CMD> set_top_module
+#% Begin Load MMMC data ... (date=04/11 15:09:04, mem=760.0M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=04/11 15:09:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=760.5M, current mem=760.5M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_129737.tcl
+Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=28.0M, fe_cpu=0.17min, fe_real=0.97min, fe_mem=798.2M) ***
+#% Begin Load netlist data ... (date=04/11 15:09:04, mem=768.2M)
+*** Begin netlist parsing (mem=798.2M) ***
+Reading verilog netlist '../netlist/vorca_fixed.v'
+Module BUFX1 is not defined and will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 950.246M, initial mem = 299.711M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=950.2M) ***
+#% End Load netlist data ... (date=04/11 15:09:04, total cpu=0:00:00.2, real=0:00:00.0, peak res=874.9M, current mem=867.1M)
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (UI-418):	Undefined cells that are instantiated in the netlist are allowed because load_netlist_ignore_undefined_cell is true. Unexpected results may occur due to missing library data or missing netlist data. For accurate results, provide a consistent library and netlist.
+Top level cell is vorca.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+1 empty module found.
+Building hierarchical netlist for Cell vorca ...
+*** Netlist is NOT unique.
+** info: there are 483 modules.
+** info: there are 1047 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1166.199M, initial mem = 299.711M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:10.6, real=0:00:58.0, peak res=1234.2M, current mem=1234.2M)
+Total number of combinational cells: 316
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVXL INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X4 DLY4X1
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Loading  (vorca)
+Traverse HInst (vorca)
+<CMD> read_sdc ../sdc/simple_sdc.sdc
+Current (total cpu=0:00:11.8, real=0:01:12, peak res=1266.0M, current mem=1232.3M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1239.7M, current mem=1239.7M)
+Current (total cpu=0:00:11.8, real=0:01:12, peak res=1266.0M, current mem=1239.7M)
+clk f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK u_survik/clk_gate_spare_config/g15__2398/A u_survik/clk_gate_spare_config/g15__2398/Y u_survik/clk_gate_spare_config/lat_reg/GN u_survik/clk_gate_config/g15__2398/A u_survik/clk_gate_config/g15__2398/Y u_survik/clk_gate_config/lat_reg/GN clk_gate_mux/g15__2398/A clk_gate_mux/g15__2398/Y clk_gate_mux/lat_reg/GN clk_gate_addr/g15__2398/A clk_gate_addr/g15__2398/Y clk_gate_addr/lat_reg/GN clk_gate_data/g15__2398/A clk_gate_data/g15__2398/Y clk_gate_data/lat_reg/GN
+u_survik/clk_gate_spare_config/lat_reg/GN u_survik/clk_gate_config/lat_reg/GN clk_gate_mux/lat_reg/GN clk_gate_addr/lat_reg/GN clk_gate_data/lat_reg/GN
+can't read "0x8": no such variable
+can't read "all": no such variable
+clk f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK u_survik/clk_gate_spare_config/g15__2398/A u_survik/clk_gate_spare_config/g15__2398/Y u_survik/clk_gate_spare_config/lat_reg/GN u_survik/clk_gate_config/g15__2398/A u_survik/clk_gate_config/g15__2398/Y u_survik/clk_gate_config/lat_reg/GN clk_gate_mux/g15__2398/A clk_gate_mux/g15__2398/Y clk_gate_mux/lat_reg/GN clk_gate_addr/g15__2398/A clk_gate_addr/g15__2398/Y clk_gate_addr/lat_reg/GN clk_gate_data/g15__2398/A clk_gate_data/g15__2398/Y clk_gate_data/lat_reg/GN
+clk f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK u_survik/clk_gate_spare_config/g15__2398/A u_survik/clk_gate_spare_config/lat_reg/GN u_survik/clk_gate_config/g15__2398/A u_survik/clk_gate_config/lat_reg/GN clk_gate_mux/g15__2398/A clk_gate_mux/lat_reg/GN clk_gate_addr/g15__2398/A clk_gate_addr/lat_reg/GN clk_gate_data/g15__2398/A clk_gate_data/lat_reg/GN
+f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK u_survik/clk_gate_spare_config/lat_reg/GN u_survik/clk_gate_config/lat_reg/GN clk_gate_mux/lat_reg/GN clk_gate_addr/lat_reg/GN clk_gate_data/lat_reg/GN
+<CMD> selectObject IO_Pin {o_rd_data[0]}
+<CMD> selectObject IO_Pin {o_rd_data[1]}
+<CMD> selectObject IO_Pin {o_rd_data[2]}
+<CMD> selectObject IO_Pin {o_rd_data[3]}
+<CMD> selectObject IO_Pin {o_rd_data[4]}
+<CMD> selectObject IO_Pin {o_rd_data[5]}
+<CMD> selectObject IO_Pin {o_rd_data[6]}
+<CMD> selectObject IO_Pin {o_rd_data[7]}
+<CMD> selectObject IO_Pin {o_rd_data[8]}
+<CMD> selectObject IO_Pin {o_rd_data[9]}
+<CMD> selectObject IO_Pin {o_rd_data[10]}
+<CMD> selectObject IO_Pin {o_rd_data[11]}
+<CMD> selectObject IO_Pin {o_rd_data[12]}
+<CMD> selectObject IO_Pin {o_rd_data[13]}
+<CMD> selectObject IO_Pin {o_rd_data[14]}
+<CMD> selectObject IO_Pin {o_rd_data[15]}
+<CMD> selectObject IO_Pin {o_rd_data[16]}
+<CMD> selectObject IO_Pin {o_rd_data[17]}
+<CMD> selectObject IO_Pin {o_rd_data[18]}
+<CMD> selectObject IO_Pin {o_rd_data[19]}
+<CMD> selectObject IO_Pin {o_rd_data[20]}
+<CMD> selectObject IO_Pin {o_rd_data[21]}
+<CMD> selectObject IO_Pin {o_rd_data[22]}
+<CMD> selectObject IO_Pin {o_rd_data[23]}
+<CMD> selectObject IO_Pin {o_rd_data[24]}
+<CMD> selectObject IO_Pin {o_rd_data[25]}
+<CMD> selectObject IO_Pin {o_rd_data[26]}
+<CMD> selectObject IO_Pin {o_rd_data[27]}
+<CMD> selectObject IO_Pin {o_rd_data[28]}
+<CMD> selectObject IO_Pin {o_rd_data[29]}
+<CMD> selectObject IO_Pin {o_rd_data[30]}
+<CMD> selectObject IO_Pin {o_rd_data[31]}
+<CMD> deselectObject IO_Pin {o_rd_data[0]}
+<CMD> deselectObject IO_Pin {o_rd_data[1]}
+<CMD> deselectObject IO_Pin {o_rd_data[2]}
+<CMD> deselectObject IO_Pin {o_rd_data[3]}
+<CMD> deselectObject IO_Pin {o_rd_data[4]}
+<CMD> deselectObject IO_Pin {o_rd_data[5]}
+<CMD> deselectObject IO_Pin {o_rd_data[6]}
+<CMD> deselectObject IO_Pin {o_rd_data[7]}
+<CMD> deselectObject IO_Pin {o_rd_data[8]}
+<CMD> deselectObject IO_Pin {o_rd_data[9]}
+<CMD> deselectObject IO_Pin {o_rd_data[10]}
+<CMD> deselectObject IO_Pin {o_rd_data[11]}
+<CMD> deselectObject IO_Pin {o_rd_data[12]}
+<CMD> deselectObject IO_Pin {o_rd_data[13]}
+<CMD> deselectObject IO_Pin {o_rd_data[14]}
+<CMD> deselectObject IO_Pin {o_rd_data[15]}
+<CMD> deselectObject IO_Pin {o_rd_data[16]}
+<CMD> deselectObject IO_Pin {o_rd_data[17]}
+<CMD> deselectObject IO_Pin {o_rd_data[18]}
+<CMD> deselectObject IO_Pin {o_rd_data[19]}
+<CMD> deselectObject IO_Pin {o_rd_data[20]}
+<CMD> deselectObject IO_Pin {o_rd_data[21]}
+<CMD> deselectObject IO_Pin {o_rd_data[22]}
+<CMD> deselectObject IO_Pin {o_rd_data[23]}
+<CMD> deselectObject IO_Pin {o_rd_data[24]}
+<CMD> deselectObject IO_Pin {o_rd_data[25]}
+<CMD> deselectObject IO_Pin {o_rd_data[26]}
+<CMD> deselectObject IO_Pin {o_rd_data[27]}
+<CMD> deselectObject IO_Pin {o_rd_data[28]}
+<CMD> deselectObject IO_Pin {o_rd_data[29]}
+<CMD> deselectObject IO_Pin {o_rd_data[30]}
+<CMD> deselectObject IO_Pin {o_rd_data[31]}
+f32_mux_1_data_reg_6_/SI f32_mux_1_data_reg_5_/Q f32_mux_1_data_reg_5_/CK
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'f32_mux_1_data_reg_6_'
+**ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'f32_mux_1_data_reg_6_'
+f32_mux_1_data_reg_6_/SI f32_mux_1_data_reg_5_/Q f32_mux_1_data_reg_5_/CK
+f32_mux_1_data_reg_6_/Q f32_mux_1_data_reg_6_/CK
+o_rd_data[6] U418/Y U418/B0 U395/Y U395/A U69/Y U69/B n_write_reg/Q n_write_reg/CK U69/A U20/Y U20/B f_ack_reg/Q f_ack_reg/CK U20/A U66/Y U66/B U75/Y U75/B f_state_reg_0_/Q f_state_reg_0_/CK U75/AN f_state_reg_1_/Q f_state_reg_1_/CK U66/A f_state_reg_2_/Q f_state_reg_2_/CK U418/A1 f32_mux_1_data_reg_6_/Q f32_mux_1_data_reg_6_/CK U418/A0 f32_mux_0_data_reg_6_/Q f32_mux_0_data_reg_6_/CK
+f32_mux_1_data_reg_5_/D U151/Y U151/C U684/Y U684/B1 i_agg_su_count_a[5] U684/B0 U481/Y U481/B U42/Y U42/B U29/Y U29/B o_reg_addr_reg_0__scan_iso_or/Y o_reg_addr_reg_0__scan_iso_or/B test_se o_reg_addr_reg_0__scan_iso_or/A o_reg_addr_reg_0_/Q o_reg_addr_reg_0_/CK U29/A o_reg_addr_reg_1__scan_iso_or/Y o_reg_addr_reg_1__scan_iso_or/B o_reg_addr_reg_1__scan_iso_or/A o_reg_addr_reg_1_/Q o_reg_addr_reg_1_/CK U42/A o_reg_addr_reg_7__scan_iso_or/Y o_reg_addr_reg_7__scan_iso_or/B o_reg_addr_reg_7__scan_iso_or/A o_reg_addr_reg_7_/Q o_reg_addr_reg_7_/CK U481/A U432/Y U432/A U161/Y U161/B U242/Y U242/B o_reg_addr_reg_3__scan_iso_or/Y o_reg_addr_reg_3__scan_iso_or/B o_reg_addr_reg_3__scan_iso_or/A o_reg_addr_reg_3_/Q o_reg_addr_reg_3_/CK U242/AN o_reg_addr_reg_2__scan_iso_or/Y o_reg_addr_reg_2__scan_iso_or/B o_reg_addr_reg_2__scan_iso_or/A o_reg_addr_reg_2_/Q o_reg_addr_reg_2_/CK U161/A U232/Y U232/B U64/Y U64/B o_reg_addr_reg_5__scan_iso_or/Y o_reg_addr_reg_5__scan_iso_or/B o_reg_addr_reg_5__scan_iso_or/A o_reg_addr_reg_5_/Q o_reg_addr_reg_5_/CK U64/A o_reg_addr_reg_6__scan_iso_or/Y o_reg_addr_reg_6__scan_iso_or/B o_reg_addr_reg_6__scan_iso_or/A o_reg_addr_reg_6_/Q o_reg_addr_reg_6_/CK U232/A o_reg_addr_reg_4__scan_iso_or/Y o_reg_addr_reg_4__scan_iso_or/B o_reg_addr_reg_4__scan_iso_or/A o_reg_addr_reg_4_/Q o_reg_addr_reg_4_/CK U684/A1 i_hisbuf2_3[5] U684/A0 U24/Y U24/A U8/Y U8/C U12/Y U12/A U8/B U41/Y U41/B U41/A U8/A U456/Y U456/C U456/B U62/Y U62/B U195/Y U195/A U62/A U456/A U196/Y U196/A U151/B U683/Y U683/B0 U682/Y ...
+
+Usage: all_fanout [-help] [-endpoints_only] [-hpin] [-only_cells] [-trace_through {case_disable|user_disable|all|clocks|loop_snipped}]
+                  [-view <view_name>] [-levels <value> | -pin_levels <value>] {-from {collection | object_list} } [ > | >> ]
+
+**ERROR: (IMPTCM-6):	Missing string value for option "-trace_through".  
+
+<CMD> stop_gui
+wrong # args: should be "tempus"
+invalid command name "i_hb_sup[1]"
+invalid command name "U263/A1"
+invalid command name "U263/Y"
+invalid command name "U264_INV/A"
+invalid command name "U264_INV/Y"
+invalid command name "U264/B0"
+invalid command name "U264/Y"
+invalid command name "U46/A0"
+invalid command name "U46/Y"
+invalid command name "U92/A"
+invalid command name "U92/Y"
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 1353.887M, initial mem = 299.711M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   UI-418               1  Undefined cells that are instantiated in...
+ERROR     IMPSYC-2             2  Timing information is not defined for ce...
+WARNING   IMPDB-2504           1  Unable to find netlist cell in the desig...
+ERROR     IMPTCM-6             1  Missing %s value for option "%s". %s     
+WARNING   TCLCMD-513           1  The software could not find a matching o...
+ERROR     TCLCMD-917           1  Cannot find '%s' that match '%s'         
+*** Message Summary: 3 warning(s), 4 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:08:29, real=2:27:14, mem=1353.9M) ---

@@ -1,0 +1,73 @@
+[04/11 11:06:51      0s] 
+[04/11 11:06:51      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[04/11 11:06:51      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/11 11:06:51      0s] 
+[04/11 11:06:51      0s] Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+[04/11 11:06:51      0s] Options:	
+[04/11 11:06:51      0s] Date:		Fri Apr 11 11:06:51 2025
+[04/11 11:06:51      0s] Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+[04/11 11:06:51      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/11 11:06:51      0s] 
+[04/11 11:06:51      0s] License:
+[04/11 11:06:56      0s] 		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+[04/11 11:06:56      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/11 11:07:03      5s] @(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/11 11:07:03      5s] @(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+[04/11 11:07:03      5s] @(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/11 11:07:03      5s] @(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+[04/11 11:07:03      5s] @(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+[04/11 11:07:03      5s] @(#)CDS: CPE v20.20-p009
+[04/11 11:07:03      5s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[04/11 11:07:03      5s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/11 11:07:03      5s] @(#)CDS: RCDB 11.15.0
+[04/11 11:07:03      5s] @(#)CDS: STYLUS 21.10-d018_1 (08/28/2020 09:14 PDT)
+[04/11 11:07:03      5s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[04/11 11:07:03      6s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_117873_2v5fzR'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_117873_2v5fzR'.
+[04/11 11:10:51     19s] <CMD> read_lib ../lib/slow.lib
+[04/11 11:11:32     22s] <CMD> read_lib -lef ../lef/NangateOpenCellLibrary.lef
+[04/11 11:11:47     23s] <CMD> read_verilog ../netlist/vorca_fixed.v
+[04/11 11:12:35     25s] <CMD> set_top_module
+[04/11 11:12:35     25s] #% Begin Load MMMC data ... (date=04/11 11:12:35, mem=781.9M)
+[04/11 11:12:35     25s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[04/11 11:12:35     25s] #% End Load MMMC data ... (date=04/11 11:12:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=781.9M, current mem=781.5M)
+[04/11 11:12:35     25s] 
+[04/11 11:12:35     25s] Loading LEF file ../lef/NangateOpenCellLibrary.lef ...
+[04/11 11:12:35     25s] Set DBUPerIGU to M2 pitch 380.
+[04/11 11:12:35     25s] 
+[04/11 11:12:35     25s] viaInitial starts at Fri Apr 11 11:12:35 2025
+viaInitial ends at Fri Apr 11 11:12:35 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[04/11 11:12:35     26s] Loading view definition file from .ssv_emulate_view_definition_117873.tcl
+[04/11 11:12:35     26s] Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+[04/11 11:12:35     26s] Read 479 cells in library 'slow' 
+[04/11 11:12:35     26s] Ending "PreSetAnalysisView" (total cpu=0:00:00.2, real=0:00:00.0, peak res=880.3M, current mem=833.2M)
+[04/11 11:12:35     26s] *** End library_loading (cpu=0.00min, real=0.00min, mem=31.0M, fe_cpu=0.44min, fe_real=5.73min, fe_mem=849.8M) ***
+[04/11 11:12:35     26s] #% Begin Load netlist data ... (date=04/11 11:12:35, mem=832.3M)
+[04/11 11:12:35     26s] *** Begin netlist parsing (mem=849.8M) ***
+[04/11 11:12:35     26s] Reading verilog netlist '../netlist/vorca_fixed.v'
+[04/11 11:12:35     26s] **WARN: (IMPVL-346):	Module 'BUFX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[04/11 11:12:35     26s] 
+[04/11 11:12:35     26s] *** Memory Usage v#1 (Current mem = 975.824M, initial mem = 299.711M) ***
+[04/11 11:12:35     26s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=975.8M) ***
+[04/11 11:12:35     26s] #% End Load netlist data ... (date=04/11 11:12:35, total cpu=0:00:00.2, real=0:00:00.0, peak res=914.1M, current mem=906.3M)
+[04/11 11:12:35     26s] **WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/11 11:12:35     26s] Cell 'BUFX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'BUFX1' as output for net 'n807' in module 'vorca'.
+[04/11 11:12:35     26s] **ERROR: (UI-49):	Undefined cells in the design are not allowed, exiting.  Review the log file for undefined cell warning messages.  Provide the cell definitions or set load_netlist_ignore_undefined_cell to true and re-run.
+[04/11 11:12:35     26s] 
+[04/11 11:12:48     27s] <CMD> exit
+[04/11 11:12:48     27s] 
+[04/11 11:12:48     27s] *** Memory Usage v#1 (Current mem = 965.824M, initial mem = 299.711M) ***
+[04/11 11:12:48     27s] 
+[04/11 11:12:48     27s] *** Summary of all messages that are not suppressed in this session:
+[04/11 11:12:48     27s] Severity  ID               Count  Summary                                  
+[04/11 11:12:48     27s] ERROR     UI-49                1  Undefined cells in the design are not al...
+[04/11 11:12:48     27s] WARNING   IMPVL-346            1  Module '%s' is instantiated in the netli...
+[04/11 11:12:48     27s] WARNING   IMPDB-2504           1  Unable to find netlist cell in the desig...
+[04/11 11:12:48     27s] *** Message Summary: 2 warning(s), 1 error(s)
+[04/11 11:12:48     27s] 
+[04/11 11:12:48     27s] --- Ending "Tempus Timing Signoff Solution" (totcpu=0:00:27.2, real=0:05:57, mem=965.8M) ---

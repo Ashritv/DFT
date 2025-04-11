@@ -1,0 +1,1244 @@
+[04/11 14:38:43      0s] 
+[04/11 14:38:43      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[04/11 14:38:43      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/11 14:38:43      0s] 
+[04/11 14:38:43      0s] Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+[04/11 14:38:43      0s] Options:	
+[04/11 14:38:43      0s] Date:		Fri Apr 11 14:38:43 2025
+[04/11 14:38:43      0s] Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+[04/11 14:38:43      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/11 14:38:43      0s] 
+[04/11 14:38:43      0s] License:
+[04/11 14:38:43      0s] 		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+[04/11 14:38:43      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/11 14:38:50      5s] @(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/11 14:38:50      5s] @(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+[04/11 14:38:50      5s] @(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/11 14:38:50      5s] @(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+[04/11 14:38:50      5s] @(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+[04/11 14:38:50      5s] @(#)CDS: CPE v20.20-p009
+[04/11 14:38:50      5s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[04/11 14:38:50      5s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/11 14:38:50      5s] @(#)CDS: RCDB 11.15.0
+[04/11 14:38:50      5s] @(#)CDS: STYLUS 21.10-d018_1 (08/28/2020 09:14 PDT)
+[04/11 14:38:50      5s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[04/11 14:38:50      6s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_128039_murOkI'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_128039_murOkI'.
+[04/11 14:39:08      7s] <CMD> read_lib ../lib/slow.lib
+[04/11 14:39:25      8s] <CMD> read_verilog ../netlist/vorca_fixed.v
+[04/11 14:40:01     10s] invalid command name "stm"
+[04/11 14:40:14     11s] invalid command name "stm"
+[04/11 14:40:25     12s] invalid command name "stm"
+[04/11 14:40:33     12s] <CMD> set_top_module
+[04/11 14:40:33     12s] #% Begin Load MMMC data ... (date=04/11 14:40:33, mem=757.9M)
+[04/11 14:40:33     12s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[04/11 14:40:33     12s] #% End Load MMMC data ... (date=04/11 14:40:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=758.4M, current mem=758.4M)
+[04/11 14:40:33     12s] Loading view definition file from .ssv_emulate_view_definition_128039.tcl
+[04/11 14:40:33     12s] Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+[04/11 14:40:34     12s] Read 479 cells in library 'slow' 
+[04/11 14:40:34     12s] Ending "PreSetAnalysisView" (total cpu=0:00:00.2, real=0:00:01.0, peak res=814.2M, current mem=765.9M)
+[04/11 14:40:34     12s] *** End library_loading (cpu=0.00min, real=0.02min, mem=27.0M, fe_cpu=0.22min, fe_real=1.85min, fe_mem=796.6M) ***
+[04/11 14:40:34     13s] #% Begin Load netlist data ... (date=04/11 14:40:34, mem=765.9M)
+[04/11 14:40:34     13s] *** Begin netlist parsing (mem=796.6M) ***
+[04/11 14:40:34     13s] Reading verilog netlist '../netlist/vorca_fixed.v'
+[04/11 14:40:34     13s] Module BUFX1 is not defined and will be treated as an empty module.
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] *** Memory Usage v#1 (Current mem = 949.629M, initial mem = 299.711M) ***
+[04/11 14:40:34     13s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=949.6M) ***
+[04/11 14:40:34     13s] #% End Load netlist data ... (date=04/11 14:40:34, total cpu=0:00:00.2, real=0:00:00.0, peak res=872.8M, current mem=864.8M)
+[04/11 14:40:34     13s] **WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/11 14:40:34     13s] Cell 'BUFX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'BUFX1' as output for net 'n807' in module 'vorca'.
+[04/11 14:40:34     13s] **WARN: (UI-418):	Undefined cells that are instantiated in the netlist are allowed because load_netlist_ignore_undefined_cell is true. Unexpected results may occur due to missing library data or missing netlist data. For accurate results, provide a consistent library and netlist.
+[04/11 14:40:34     13s] Top level cell is vorca.
+[04/11 14:40:34     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/11 14:40:34     13s] late library set: default_emulate_libset_max
+[04/11 14:40:34     13s] early library set: default_emulate_libset_min
+[04/11 14:40:34     13s] Completed consistency checks. Status: Successful
+[04/11 14:40:34     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/11 14:40:34     13s] late library set: default_emulate_libset_max
+[04/11 14:40:34     13s] early library set: default_emulate_libset_min
+[04/11 14:40:34     13s] Completed consistency checks. Status: Successful
+[04/11 14:40:34     13s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=902.2M, current mem=902.2M)
+[04/11 14:40:34     13s] 1 empty module found.
+[04/11 14:40:34     13s] Building hierarchical netlist for Cell vorca ...
+[04/11 14:40:34     13s] *** Netlist is NOT unique.
+[04/11 14:40:34     13s] ** info: there are 483 modules.
+[04/11 14:40:34     13s] ** info: there are 1047 stdCell insts.
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] *** Memory Usage v#1 (Current mem = 1166.582M, initial mem = 299.711M) ***
+[04/11 14:40:34     13s] Set Default Net Delay as 1000 ps.
+[04/11 14:40:34     13s] Set Default Net Load as 0.5 pF. 
+[04/11 14:40:34     13s] Set Default Input Pin Transition as 0.1 ps.
+[04/11 14:40:34     13s] Extraction setup Started 
+[04/11 14:40:34     13s] Summary of Active RC-Corners : 
+[04/11 14:40:34     13s]  
+[04/11 14:40:34     13s]  Analysis View: default_emulate_view
+[04/11 14:40:34     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 14:40:34     13s]     RC-Corner Index       : 0
+[04/11 14:40:34     13s]     RC-Corner Temperature : 25 Celsius
+[04/11 14:40:34     13s]     RC-Corner Cap Table   : ''
+[04/11 14:40:34     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 14:40:34     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/11 14:40:34     13s] late library set: default_emulate_libset_max
+[04/11 14:40:34     13s] early library set: default_emulate_libset_min
+[04/11 14:40:34     13s] Completed consistency checks. Status: Successful
+[04/11 14:40:34     13s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1221.8M, current mem=1005.6M)
+[04/11 14:40:34     13s] Reading timing constraints file '/dev/null' ...
+[04/11 14:40:34     13s] Current (total cpu=0:00:13.4, real=0:01:51, peak res=1226.4M, current mem=1226.4M)
+[04/11 14:40:34     13s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 1, 1, 1)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s] Total number of combinational cells: 316
+[04/11 14:40:34     13s] Total number of sequential cells: 152
+[04/11 14:40:34     13s] Total number of tristate cells: 10
+[04/11 14:40:34     13s] Total number of level shifter cells: 0
+[04/11 14:40:34     13s] Total number of power gating cells: 0
+[04/11 14:40:34     13s] Total number of isolation cells: 0
+[04/11 14:40:34     13s] Total number of power switch cells: 0
+[04/11 14:40:34     13s] Total number of pulse generator cells: 0
+[04/11 14:40:34     13s] Total number of always on buffers: 0
+[04/11 14:40:34     13s] Total number of retention cells: 0
+[04/11 14:40:34     13s] List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[04/11 14:40:34     13s] Total number of usable buffers: 16
+[04/11 14:40:34     13s] List of unusable buffers:
+[04/11 14:40:34     13s] Total number of unusable buffers: 0
+[04/11 14:40:34     13s] List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVXL INVX8
+[04/11 14:40:34     13s] Total number of usable inverters: 19
+[04/11 14:40:34     13s] List of unusable inverters:
+[04/11 14:40:34     13s] Total number of unusable inverters: 0
+[04/11 14:40:34     13s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X4 DLY4X1
+[04/11 14:40:34     13s] Total number of identified usable delay cells: 8
+[04/11 14:40:34     13s] List of identified unusable delay cells:
+[04/11 14:40:34     13s] Total number of identified unusable delay cells: 0
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1256.7M, current mem=1256.7M)
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] **ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Extraction setup Started 
+[04/11 14:40:34     13s] Summary of Active RC-Corners : 
+[04/11 14:40:34     13s]  
+[04/11 14:40:34     13s]  Analysis View: default_emulate_view
+[04/11 14:40:34     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 14:40:34     13s]     RC-Corner Index       : 0
+[04/11 14:40:34     13s]     RC-Corner Temperature : 125 Celsius
+[04/11 14:40:34     13s]     RC-Corner Cap Table   : ''
+[04/11 14:40:34     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 14:40:34     13s] Extraction setup Started 
+[04/11 14:40:34     13s] Summary of Active RC-Corners : 
+[04/11 14:40:34     13s]  
+[04/11 14:40:34     13s]  Analysis View: default_emulate_view
+[04/11 14:40:34     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 14:40:34     13s]     RC-Corner Index       : 0
+[04/11 14:40:34     13s]     RC-Corner Temperature : 125 Celsius
+[04/11 14:40:34     13s]     RC-Corner Cap Table   : ''
+[04/11 14:40:34     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 14:40:34     13s] Extraction setup Started 
+[04/11 14:40:34     13s] Summary of Active RC-Corners : 
+[04/11 14:40:34     13s]  
+[04/11 14:40:34     13s]  Analysis View: default_emulate_view
+[04/11 14:40:34     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 14:40:34     13s]     RC-Corner Index       : 0
+[04/11 14:40:34     13s]     RC-Corner Temperature : 125 Celsius
+[04/11 14:40:34     13s]     RC-Corner Cap Table   : ''
+[04/11 14:40:34     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 14:40:34     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 14:40:34     13s] **ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Loading  (vorca)
+[04/11 14:40:34     13s] Traverse HInst (vorca)
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:34     13s] Deleting Cell Server ...
+[04/11 14:40:34     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 14:40:34     13s] Summary for sequential cells identification: 
+[04/11 14:40:34     13s]   Identified SBFF number: 112
+[04/11 14:40:34     13s]   Identified MBFF number: 0
+[04/11 14:40:34     13s]   Identified SB Latch number: 0
+[04/11 14:40:34     13s]   Identified MB Latch number: 0
+[04/11 14:40:34     13s]   Not identified SBFF number: 8
+[04/11 14:40:34     13s]   Not identified MBFF number: 0
+[04/11 14:40:34     13s]   Not identified SB Latch number: 0
+[04/11 14:40:34     13s]   Not identified MB Latch number: 0
+[04/11 14:40:34     13s]   Number of sequential cells which are not FFs: 32
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s]  Visiting view : default_emulate_view
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 14:40:34     13s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 14:40:34     13s] Creating Cell Server, finished. 
+[04/11 14:40:34     13s] 
+[04/11 14:40:51     14s] <CMD> read_sdc ../sdc/simple_sdc.sdc
+[04/11 14:40:51     14s] Current (total cpu=0:00:14.8, real=0:02:08, peak res=1258.3M, current mem=1224.5M)
+[04/11 14:40:51     14s] INFO (CTE): Constraints read successfully.
+[04/11 14:40:51     14s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1231.8M, current mem=1231.8M)
+[04/11 14:40:51     14s] Current (total cpu=0:00:14.8, real=0:02:08, peak res=1258.3M, current mem=1231.8M)
+[04/11 14:45:34     31s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '-endpoints_only'
+[04/11 14:45:34     31s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match '-endpoints_only'
+can't read "C": no such variable
+[04/11 15:35:51    205s] <CMD> selectObject Net {f32_mux_1_data[5]}
+[04/11 15:35:54    205s] <CMD> ui::getColorByName red
+[04/11 15:38:59    216s] <CMD> deselectObject Net {f32_mux_1_data[5]}
+[04/11 15:38:59    216s] <CMD> selectObject Module u_survik
+[04/11 15:38:59    216s] Loading u_survik (survik)
+[04/11 15:38:59    216s] Traverse HInst u_survik(survik)
+[04/11 15:38:59    216s] Deleting Cell Server ...
+[04/11 15:38:59    216s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 15:38:59    216s] Summary for sequential cells identification: 
+[04/11 15:38:59    216s]   Identified SBFF number: 112
+[04/11 15:38:59    216s]   Identified MBFF number: 0
+[04/11 15:38:59    216s]   Identified SB Latch number: 0
+[04/11 15:38:59    216s]   Identified MB Latch number: 0
+[04/11 15:38:59    216s]   Not identified SBFF number: 8
+[04/11 15:38:59    216s]   Not identified MBFF number: 0
+[04/11 15:38:59    216s]   Not identified SB Latch number: 0
+[04/11 15:38:59    216s]   Not identified MB Latch number: 0
+[04/11 15:38:59    216s]   Number of sequential cells which are not FFs: 32
+[04/11 15:38:59    217s]  Visiting view : default_emulate_view
+[04/11 15:38:59    217s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 15:38:59    217s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 15:38:59    217s]  Visiting view : default_emulate_view
+[04/11 15:38:59    217s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 15:38:59    217s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 15:38:59    217s] Creating Cell Server, finished. 
+[04/11 15:38:59    217s] 
+[04/11 15:38:59    217s] Deleting Cell Server ...
+[04/11 15:39:46    219s] Loading u_survik (survik)
+[04/11 15:39:51    220s] Loading u_survik (survik)
+[04/11 15:43:20    232s] -checkType setup                           # enums={setup hold}, default=setup
+[04/11 15:43:23    232s] <CMD> load_timing_debug_report -name default_report top.mtarpt
+[04/11 15:43:23    232s] Parsing file top.mtarpt...
+[04/11 15:43:44    234s] **WARN: (IMPSGN-1031):	Cannot find Instance clk_gate_mux in db.
+[04/11 15:43:45    234s] **WARN: (IMPSGN-1031):	Cannot find Instance clk_gate_mux in db.
+[04/11 15:43:49    234s] <CMD> selectInst f32_mux_1_data_reg_5_
+[04/11 15:43:54    234s] <CMD> selectInst f32_mux_1_data_reg_5_
+[04/11 15:44:08    235s] <CMD> deselectInst f32_mux_1_data_reg_5_
+[04/11 15:44:08    235s] <CMD> selectInst U422
+[04/11 15:45:53    241s] <CMD> deselectInst U422
+[04/11 15:45:53    241s] <CMD> selectInst U422
+[04/11 16:09:16    322s] **WARN: (IMPSGN-1031):	Cannot find Instance clk_gate_mux in db.
+[04/11 16:09:27    323s] <CMD> selectInst f32_mux_1_data_reg_5_
+[04/11 16:09:27    323s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 16:09:27    323s] Summary for sequential cells identification: 
+[04/11 16:09:27    323s]   Identified SBFF number: 112
+[04/11 16:09:27    323s]   Identified MBFF number: 0
+[04/11 16:09:27    323s]   Identified SB Latch number: 0
+[04/11 16:09:27    323s]   Identified MB Latch number: 0
+[04/11 16:09:27    323s]   Not identified SBFF number: 8
+[04/11 16:09:27    323s]   Not identified MBFF number: 0
+[04/11 16:09:27    323s]   Not identified SB Latch number: 0
+[04/11 16:09:27    323s]   Not identified MB Latch number: 0
+[04/11 16:09:27    323s]   Number of sequential cells which are not FFs: 32
+[04/11 16:09:27    323s]  Visiting view : default_emulate_view
+[04/11 16:09:27    323s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 16:09:27    323s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 16:09:27    323s]  Visiting view : default_emulate_view
+[04/11 16:09:27    323s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[04/11 16:09:27    323s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[04/11 16:09:27    323s] Creating Cell Server, finished. 
+[04/11 16:09:27    323s] 
+[04/11 16:09:27    323s] Deleting Cell Server ...
+[04/11 16:12:01    332s] <CMD> deselectInst f32_mux_1_data_reg_5_
+[04/11 16:12:01    332s] <CMD> selectInst U151
+[04/11 16:15:07    343s] <CMD> selectInst U151
+[04/11 16:40:47    432s] **WARN: (IMPSGN-1031):	Cannot find Instance u_survik/clk_gate_spare_config in db.
+[04/11 16:40:55    432s] **WARN: (IMPSGN-1031):	Cannot find Instance u_survik/clk_gate_spare_config in db.
+[04/11 16:40:55    433s] **WARN: (IMPSGN-1031):	Cannot find Instance u_survik/clk_gate_spare_config in db.
+[04/11 16:40:56    433s] **WARN: (IMPSGN-1031):	Cannot find Instance u_survik/clk_gate_spare_config in db.
+[04/11 16:40:56    433s] **WARN: (IMPSGN-1031):	Cannot find Instance u_survik/clk_gate_spare_config in db.
+[04/11 16:41:35    435s] <CMD> deselectObject Module u_survik
+[04/11 16:49:31    462s] <CMD> selectObject Net {i_hb_sup[0]}
+[04/11 16:49:31    462s] <CMD> selectObject Net {i_hb_sup[1]}
+[04/11 16:49:31    462s] <CMD> selectObject Net {i_hb_sup[2]}
+[04/11 16:49:35    463s] <CMD> ui::getColorByName red
+[04/11 16:51:13    469s] <CMD> deselectObject Net {i_hb_sup[0]}
+[04/11 16:51:13    469s] <CMD> deselectObject Net {i_hb_sup[1]}
+[04/11 16:51:13    469s] <CMD> deselectObject Net {i_hb_sup[2]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[0]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[1]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[2]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[3]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[4]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[5]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[6]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[7]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[8]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[9]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[10]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[11]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[12]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[13]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[14]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[15]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[16]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[17]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[18]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[19]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[20]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[21]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[22]}
+[04/11 16:51:13    469s] <CMD> selectObject Net {i_hisbuf1_3[23]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[0]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[1]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[2]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[3]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[4]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[5]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[6]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[7]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[8]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[9]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[10]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[11]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[12]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[13]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[14]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[15]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[16]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[17]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[18]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[19]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[20]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[21]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[22]}
+[04/11 16:51:14    469s] <CMD> deselectObject Net {i_hisbuf1_3[23]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[0]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[1]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[2]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[3]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[4]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[5]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[6]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[7]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[8]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[9]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[10]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[11]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[12]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[13]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[14]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[15]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[16]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[17]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[18]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[19]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[20]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[21]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[22]}
+[04/11 16:51:14    469s] <CMD> selectObject Net {i_hisbuf1_3[23]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[0]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[1]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[2]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[3]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[4]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[5]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[6]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[7]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[8]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[9]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[10]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[11]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[12]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[13]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[14]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[15]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[16]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[17]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[18]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[19]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[20]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[21]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[22]}
+[04/11 16:51:15    469s] <CMD> deselectObject Net {i_hisbuf1_3[23]}
+[04/11 16:51:15    469s] <CMD> selectObject Net {i_hb_sup[1]}
+[04/11 16:51:17    469s] <CMD> deselectObject Net {i_hb_sup[1]}
+[04/11 16:51:17    469s] <CMD> selectInst U263
+[04/11 16:51:17    469s] <CMD> deselectInst U263
+[04/11 16:51:17    469s] <CMD> selectObject Pin U263/A1
+[04/11 16:51:19    469s] <CMD> deselectObject Net {i_hb_sup[1]}
+[04/11 16:51:19    469s] <CMD> selectObject Net {i_hb_sup[1]}
+[04/11 16:51:19    469s] <CMD> deselectObject Net {i_hb_sup[1]}
+[04/11 16:51:19    469s] <CMD> selectObject Net {i_hb_sup[1]}
+[04/11 16:51:22    469s] <CMD> deselectObject Net {i_hb_sup[1]}
+[04/11 16:51:22    469s] <CMD> selectInst U263
+[04/11 16:51:50    471s] <CMD> deselectInst U263
+[04/11 16:52:02    472s] <CMD> selectInst U263
+[04/11 16:52:39    474s] <CMD> deselectInst U263
+[04/11 16:52:39    474s] <CMD> selectObject Net n188
+[04/11 16:52:45    474s] <CMD> ui::getColorByName red
+[04/11 16:52:49    474s] <CMD> deselectObject Net n188
+[04/11 16:52:49    474s] <CMD> selectObject Net n188_inv
+[04/11 16:52:49    474s] <CMD> deselectObject Net n188_inv
+[04/11 16:52:49    474s] <CMD> selectObject Net n188_inv
+[04/11 16:52:53    474s] <CMD> ui::getColorByName red
+[04/11 16:57:13    489s] <CMD> deselectObject Net n188_inv
+[04/11 16:57:13    489s] <CMD> selectInst U264
+[04/11 16:57:18    490s] <CMD> deselectInst U264
+[04/11 16:57:18    490s] <CMD> selectObject Net n194
+[04/11 16:57:21    490s] <CMD> ui::getColorByName red
+[04/11 16:57:25    490s] <CMD> deselectObject Net n194
+[04/11 16:57:26    490s] <CMD> selectObject Net n198
+[04/11 16:57:29    490s] <CMD> ui::getColorByName red
+[04/11 16:57:33    491s] <CMD> deselectObject Net n198
+[04/11 16:57:34    491s] <CMD> selectObject Net N423
+[04/11 16:57:42    491s] <CMD> ui::getColorByName red
+[04/11 16:57:55    492s] <CMD> deselectObject Net N423
+[04/11 16:57:55    492s] <CMD> selectInst f32_mux_0_data_reg_1_
+[04/11 16:58:20    493s] <CMD> ui::getColorByName red
+[04/11 16:58:43    495s] <CMD> ui::getColorByName red
+[04/11 16:58:43    495s] <CMD> ui::getColorByName red
+[04/11 16:58:44    495s] <CMD> ui::getColorByName red
+[04/11 17:01:25    504s] <CMD> deselectInst f32_mux_0_data_reg_15_
+[04/11 17:01:25    504s] <CMD> deselectObject Net net121966
+[04/11 17:01:25    504s] <CMD> deselectObject Module clk_gate_mux
+[04/11 17:01:25    504s] <CMD> deselectObject Net clk
+[04/11 17:01:25    504s] <CMD> deselectObject IO_Pin clk
+[04/11 17:01:25    504s] <CMD> deselectObject Net n129
+[04/11 17:01:25    504s] <CMD> deselectInst U15
+[04/11 17:01:25    504s] <CMD> deselectObject Net n126
+[04/11 17:01:25    504s] <CMD> deselectInst U13
+[04/11 17:01:25    504s] <CMD> deselectObject Net i_reset_
+[04/11 17:01:25    504s] <CMD> deselectObject IO_Pin i_reset_
+[04/11 17:01:25    504s] <CMD> deselectInst f32_mux_0_data_reg_1_
+[04/11 17:01:25    504s] <CMD> selectObject Net N437
+[04/11 17:02:22    508s] **WARN: (IMPSGN-1031):	Cannot find Instance clk_gate_mux in db.
+[04/11 17:04:36    517s] <CMD> selectObject Pin f32_mux_0_data_reg_1_/D
+[04/11 17:04:36    517s] <CMD_INTERNAL> zoomSelected
+[04/11 17:04:37    517s] <CMD> selectObject Pin f32_mux_0_data_reg_1_/D
+[04/11 17:04:37    517s] <CMD_INTERNAL> zoomSelected
+[04/11 17:04:59    518s] <CMD> deselectObject Pin f32_mux_0_data_reg_1_/D
+[04/11 17:04:59    518s] <CMD> selectObject Pin U92/A
+[04/11 17:04:59    518s] <CMD_INTERNAL> zoomSelected
+[04/11 17:05:00    518s] <CMD> deselectObject Pin U92/A
+[04/11 17:05:00    518s] <CMD> selectInst U92
+[04/11 17:05:00    518s] <CMD_INTERNAL> zoomSelected
+[04/11 17:05:00    518s] <CMD> deselectInst U92
+[04/11 17:05:00    518s] <CMD> selectObject Pin U92/A
+[04/11 17:05:00    518s] <CMD_INTERNAL> zoomSelected
+[04/11 17:05:00    518s] <CMD> selectObject Pin U92/A
+[04/11 17:05:00    518s] <CMD_INTERNAL> zoomSelected
+[04/11 17:05:13    519s] <CMD> deselectInst U46
+[04/11 17:05:14    519s] <CMD> selectObject Pin U46/A0
+[04/11 17:05:14    519s] <CMD_INTERNAL> zoomSelected
+[04/11 17:05:14    519s] <CMD> selectObject Pin U46/A0
+[04/11 17:05:14    519s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:22    523s] <CMD> deselectInst U264
+[04/11 17:06:22    523s] <CMD> selectInst U264
+[04/11 17:06:22    523s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:23    523s] <CMD> deselectInst U264
+[04/11 17:06:23    523s] <CMD> selectObject Pin U264/B0
+[04/11 17:06:23    523s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:23    523s] <CMD> deselectObject Pin U264/B0
+[04/11 17:06:24    523s] <CMD> selectObject Pin U264/B0
+[04/11 17:06:24    523s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:24    523s] <CMD> selectObject Pin U264/B0
+[04/11 17:06:24    523s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:36    524s] <CMD> deselectInst U264_INV
+[04/11 17:06:36    524s] <CMD> selectObject Pin U264_INV/A
+[04/11 17:06:36    524s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:37    524s] <CMD> deselectObject Pin U264_INV/A
+[04/11 17:06:37    524s] <CMD> selectObject Pin U264_INV/A
+[04/11 17:06:37    524s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:37    524s] <CMD> selectObject Pin U264_INV/A
+[04/11 17:06:37    524s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:47    524s] <CMD> deselectInst U263
+[04/11 17:06:47    524s] <CMD> selectObject Pin U263/A1
+[04/11 17:06:47    524s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:47    524s] <CMD> selectObject Pin U263/A1
+[04/11 17:06:47    524s] <CMD_INTERNAL> zoomSelected
+[04/11 17:06:49    524s] <CMD> deselectObject Pin U263/A1
+[04/11 17:06:55    525s] <CMD> selectObject Net clk
+[04/11 17:06:55    525s] <CMD> selectObject IO_Pin clk
+[04/11 17:06:55    525s] <CMD_INTERNAL> zoomSelected
+[04/11 17:07:01    525s] <CMD> selectObject IO_Pin scan_enable
+[04/11 17:07:01    525s] <CMD_INTERNAL> zoomSelected
+[04/11 17:30:10    602s] <CMD> stop_gui
+[04/11 17:35:31    619s] <CMD> exit
+[04/11 17:35:31    619s] 
+[04/11 17:35:31    619s] *** Memory Usage v#1 (Current mem = 1376.270M, initial mem = 299.711M) ***
+[04/11 17:35:31    619s] 
+[04/11 17:35:31    619s] *** Summary of all messages that are not suppressed in this session:
+[04/11 17:35:31    619s] Severity  ID               Count  Summary                                  
+[04/11 17:35:31    619s] WARNING   UI-418               1  Undefined cells that are instantiated in...
+[04/11 17:35:31    619s] ERROR     IMPSYC-2             2  Timing information is not defined for ce...
+[04/11 17:35:31    619s] WARNING   IMPSGN-1031          9  Cannot find Instance %s in db.           
+[04/11 17:35:31    619s] WARNING   IMPDB-2504           1  Unable to find netlist cell in the desig...
+[04/11 17:35:31    619s] WARNING   TCLCMD-513           1  The software could not find a matching o...
+[04/11 17:35:31    619s] ERROR     TCLCMD-917           1  Cannot find '%s' that match '%s'         
+[04/11 17:35:31    619s] *** Message Summary: 12 warning(s), 3 error(s)
+[04/11 17:35:31    619s] 
+[04/11 17:35:31    619s] --- Ending "Tempus Timing Signoff Solution" (totcpu=0:10:20, real=2:56:48, mem=1376.3M) ---

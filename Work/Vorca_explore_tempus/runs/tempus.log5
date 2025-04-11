@@ -1,0 +1,198 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+Options:	
+Date:		Fri Apr 11 10:46:32 2025
+Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_115704_fKZWHD'.
+<CMD> read_lib ../lib/slow.lib
+<CMD> read_lib -lef ../lef/NangateOpenCellLibrary.lef
+<CMD> read_verilog ../netlist/vorca.v
+<CMD> set_top_module
+#% Begin Load MMMC data ... (date=04/11 10:47:33, mem=758.6M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=04/11 10:47:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=759.2M, current mem=759.2M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+
+Loading LEF file ../lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Fri Apr 11 10:47:33 2025
+viaInitial ends at Fri Apr 11 10:47:33 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from .ssv_emulate_view_definition_115704.tcl
+Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=29.0M, fe_cpu=0.17min, fe_real=1.02min, fe_mem=847.6M) ***
+#% Begin Load netlist data ... (date=04/11 10:47:33, mem=811.1M)
+*** Begin netlist parsing (mem=847.6M) ***
+Reading verilog netlist '../netlist/vorca.v'
+**WARN: (IMPVL-346):	Module 'BUFX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+**WARN: (IMPVL-346):	Module 'ICGX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 973.676M, initial mem = 299.711M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=973.7M) ***
+#% End Load netlist data ... (date=04/11 10:47:33, total cpu=0:00:00.2, real=0:00:00.0, peak res=892.8M, current mem=885.1M)
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'ICGX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (UI-418):	Undefined cells that are instantiated in the netlist are allowed because load_netlist_ignore_undefined_cell is true. Unexpected results may occur due to missing library data or missing netlist data. For accurate results, provide a consistent library and netlist.
+Top level cell is vorca.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+2 empty module found.
+Building hierarchical netlist for Cell vorca ...
+*** Netlist is unique.
+** info: there are 617 modules.
+** info: there are 1032 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1203.621M, initial mem = 299.711M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal9 is different from 1.6 defined in technology file in unpreferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in unpreferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.28 in metal7 is different from 0.8 defined in technology file in unpreferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.14 in metal4 is different from 0.28 defined in technology file in unpreferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:10.9, real=0:01:02, peak res=1266.9M, current mem=1266.9M)
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+default_emulate_constraint_mode
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell ICGX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+default_emulate_libset_max default_emulate_libset_min
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell ICGX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+**ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Loading  (vorca)
+Traverse HInst (vorca)
+f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK
+f_state_reg_0_ f_state_reg_1_ f_state_reg_2_ f_ack_reg n_write_reg o_reg_addr_reg_7_ o_reg_addr_reg_6_ o_reg_addr_reg_5_ o_reg_addr_reg_4_ o_reg_addr_reg_3_ o_reg_addr_reg_2_ o_reg_addr_reg_1_ o_reg_addr_reg_0_ f_err_ack_reg f32_mux_1_data_reg_0_ f32_mux_1_data_reg_1_ f32_mux_1_data_reg_2_ f32_mux_1_data_reg_3_ f32_mux_1_data_reg_4_ f32_mux_1_data_reg_5_ f32_mux_1_data_reg_6_ f32_mux_1_data_reg_7_ f32_mux_1_data_reg_8_ f32_mux_1_data_reg_9_ f32_mux_1_data_reg_10_ f32_mux_1_data_reg_11_ f32_mux_1_data_reg_12_ f32_mux_1_data_reg_13_ f32_mux_1_data_reg_14_ f32_mux_1_data_reg_15_ f32_mux_1_data_reg_16_ f32_mux_1_data_reg_17_ f32_mux_1_data_reg_18_ f32_mux_1_data_reg_19_ f32_mux_1_data_reg_20_ f32_mux_1_data_reg_21_ f32_mux_1_data_reg_22_ f32_mux_1_data_reg_23_ f32_mux_1_data_reg_24_ f32_mux_1_data_reg_25_ f32_mux_1_data_reg_26_ f32_mux_1_data_reg_27_ f32_mux_1_data_reg_28_ f32_mux_1_data_reg_29_ f32_mux_1_data_reg_30_ f32_mux_1_data_reg_31_ o_reg_read_reg f32_mux_0_data_reg_31_ f32_mux_0_data_reg_30_ f32_mux_0_data_reg_29_ f32_mux_0_data_reg_28_ f32_mux_0_data_reg_27_ f32_mux_0_data_reg_26_ f32_mux_0_data_reg_25_ f32_mux_0_data_reg_24_ f32_mux_0_data_reg_23_ f32_mux_0_data_reg_22_ f32_mux_0_data_reg_21_ f32_mux_0_data_reg_20_ f32_mux_0_data_reg_19_ f32_mux_0_data_reg_18_ f32_mux_0_data_reg_17_ f32_mux_0_data_reg_16_ f32_mux_0_data_reg_0_ f32_mux_0_data_reg_1_ f32_mux_0_data_reg_2_ f32_mux_0_data_reg_3_ f32_mux_0_data_reg_4_ f32_mux_0_data_reg_5_ f32_mux_0_data_reg_6_ f32_mux_0_data_reg_7_ f32_mux_0_data_reg_8_ f32_mux_0_data_reg_9_ f32_mux_0_data_reg_10_ f32_mux_0_data_reg_11_ f32_mux_0_data_reg_12_ f32_mux_0_data_reg_13_ f32_mux_0_data_reg_14_ f32_mux_0_data_reg_15_ f32_data_reg_31_ f32_data_reg_30_ f32_data_reg_29_ f32_data_reg_28_ f32_data_reg_27_ f32_data_reg_26_ f32_data_reg_25_ f32_data_reg_24_ f32_data_reg_23_ f32_data_reg_22_ f32_data_reg_21_ f32_data_reg_20_ f32_data_reg_19_ f32_data_reg_18_ f32_data_reg_17_ f32_data_reg_16_ f32_data_reg_15_ f32_data_reg_14_ f32_data_reg_13_ f32_data_reg_12_ f32_data_reg_11_ ...
+f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK
+
+Usage: all_fanout [-help] [-endpoints_only] [-hpin] [-only_cells] [-trace_through {case_disable|user_disable|all|clocks|loop_snipped}]
+                  [-view <view_name>] [-levels <value> | -pin_levels <value>] {-from {collection | object_list} } [ > | >> ]
+
+**ERROR: (IMPTCM-6):	Missing string value for option "-trace_through".  
+
+
+Usage: all_fanout [-help] [-endpoints_only] [-hpin] [-only_cells] [-trace_through {case_disable|user_disable|all|clocks|loop_snipped}]
+                  [-view <view_name>] [-levels <value> | -pin_levels <value>] {-from {collection | object_list} } [ > | >> ]
+
+**ERROR: (IMPTCM-6):	Missing string value for option "-trace_through".  
+
+f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK
+f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK
+clk f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK
+clk f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 1388.551M, initial mem = 299.711M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   UI-418               1  Undefined cells that are instantiated in...
+ERROR     IMPSYC-2             4  Timing information is not defined for ce...
+WARNING   IMPVL-346            2  Module '%s' is instantiated in the netli...
+WARNING   IMPDB-2504           2  Unable to find netlist cell in the desig...
+WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+ERROR     IMPTCM-6             2  Missing %s value for option "%s". %s     
+*** Message Summary: 7 warning(s), 6 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:01:21, real=0:20:12, mem=1388.6M) ---

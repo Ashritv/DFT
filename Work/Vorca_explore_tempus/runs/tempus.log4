@@ -1,0 +1,642 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+Options:	
+Date:		Fri Apr 11 09:50:18 2025
+Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_111819_d26aW1'.
+<CMD> read_lib ../lib/slow.lib
+<CMD> read_lib -lef ../lef/NangateOpenCellLibrary.lef
+<CMD> read_verilog ../netlist/vorca1.v
+<CMD> set_top_module
+#% Begin Load MMMC data ... (date=04/11 09:52:42, mem=759.9M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=04/11 09:52:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=760.3M, current mem=760.3M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+
+Loading LEF file ../lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Fri Apr 11 09:52:43 2025
+viaInitial ends at Fri Apr 11 09:52:43 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from .ssv_emulate_view_definition_111819.tcl
+Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=31.0M, fe_cpu=0.26min, fe_real=2.43min, fe_mem=849.8M) ***
+#% Begin Load netlist data ... (date=04/11 09:52:43, mem=812.1M)
+*** Begin netlist parsing (mem=849.8M) ***
+Reading verilog netlist '../netlist/vorca1.v'
+
+*** Memory Usage v#1 (Current mem = 975.832M, initial mem = 299.711M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=975.8M) ***
+#% End Load netlist data ... (date=04/11 09:52:43, total cpu=0:00:00.2, real=0:00:00.0, peak res=894.0M, current mem=886.1M)
+Top level cell is vorca.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell vorca ...
+*** Netlist is unique.
+** info: there are 615 modules.
+** info: there are 1038 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1203.863M, initial mem = 299.711M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal9 is different from 1.6 defined in technology file in unpreferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in unpreferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.28 in metal7 is different from 0.8 defined in technology file in unpreferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.14 in metal4 is different from 0.28 defined in technology file in unpreferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:16.0, real=0:02:25, peak res=1267.9M, current mem=1267.9M)
+Total number of combinational cells: 0
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+default_emulate_libset_max default_emulate_libset_min
+Loading  (vorca)
+Traverse HInst (vorca)
+clk f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK u_survik/clk_gate_spare_config/CK u_survik/clk_gate_config/CK clk_gate_mux/CK clk_gate_addr/CK clk_gate_data/CK
+<CMD> report_clock_gating_check 
+**WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+AAE DB initialization (MEM=1488.04 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: vorca
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1496.25)
+/dev/null
+End delay calculation. (MEM=1525.02 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1525.02 CPU=0:00:00.1 REAL=0:00:00.0)
+      -------------------------------------------------------------------------------------------------  
+       Clock Gating Check Report                                                                         
+      -------------------------------------------------------------------------------------------------  
+       Instance                         Enable   Clock   Type    Level   Setup   Setup   Hold    Hold    
+                                                                         Rise    Fall    Rise    Fall    
+      -------------------------------------------------------------------------------------------------  
+      
+<CMD> create_clock -name sclk -period 1 [get_ports clk]
+<CMD> report_clock_gating_check 
+#################################################################################
+# Design Name: vorca
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1517.02)
+End delay calculation. (MEM=1527.1 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1527.1 CPU=0:00:00.1 REAL=0:00:00.0)
+      -------------------------------------------------------------------------------------------------  
+       Clock Gating Check Report                                                                         
+      -------------------------------------------------------------------------------------------------  
+       Instance                         Enable   Clock   Type    Level   Setup   Setup   Hold    Hold    
+                                                                         Rise    Fall    Rise    Fall    
+      -------------------------------------------------------------------------------------------------  
+      u_survik/clk_gate_spare_config   E        CK      L       H       0.134   0.169   -0.064  -0.084
+      u_survik/clk_gate_spare_config   SE       CK      L       H       0.202   0.202   -0.109  -0.109
+      u_survik/clk_gate_config         E        CK      L       H       0.134   0.169   -0.058  -0.080
+      u_survik/clk_gate_config         SE       CK      L       H       0.202   0.202   -0.109  -0.109
+      clk_gate_mux                     E        CK      L       H       0.150   0.167   -0.057  -0.074
+      clk_gate_mux                     SE       CK      L       H       0.202   0.202   -0.109  -0.109
+      clk_gate_addr                    E        CK      L       H       0.167   0.201   -0.074  -0.107
+      clk_gate_addr                    SE       CK      L       H       0.202   0.202   -0.109  -0.109
+      clk_gate_data                    E        CK      L       H       0.202   0.202   -0.109  -0.109
+      clk_gate_data                    SE       CK      L       H       0.202   0.202   -0.109  -0.109
+      -------------------------------------------------------------------------------------------------
+vorca survik
+f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f_ack_reg/CK n_write_reg/CK f_err_ack_reg/CK o_reg_read_reg/CK u_survik/o_dbg_config_reg_0_/CK u_survik/clk_gate_spare_config/CK u_survik/o_spare_config_reg_31_/CK u_survik/o_spare_config_reg_30_/CK u_survik/o_spare_config_reg_29_/CK u_survik/o_spare_config_reg_28_/CK u_survik/o_spare_config_reg_27_/CK u_survik/o_spare_config_reg_26_/CK u_survik/o_spare_config_reg_25_/CK u_survik/o_spare_config_reg_24_/CK u_survik/o_spare_config_reg_23_/CK u_survik/o_spare_config_reg_22_/CK u_survik/o_spare_config_reg_21_/CK u_survik/o_spare_config_reg_20_/CK u_survik/o_spare_config_reg_19_/CK u_survik/o_spare_config_reg_18_/CK u_survik/o_spare_config_reg_17_/CK u_survik/o_spare_config_reg_16_/CK u_survik/o_spare_config_reg_15_/CK u_survik/o_spare_config_reg_14_/CK u_survik/o_spare_config_reg_13_/CK u_survik/o_spare_config_reg_12_/CK u_survik/o_spare_config_reg_11_/CK u_survik/o_spare_config_reg_10_/CK u_survik/o_spare_config_reg_9_/CK u_survik/o_spare_config_reg_8_/CK u_survik/o_spare_config_reg_7_/CK u_survik/o_spare_config_reg_6_/CK u_survik/o_spare_config_reg_5_/CK u_survik/o_spare_config_reg_4_/CK u_survik/o_spare_config_reg_3_/CK u_survik/o_spare_config_reg_2_/CK u_survik/o_spare_config_reg_1_/CK u_survik/o_spare_config_reg_0_/CK u_survik/clk_gate_config/CK u_survik/o_adj_config_reg_15_/CK u_survik/o_adj_config_reg_14_/CK u_survik/o_adj_config_reg_13_/CK u_survik/o_adj_config_reg_12_/CK u_survik/o_adj_config_reg_11_/CK u_survik/o_adj_config_reg_10_/CK u_survik/o_adj_config_reg_9_/CK u_survik/o_adj_config_reg_8_/CK u_survik/o_adj_config_reg_7_/CK u_survik/o_adj_config_reg_6_/CK u_survik/o_adj_config_reg_5_/CK u_survik/o_adj_config_reg_4_/CK u_survik/o_adj_config_reg_3_/CK u_survik/o_adj_config_reg_2_/CK u_survik/o_adj_config_reg_1_/CK u_survik/o_adj_config_reg_0_/CK clk_gate_mux/CK f32_mux_1_data_reg_0_/CK f32_mux_1_data_reg_1_/CK f32_mux_1_data_reg_2_/CK f32_mux_1_data_reg_3_/CK f32_mux_1_data_reg_4_/CK f32_mux_1_data_reg_5_/CK f32_mux_1_data_reg_6_/CK f32_mux_1_data_reg_7_/CK f32_mux_1_data_reg_8_/CK f32_mux_1_data_reg_9_/CK f32_mux_1_data_reg_10_/CK f32_mux_1_data_reg_11_/CK f32_mux_1_data_reg_12_/CK f32_mux_1_data_reg_13_/CK f32_mux_1_data_reg_14_/CK f32_mux_1_data_reg_15_/CK f32_mux_1_data_reg_16_/CK f32_mux_1_data_reg_17_/CK f32_mux_1_data_reg_18_/CK f32_mux_1_data_reg_19_/CK f32_mux_1_data_reg_20_/CK f32_mux_1_data_reg_21_/CK f32_mux_1_data_reg_22_/CK f32_mux_1_data_reg_23_/CK f32_mux_1_data_reg_24_/CK f32_mux_1_data_reg_25_/CK f32_mux_1_data_reg_26_/CK f32_mux_1_data_reg_27_/CK f32_mux_1_data_reg_28_/CK f32_mux_1_data_reg_29_/CK f32_mux_1_data_reg_30_/CK f32_mux_1_data_reg_31_/CK f32_mux_0_data_reg_31_/CK f32_mux_0_data_reg_30_/CK f32_mux_0_data_reg_29_/CK f32_mux_0_data_reg_28_/CK f32_mux_0_data_reg_27_/CK f32_mux_0_data_reg_26_/CK f32_mux_0_data_reg_25_/CK f32_mux_0_data_reg_24_/CK f32_mux_0_data_reg_23_/CK ...
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'f32_mux_1_data_reg_5_'
+**ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'f32_mux_1_data_reg_5_'
+f32_mux_1_data_reg_6_/SI o_rd_data[5]
+n_write_reg/CK f_ack_reg/CK f_state_reg_0_/CK f_state_reg_1_/CK f_state_reg_2_/CK f32_mux_1_data_reg_5_/CK f32_mux_0_data_reg_5_/CK
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list}
+                 [-trace_through {case_disable|user_disable|all|clocks|loop_snipped}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-6):	Missing string value for option "-trace_through".  
+
+o_rd_data[5] U422/Y U422/B0 U395/Y U395/A U69/Y U69/B n_write_reg/Q n_write_reg/CK U69/A U20/Y U20/B f_ack_reg/Q f_ack_reg/CK U20/A U66/Y U66/B U75/Y U75/B f_state_reg_0_/Q f_state_reg_0_/CK U75/AN f_state_reg_1_/Q f_state_reg_1_/CK U66/A f_state_reg_2_/Q f_state_reg_2_/CK U422/A1 f32_mux_1_data_reg_5_/Q f32_mux_1_data_reg_5_/CK U422/A0 f32_mux_0_data_reg_5_/Q f32_mux_0_data_reg_5_/CK
+f32_mux_1_data_reg_6_/SI f32_mux_1_data_reg_5_/Q f32_mux_1_data_reg_5_/CK
+**ERROR: (IMPTCM-46):	Argument "{body }" is required for command "foreach_in_collection", either this option is not specified or an option prior to it is not specified correctly.
+
+u_survik/o_spare_config_reg_31_/CK u_survik/o_spare_config_reg_30_/CK u_survik/o_spare_config_reg_29_/CK u_survik/o_spare_config_reg_28_/CK u_survik/o_spare_config_reg_27_/CK u_survik/o_spare_config_reg_26_/CK u_survik/o_spare_config_reg_25_/CK u_survik/o_spare_config_reg_24_/CK u_survik/o_spare_config_reg_23_/CK u_survik/o_spare_config_reg_22_/CK u_survik/o_spare_config_reg_21_/CK u_survik/o_spare_config_reg_20_/CK u_survik/o_spare_config_reg_19_/CK u_survik/o_spare_config_reg_18_/CK u_survik/o_spare_config_reg_17_/CK u_survik/o_spare_config_reg_16_/CK u_survik/o_spare_config_reg_15_/CK u_survik/o_spare_config_reg_14_/CK u_survik/o_spare_config_reg_13_/CK u_survik/o_spare_config_reg_12_/CK u_survik/o_spare_config_reg_11_/CK u_survik/o_spare_config_reg_10_/CK u_survik/o_spare_config_reg_9_/CK u_survik/o_spare_config_reg_8_/CK u_survik/o_spare_config_reg_7_/CK u_survik/o_spare_config_reg_6_/CK u_survik/o_spare_config_reg_5_/CK u_survik/o_spare_config_reg_4_/CK u_survik/o_spare_config_reg_3_/CK u_survik/o_spare_config_reg_2_/CK u_survik/o_spare_config_reg_1_/CK u_survik/o_spare_config_reg_0_/CK u_survik/o_adj_config_reg_15_/CK u_survik/o_adj_config_reg_14_/CK u_survik/o_adj_config_reg_13_/CK u_survik/o_adj_config_reg_12_/CK u_survik/o_adj_config_reg_11_/CK u_survik/o_adj_config_reg_10_/CK u_survik/o_adj_config_reg_9_/CK u_survik/o_adj_config_reg_8_/CK u_survik/o_adj_config_reg_7_/CK u_survik/o_adj_config_reg_6_/CK u_survik/o_adj_config_reg_5_/CK u_survik/o_adj_config_reg_4_/CK u_survik/o_adj_config_reg_3_/CK u_survik/o_adj_config_reg_2_/CK u_survik/o_adj_config_reg_1_/CK u_survik/o_adj_config_reg_0_/CK f32_mux_1_data_reg_0_/CK f32_mux_1_data_reg_1_/CK f32_mux_1_data_reg_2_/CK f32_mux_1_data_reg_3_/CK f32_mux_1_data_reg_4_/CK f32_mux_1_data_reg_5_/CK f32_mux_1_data_reg_6_/CK f32_mux_1_data_reg_7_/CK f32_mux_1_data_reg_8_/CK f32_mux_1_data_reg_9_/CK f32_mux_1_data_reg_10_/CK f32_mux_1_data_reg_11_/CK f32_mux_1_data_reg_12_/CK f32_mux_1_data_reg_13_/CK f32_mux_1_data_reg_14_/CK f32_mux_1_data_reg_15_/CK f32_mux_1_data_reg_16_/CK f32_mux_1_data_reg_17_/CK f32_mux_1_data_reg_18_/CK f32_mux_1_data_reg_19_/CK f32_mux_1_data_reg_20_/CK f32_mux_1_data_reg_21_/CK f32_mux_1_data_reg_22_/CK f32_mux_1_data_reg_23_/CK f32_mux_1_data_reg_24_/CK f32_mux_1_data_reg_25_/CK f32_mux_1_data_reg_26_/CK f32_mux_1_data_reg_27_/CK f32_mux_1_data_reg_28_/CK f32_mux_1_data_reg_29_/CK f32_mux_1_data_reg_30_/CK f32_mux_1_data_reg_31_/CK f32_mux_0_data_reg_31_/CK f32_mux_0_data_reg_30_/CK f32_mux_0_data_reg_29_/CK f32_mux_0_data_reg_28_/CK f32_mux_0_data_reg_27_/CK f32_mux_0_data_reg_26_/CK f32_mux_0_data_reg_25_/CK f32_mux_0_data_reg_24_/CK f32_mux_0_data_reg_23_/CK f32_mux_0_data_reg_22_/CK f32_mux_0_data_reg_21_/CK f32_mux_0_data_reg_20_/CK f32_mux_0_data_reg_19_/CK f32_mux_0_data_reg_18_/CK f32_mux_0_data_reg_17_/CK f32_mux_0_data_reg_16_/CK f32_mux_0_data_reg_0_/CK f32_mux_0_data_reg_1_/CK f32_mux_0_data_reg_2_/CK f32_mux_0_data_reg_3_/CK ...
+**ERROR: (TCLCMD-923):	Specified argument '12' is not a valid collection
+
+Usage: foreach_in_collection [-help] <var_name> <collection> {<body> }
+
+**ERROR: (IMPTCM-48):	"" is not a legal option for command "foreach_in_collection". Either the current option or an option prior to it is not specified correctly.
+
+wrong # args: should be "set varName ?newValue?"
+f32_data_reg_31_/CK clk
+f32_data_reg_31_/CK clk_gate_data/ECK clk_gate_data/CK clk
+<CMD> report_fanout -from clk -pin_levels 3
+       -------------------------------------------------------------------------------------------------------  
+        Source Pin             Sink Pin               Cell Type         Timing Sense      Arc        Case       
+                                                                                          Disabled   Analysis   
+       -------------------------------------------------------------------------------------------------------  
+       clk                    f_state_reg_0_/CK      (net)             -                 -          -
+       clk                    f_state_reg_1_/CK      (net)             -                 -          -
+       clk                    f_state_reg_2_/CK      (net)             -                 -          -
+       clk                    f_ack_reg/CK           (net)             -                 -          -
+       clk                    n_write_reg/CK         (net)             -                 -          -
+       clk                    f_err_ack_reg/CK       (net)             -                 -          -
+       clk                    o_reg_read_reg/CK      (net)             -                 -          -
+       clk                    u_survik/o_dbg_config_reg_0_/CK
+                                                     (net)             -                 -          -
+       clk                    u_survik/clk_gate_spare_config/CK
+                                                     (net)             -                 -          -
+       clk                    u_survik/clk_gate_config/CK
+                                                     (net)             -                 -          -
+       clk                    clk_gate_mux/CK        (net)             -                 -          -
+       clk                    clk_gate_addr/CK       (net)             -                 -          -
+       clk                    clk_gate_data/CK       (net)             -                 -          -
+       -------------------------------------------------------------------------------------------------------
+       u_survik/clk_gate_spare_config/CK
+                              u_survik/clk_gate_spare_config/ECK
+                                                     TLATNTSCAX12      positive_unate    -          -
+       u_survik/clk_gate_config/CK
+                              u_survik/clk_gate_config/ECK
+                                                     TLATNTSCAX12      positive_unate    -          -
+       clk_gate_mux/CK        clk_gate_mux/ECK       TLATNTSCAX12      positive_unate    -          -
+       clk_gate_addr/CK       clk_gate_addr/ECK      TLATNTSCAX12      positive_unate    -          -
+       clk_gate_data/CK       clk_gate_data/ECK      TLATNTSCAX12      positive_unate    -          -
+       -------------------------------------------------------------------------------------------------------
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_31_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_30_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_29_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_28_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_27_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_26_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_25_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_24_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_23_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_22_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_21_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_20_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_19_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_18_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_17_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_16_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_15_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_14_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_13_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_12_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_11_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_10_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_9_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_8_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_7_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_6_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_5_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_4_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_3_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_2_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_1_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_spare_config/ECK
+                              u_survik/o_spare_config_reg_0_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_15_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_14_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_13_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_12_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_11_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_10_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_9_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_8_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_7_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_6_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_5_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_4_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_3_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_2_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_1_/CK
+                                                     (net)             -                 -          -
+       u_survik/clk_gate_config/ECK
+                              u_survik/o_adj_config_reg_0_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_0_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_1_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_2_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_3_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_4_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_5_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_6_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_7_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_8_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_9_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_10_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_11_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_12_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_13_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_14_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_15_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_16_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_17_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_18_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_19_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_20_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_21_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_22_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_23_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_24_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_25_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_26_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_27_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_28_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_29_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_30_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_1_data_reg_31_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_31_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_30_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_29_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_28_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_27_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_26_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_25_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_24_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_23_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_22_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_21_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_20_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_19_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_18_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_17_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_16_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_0_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_1_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_2_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_3_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_4_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_5_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_6_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_7_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_8_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_9_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_10_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_11_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_12_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_13_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_14_/CK
+                                                     (net)             -                 -          -
+       clk_gate_mux/ECK       f32_mux_0_data_reg_15_/CK
+                                                     (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_7_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_6_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_5_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_4_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_3_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_2_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_1_/CK   (net)             -                 -          -
+       clk_gate_addr/ECK      o_reg_addr_reg_0_/CK   (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_31_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_30_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_29_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_28_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_27_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_26_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_25_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_24_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_23_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_22_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_21_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_20_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_19_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_18_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_17_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_16_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_15_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_14_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_13_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_12_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_11_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_10_/CK    (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_9_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_8_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_7_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_6_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_5_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_4_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_3_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_2_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_1_/CK     (net)             -                 -          -
+       clk_gate_data/ECK      f32_data_reg_0_/CK     (net)             -                 -          -
+       -------------------------------------------------------------------------------------------------------
+<CMD> report_timing
+Path 1: VIOLATED Setup Check with Pin f32_mux_1_data_reg_1_/CK 
+Endpoint:   f32_mux_1_data_reg_1_/D (^) checked with  leading edge of 'sclk'
+Beginpoint: o_reg_addr_reg_6_/Q     (^) triggered by  leading edge of 'sclk'
+Path Groups: {sclk}
+Other End Arrival Time          0.000
+- Setup                         0.254
++ Phase Shift                   1.000
+= Required Time                 0.746
+- Arrival Time                  2.191
+= Slack Time                   -1.445
+     Clock Rise Edge                 0.000
+     + Clock Network Latency (Ideal) 0.000
+     = Beginpoint Arrival Time       0.000
+      -----------------------------------------------------------------------------
+      Instance                       Arc          Cell     Delay  Arrival  Required  
+                                                                  Time     Time  
+      -----------------------------------------------------------------------------
+      o_reg_addr_reg_6_              CK ^         -        -      0.000    -1.445  
+      o_reg_addr_reg_6_              CK ^ -> Q ^  SDFFRX1  0.365  0.365    -1.079  
+      o_reg_addr_reg_6__scan_iso_or  A ^ -> Y ^   AND2X1   0.228  0.593    -0.851  
+      U195                           A ^ -> Y v   INVX2    0.107  0.700    -0.744  
+      U62                            B v -> Y ^   NOR2X2   0.130  0.831    -0.614  
+      U32                            B ^ -> Y v   NAND3X1  0.185  1.015    -0.429  
+      U27                            A v -> Y v   OR2X1    0.302  1.317    -0.127  
+      U59                            B v -> Y ^   NOR2X1   0.312  1.629    0.184  
+      U489                           A ^ -> Y ^   BUFX4    0.274  1.903    0.458  
+      U525                           B0 ^ -> Y v  AOI22X1  0.086  1.988    0.544  
+      U529                           A v -> Y ^   NAND4X1  0.089  2.078    0.633  
+      U530                           B0 ^ -> Y v  AOI21X1  0.048  2.125    0.681  
+      U158                           B v -> Y ^   NAND3X1  0.066  2.191    0.746  
+      f32_mux_1_data_reg_1_          D ^          SDFFRX1  0.000  2.191    0.746  
+      -----------------------------------------------------------------------------
+
+-checkType setup                           # enums={setup hold}, default=setup
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+<CMD> selectInst f32_mux_1_data_reg_5_
+<CMD> deselectInst f32_mux_1_data_reg_5_
+<CMD> selectInst f32_mux_1_data_reg_6_
+<CMD> selectInst U422
+<CMD> deselectInst U422
+<CMD> selectObject Net {f32_mux_1_data[5]}
+<CMD> deselectObject Net {f32_mux_1_data[5]}
+<CMD> selectInst f32_mux_1_data_reg_5_
+<CMD> deselectInst f32_mux_1_data_reg_5_
+<CMD> selectObject Net {f32_mux_1_data[5]}
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 1509.098M, initial mem = 299.711M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPESI-3468          1  User needs to specify -equivalent_wavefo...
+WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+ERROR     IMPTCM-6             1  Missing %s value for option "%s". %s     
+ERROR     IMPTCM-46            1  Argument "%s" is required for command "%...
+ERROR     IMPTCM-48            1  "%s" is not a legal option for command "...
+WARNING   TCLCMD-513           1  The software could not find a matching o...
+ERROR     TCLCMD-917           1  Cannot find '%s' that match '%s'         
+ERROR     TCLCMD-923           1  Specified argument '%s' is not a valid c...
+*** Message Summary: 4 warning(s), 5 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:03:37, real=0:56:07, mem=1509.1M) ---

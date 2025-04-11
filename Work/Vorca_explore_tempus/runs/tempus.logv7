@@ -1,0 +1,374 @@
+[04/11 11:12:59      0s] 
+[04/11 11:12:59      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[04/11 11:12:59      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/11 11:12:59      0s] 
+[04/11 11:12:59      0s] Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+[04/11 11:12:59      0s] Options:	
+[04/11 11:12:59      0s] Date:		Fri Apr 11 11:12:59 2025
+[04/11 11:12:59      0s] Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+[04/11 11:12:59      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/11 11:12:59      0s] 
+[04/11 11:12:59      0s] License:
+[04/11 11:13:02      0s] 		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+[04/11 11:13:02      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/11 11:13:09      5s] @(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/11 11:13:09      5s] @(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+[04/11 11:13:09      5s] @(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/11 11:13:09      5s] @(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+[04/11 11:13:09      5s] @(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+[04/11 11:13:09      5s] @(#)CDS: CPE v20.20-p009
+[04/11 11:13:09      5s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[04/11 11:13:09      5s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/11 11:13:09      5s] @(#)CDS: RCDB 11.15.0
+[04/11 11:13:09      5s] @(#)CDS: STYLUS 21.10-d018_1 (08/28/2020 09:14 PDT)
+[04/11 11:13:09      5s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[04/11 11:13:09      6s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_118325_zNf4gy'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_118325_zNf4gy'.
+[04/11 11:13:48      8s] <CMD> read_lib ../lib/slow.lib
+[04/11 11:13:58      9s] <CMD> read_lib -lef ../lef/NangateOpenCellLibrary.lef
+[04/11 11:14:17     10s] <CMD> read_verilog ../netlist/vorca_fixed.v
+[04/11 11:14:51     12s] <CMD> set_top_module
+[04/11 11:14:51     12s] #% Begin Load MMMC data ... (date=04/11 11:14:51, mem=760.4M)
+[04/11 11:14:51     12s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[04/11 11:14:51     12s] #% End Load MMMC data ... (date=04/11 11:14:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=760.9M, current mem=760.9M)
+[04/11 11:14:51     12s] 
+[04/11 11:14:51     12s] Loading LEF file ../lef/NangateOpenCellLibrary.lef ...
+[04/11 11:14:51     12s] Set DBUPerIGU to M2 pitch 380.
+[04/11 11:14:51     12s] 
+[04/11 11:14:51     12s] viaInitial starts at Fri Apr 11 11:14:51 2025
+viaInitial ends at Fri Apr 11 11:14:51 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[04/11 11:14:51     12s] Loading view definition file from .ssv_emulate_view_definition_118325.tcl
+[04/11 11:14:51     12s] Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+[04/11 11:14:51     13s] Read 479 cells in library 'slow' 
+[04/11 11:14:51     13s] Ending "PreSetAnalysisView" (total cpu=0:00:00.2, real=0:00:00.0, peak res=862.9M, current mem=812.8M)
+[04/11 11:14:51     13s] *** End library_loading (cpu=0.00min, real=0.00min, mem=28.0M, fe_cpu=0.22min, fe_real=1.87min, fe_mem=846.8M) ***
+[04/11 11:14:51     13s] #% Begin Load netlist data ... (date=04/11 11:14:51, mem=812.8M)
+[04/11 11:14:51     13s] *** Begin netlist parsing (mem=846.8M) ***
+[04/11 11:14:51     13s] Reading verilog netlist '../netlist/vorca_fixed.v'
+[04/11 11:14:51     13s] **WARN: (IMPVL-346):	Module 'BUFX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[04/11 11:14:51     13s] 
+[04/11 11:14:51     13s] *** Memory Usage v#1 (Current mem = 972.801M, initial mem = 299.711M) ***
+[04/11 11:14:51     13s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=972.8M) ***
+[04/11 11:14:52     13s] #% End Load netlist data ... (date=04/11 11:14:52, total cpu=0:00:00.2, real=0:00:01.0, peak res=894.7M, current mem=886.8M)
+[04/11 11:14:52     13s] **WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/11 11:14:52     13s] Cell 'BUFX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'BUFX1' as output for net 'n807' in module 'vorca'.
+[04/11 11:14:52     13s] **WARN: (UI-418):	Undefined cells that are instantiated in the netlist are allowed because load_netlist_ignore_undefined_cell is true. Unexpected results may occur due to missing library data or missing netlist data. For accurate results, provide a consistent library and netlist.
+[04/11 11:14:52     13s] Top level cell is vorca.
+[04/11 11:14:52     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/11 11:14:52     13s] late library set: default_emulate_libset_max
+[04/11 11:14:52     13s] early library set: default_emulate_libset_min
+[04/11 11:14:52     13s] Completed consistency checks. Status: Successful
+[04/11 11:14:52     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/11 11:14:52     13s] late library set: default_emulate_libset_max
+[04/11 11:14:52     13s] early library set: default_emulate_libset_min
+[04/11 11:14:52     13s] Completed consistency checks. Status: Successful
+[04/11 11:14:52     13s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=938.0M, current mem=938.0M)
+[04/11 11:14:52     13s] 1 empty module found.
+[04/11 11:14:52     13s] Building hierarchical netlist for Cell vorca ...
+[04/11 11:14:52     13s] *** Netlist is NOT unique.
+[04/11 11:14:52     13s] Setting Std. cell height to 2800 DBU (smallest ABS library cell).
+[04/11 11:14:52     13s] ** info: there are 617 modules.
+[04/11 11:14:52     13s] ** info: there are 1047 stdCell insts.
+[04/11 11:14:52     13s] 
+[04/11 11:14:52     13s] *** Memory Usage v#1 (Current mem = 1202.754M, initial mem = 299.711M) ***
+[04/11 11:14:52     13s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/11 11:14:52     13s] Generated pitch 0.84 in metal9 is different from 1.6 defined in technology file in unpreferred direction.
+[04/11 11:14:52     13s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in unpreferred direction.
+[04/11 11:14:52     13s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/11 11:14:52     13s] Generated pitch 0.28 in metal7 is different from 0.8 defined in technology file in unpreferred direction.
+[04/11 11:14:52     13s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/11 11:14:52     13s] Generated pitch 0.14 in metal4 is different from 0.28 defined in technology file in unpreferred direction.
+[04/11 11:14:52     13s] Set Default Net Delay as 1000 ps.
+[04/11 11:14:52     13s] Set Default Net Load as 0.5 pF. 
+[04/11 11:14:52     13s] Set Default Input Pin Transition as 0.1 ps.
+[04/11 11:14:52     13s] Extraction setup Started 
+[04/11 11:14:52     13s] Summary of Active RC-Corners : 
+[04/11 11:14:52     13s]  
+[04/11 11:14:52     13s]  Analysis View: default_emulate_view
+[04/11 11:14:52     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 11:14:52     13s]     RC-Corner Index       : 0
+[04/11 11:14:52     13s]     RC-Corner Temperature : 25 Celsius
+[04/11 11:14:52     13s]     RC-Corner Cap Table   : ''
+[04/11 11:14:52     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 11:14:52     13s] LayerId::1 widthSet size::1
+[04/11 11:14:52     13s] LayerId::2 widthSet size::1
+[04/11 11:14:52     13s] LayerId::3 widthSet size::1
+[04/11 11:14:52     13s] LayerId::4 widthSet size::1
+[04/11 11:14:52     13s] LayerId::5 widthSet size::1
+[04/11 11:14:52     13s] LayerId::6 widthSet size::1
+[04/11 11:14:52     13s] LayerId::7 widthSet size::1
+[04/11 11:14:52     13s] LayerId::8 widthSet size::1
+[04/11 11:14:52     13s] LayerId::9 widthSet size::1
+[04/11 11:14:52     13s] LayerId::10 widthSet size::1
+[04/11 11:14:52     13s] Initializing multi-corner resistance tables ...
+[04/11 11:14:52     13s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/11 11:14:52     13s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/11 11:14:52     13s] late library set: default_emulate_libset_max
+[04/11 11:14:52     13s] early library set: default_emulate_libset_min
+[04/11 11:14:52     13s] Completed consistency checks. Status: Successful
+[04/11 11:14:52     13s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1262.8M, current mem=1048.5M)
+[04/11 11:14:52     13s] Reading timing constraints file '/dev/null' ...
+[04/11 11:14:52     13s] Current (total cpu=0:00:13.6, real=0:01:53, peak res=1269.8M, current mem=1269.8M)
+[04/11 11:14:52     13s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/11 11:14:52     13s] Creating Cell Server ...(0, 1, 1, 1)
+[04/11 11:14:52     13s] Summary for sequential cells identification: 
+[04/11 11:14:52     13s]   Identified SBFF number: 0
+[04/11 11:14:52     13s]   Identified MBFF number: 0
+[04/11 11:14:52     13s]   Identified SB Latch number: 0
+[04/11 11:14:52     13s]   Identified MB Latch number: 0
+[04/11 11:14:52     13s]   Not identified SBFF number: 0
+[04/11 11:14:52     13s]   Not identified MBFF number: 0
+[04/11 11:14:52     13s]   Not identified SB Latch number: 0
+[04/11 11:14:52     13s]   Not identified MB Latch number: 0
+[04/11 11:14:52     13s]   Number of sequential cells which are not FFs: 0
+[04/11 11:14:52     13s] Total number of combinational cells: 0
+[04/11 11:14:52     13s] Total number of sequential cells: 0
+[04/11 11:14:52     13s] Total number of tristate cells: 0
+[04/11 11:14:52     13s] Total number of level shifter cells: 0
+[04/11 11:14:52     13s] Total number of power gating cells: 0
+[04/11 11:14:52     13s] Total number of isolation cells: 0
+[04/11 11:14:52     13s] Total number of power switch cells: 0
+[04/11 11:14:52     13s] Total number of pulse generator cells: 0
+[04/11 11:14:52     13s] Total number of always on buffers: 0
+[04/11 11:14:52     13s] Total number of retention cells: 0
+[04/11 11:14:52     13s] List of usable buffers:
+[04/11 11:14:52     13s] Total number of usable buffers: 0
+[04/11 11:14:52     13s] List of unusable buffers:
+[04/11 11:14:52     13s] Total number of unusable buffers: 0
+[04/11 11:14:52     13s] List of usable inverters:
+[04/11 11:14:52     13s] Total number of usable inverters: 0
+[04/11 11:14:52     13s] List of unusable inverters:
+[04/11 11:14:52     13s] Total number of unusable inverters: 0
+[04/11 11:14:52     13s] List of identified usable delay cells:
+[04/11 11:14:52     13s] Total number of identified usable delay cells: 0
+[04/11 11:14:52     13s] List of identified unusable delay cells:
+[04/11 11:14:52     13s] Total number of identified unusable delay cells: 0
+[04/11 11:14:52     13s] Creating Cell Server, finished. 
+[04/11 11:14:52     13s] 
+[04/11 11:14:52     13s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[04/11 11:14:52     13s] Deleting Cell Server ...
+[04/11 11:14:52     13s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1298.7M, current mem=1298.7M)
+[04/11 11:14:52     13s] Creating Cell Server ...(0, 0, 0, 0)
+[04/11 11:14:52     13s] Summary for sequential cells identification: 
+[04/11 11:14:52     13s]   Identified SBFF number: 0
+[04/11 11:14:52     13s]   Identified MBFF number: 0
+[04/11 11:14:52     13s]   Identified SB Latch number: 0
+[04/11 11:14:52     13s]   Identified MB Latch number: 0
+[04/11 11:14:52     13s]   Not identified SBFF number: 0
+[04/11 11:14:52     13s]   Not identified MBFF number: 0
+[04/11 11:14:52     13s]   Not identified SB Latch number: 0
+[04/11 11:14:52     13s]   Not identified MB Latch number: 0
+[04/11 11:14:52     13s]   Number of sequential cells which are not FFs: 0
+[04/11 11:14:52     13s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[04/11 11:14:52     13s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[04/11 11:14:52     13s]  Visiting view : default_emulate_view
+[04/11 11:14:52     13s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[04/11 11:14:52     13s]    : PowerDomain = none : no stdDelay from this view
+[04/11 11:14:52     13s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/11 11:14:52     13s]  Visiting view : default_emulate_view
+[04/11 11:14:52     13s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[04/11 11:14:52     13s]    : PowerDomain = none : no stdDelay from this view
+[04/11 11:14:52     13s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/11 11:14:52     13s] *INFO : stdDelay is calculated as zero; using legacy method.
+[04/11 11:14:52     13s] *INFO : stdSlew is calculated as zero; using legacy method.
+[04/11 11:14:52     13s] Creating Cell Server, finished. 
+[04/11 11:14:52     13s] 
+[04/11 11:14:52     13s] **ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Extraction setup Started 
+[04/11 11:14:52     13s] Summary of Active RC-Corners : 
+[04/11 11:14:52     13s]  
+[04/11 11:14:52     13s]  Analysis View: default_emulate_view
+[04/11 11:14:52     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 11:14:52     13s]     RC-Corner Index       : 0
+[04/11 11:14:52     13s]     RC-Corner Temperature : 125 Celsius
+[04/11 11:14:52     13s]     RC-Corner Cap Table   : ''
+[04/11 11:14:52     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 11:14:52     13s] LayerId::1 widthSet size::1
+[04/11 11:14:52     13s] LayerId::2 widthSet size::1
+[04/11 11:14:52     13s] LayerId::3 widthSet size::1
+[04/11 11:14:52     13s] LayerId::4 widthSet size::1
+[04/11 11:14:52     13s] LayerId::5 widthSet size::1
+[04/11 11:14:52     13s] LayerId::6 widthSet size::1
+[04/11 11:14:52     13s] LayerId::7 widthSet size::1
+[04/11 11:14:52     13s] LayerId::8 widthSet size::1
+[04/11 11:14:52     13s] LayerId::9 widthSet size::1
+[04/11 11:14:52     13s] LayerId::10 widthSet size::1
+[04/11 11:14:52     13s] Initializing multi-corner resistance tables ...
+[04/11 11:14:52     13s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/11 11:14:52     13s] Extraction setup Started 
+[04/11 11:14:52     13s] Summary of Active RC-Corners : 
+[04/11 11:14:52     13s]  
+[04/11 11:14:52     13s]  Analysis View: default_emulate_view
+[04/11 11:14:52     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 11:14:52     13s]     RC-Corner Index       : 0
+[04/11 11:14:52     13s]     RC-Corner Temperature : 125 Celsius
+[04/11 11:14:52     13s]     RC-Corner Cap Table   : ''
+[04/11 11:14:52     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 11:14:52     13s] LayerId::1 widthSet size::1
+[04/11 11:14:52     13s] LayerId::2 widthSet size::1
+[04/11 11:14:52     13s] LayerId::3 widthSet size::1
+[04/11 11:14:52     13s] LayerId::4 widthSet size::1
+[04/11 11:14:52     13s] LayerId::5 widthSet size::1
+[04/11 11:14:52     13s] LayerId::6 widthSet size::1
+[04/11 11:14:52     13s] LayerId::7 widthSet size::1
+[04/11 11:14:52     13s] LayerId::8 widthSet size::1
+[04/11 11:14:52     13s] LayerId::9 widthSet size::1
+[04/11 11:14:52     13s] LayerId::10 widthSet size::1
+[04/11 11:14:52     13s] Initializing multi-corner resistance tables ...
+[04/11 11:14:52     13s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/11 11:14:52     13s] Extraction setup Started 
+[04/11 11:14:52     13s] Summary of Active RC-Corners : 
+[04/11 11:14:52     13s]  
+[04/11 11:14:52     13s]  Analysis View: default_emulate_view
+[04/11 11:14:52     13s]     RC-Corner Name        : default_emulate_rc_corner
+[04/11 11:14:52     13s]     RC-Corner Index       : 0
+[04/11 11:14:52     13s]     RC-Corner Temperature : 125 Celsius
+[04/11 11:14:52     13s]     RC-Corner Cap Table   : ''
+[04/11 11:14:52     13s]     RC-Corner PostRoute Res Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute Cap Factor        : 1
+[04/11 11:14:52     13s]     RC-Corner PostRoute XCap Factor       : 1
+[04/11 11:14:52     13s] LayerId::1 widthSet size::1
+[04/11 11:14:52     13s] LayerId::2 widthSet size::1
+[04/11 11:14:52     13s] LayerId::3 widthSet size::1
+[04/11 11:14:52     13s] LayerId::4 widthSet size::1
+[04/11 11:14:52     13s] LayerId::5 widthSet size::1
+[04/11 11:14:52     13s] LayerId::6 widthSet size::1
+[04/11 11:14:52     13s] LayerId::7 widthSet size::1
+[04/11 11:14:52     13s] LayerId::8 widthSet size::1
+[04/11 11:14:52     13s] LayerId::9 widthSet size::1
+[04/11 11:14:52     13s] LayerId::10 widthSet size::1
+[04/11 11:14:52     13s] Initializing multi-corner resistance tables ...
+[04/11 11:14:52     13s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/11 11:14:52     13s] **ERROR: (IMPSYC-2):	Timing information is not defined for cell BUFX1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the check_library command to verify if the timing library has complete information after the design is loaded.
+Loading  (vorca)
+[04/11 11:14:52     13s] Traverse HInst (vorca)
+[04/11 11:21:37     37s] invalid command name "0xe"
+[04/11 11:24:38     47s] **ERROR: (TCLCMD-923):	Specified argument '$rm_from' is not a valid collection
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '$rm'
+[04/11 11:25:36     51s] **ERROR: (TCLCMD-923):	Specified argument '[0x13]' is not a valid collection
+[04/11 11:28:12     58s] **INFO (INTERRUPT): One more Ctrl-C to exit Tempus Timing Signoff Solution ...
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_mux'
+[04/11 11:30:48     64s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'clk_gate_mux'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_mux/ECK'
+[04/11 11:31:20     66s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'clk_gate_mux/ECK'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_mux/GN'
+[04/11 11:31:26     66s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'clk_gate_mux/GN'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_config/ENCLK'
+[04/11 11:32:49     71s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'clk_gate_config/ENCLK'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_spare_config/ENCLK'
+[04/11 11:33:59     75s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'clk_gate_spare_config/ENCLK'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_config/ENCLK'
+[04/11 11:34:18     76s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'clk_gate_config/ENCLK'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_*'
+[04/11 11:50:53    134s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_*'
+[04/11 11:51:09    135s] **ERROR: (TCLCMD-923):	Specified argument '$0x39' is not a valid collection
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_gate_*'
+[04/11 11:51:48    137s] 
+[04/11 11:51:48    137s] Usage: remove_from_collection [-help] <base_collection> <object_collection_or_list> [-intersect]
+[04/11 11:51:48    137s] 
+[04/11 11:51:48    137s] **ERROR: (IMPTCM-48):	"clk" is not a legal option for command "remove_from_collection". Either the current option or an option prior to it is not specified correctly.
+
+[04/11 12:01:15    169s] 
+[04/11 12:01:15    169s] Usage: all_fanout [-help] [-endpoints_only] [-hpin] [-only_cells] [-trace_through {case_disable|user_disable|all|clocks|loop_snipped}]
+[04/11 12:01:15    169s]                   [-view <view_name>] [-levels <value> | -pin_levels <value>] {-from {collection | object_list} } [ > | >> ]
+[04/11 12:01:15    169s] 
+[04/11 12:01:15    169s] **ERROR: (IMPTCM-6):	Missing string value for option "-view".  
+
+[04/11 12:09:55    199s] -checkType setup                           # enums={setup hold}, default=setup
+[04/11 12:09:57    200s] <CMD> load_timing_debug_report -name default_report top.mtarpt
+[04/11 12:09:57    200s] Parsing file top.mtarpt...
+[04/11 12:10:15    201s] **WARN: (IMPSGN-1031):	Cannot find Instance clk_gate_mux in db.
+[04/11 12:10:16    201s] **WARN: (IMPSGN-1031):	Cannot find Instance clk_gate_mux in db.
+[04/11 12:10:18    201s] <CMD> selectInst f32_mux_1_data_reg_4_
+[04/11 12:10:21    201s] <CMD> deselectInst f32_mux_1_data_reg_4_
+[04/11 12:10:21    201s] <CMD> selectInst f32_mux_1_data_reg_4_
+[04/11 12:10:23    202s] <CMD> selectInst f32_mux_1_data_reg_4_
+[04/11 12:10:25    202s] <CMD> deselectInst f32_mux_1_data_reg_4_
+[04/11 12:10:25    202s] <CMD> selectInst f32_mux_1_data_reg_4_
+[04/11 12:10:27    202s] <CMD> selectInst f32_mux_1_data_reg_4_
+[04/11 12:10:36    202s] <CMD> selectInst f32_mux_1_data_reg_4_
+[04/11 12:19:45    234s] can't read "c": no such variable
+[04/11 12:21:49    242s] **ERROR: (TCLCMD-929):	Command foreach_in_collection exited: invalid command name "}"
+
+[04/11 12:28:49    266s] <CMD> report_clock_gating_check 
+[04/11 12:28:49    266s] **WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+[04/11 12:28:49    266s] AAE DB initialization (MEM=1490.68 CPU=0:00:00.0 REAL=0:00:00.0) 
+[04/11 12:28:49    266s] #################################################################################
+[04/11 12:28:49    266s] # Design Name: vorca
+[04/11 12:28:49    266s] # Design Mode: 65nm
+[04/11 12:28:49    266s] # Analysis Mode: MMMC OCV 
+[04/11 12:28:49    266s] # Parasitics Mode: No SPEF/RCDB 
+[04/11 12:28:49    266s] # Signoff Settings: SI Off 
+[04/11 12:28:49    266s] #################################################################################
+[04/11 12:28:49    266s] Topological Sorting (REAL = 0:00:00.0, MEM = 1498.9M, InitMEM = 1498.9M)
+[04/11 12:28:49    266s] Start delay calculation (fullDC) (1 T). (MEM=1498.89)
+[04/11 12:28:49    266s] Start AAE Lib Loading. (MEM=1498.89)
+[04/11 12:28:49    266s] End AAE Lib Loading. (MEM=1498.89 CPU=0:00:00.0 Real=0:00:00.0)
+[04/11 12:28:49    266s] End AAE Lib Interpolated Model. (MEM=1498.89 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/11 12:28:49    266s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/11 12:28:49    266s] End delay calculation. (MEM=1531.66 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/11 12:28:49    266s] End delay calculation (fullDC). (MEM=1531.66 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/11 12:28:49    266s] *** CDM Built up (cpu=0:00:00.2  real=0:00:00.0  mem= 1531.7M) ***
+[04/11 12:29:19    268s] <CMD> read_sdc ../sdc/simple_sdc.sdc
+[04/11 12:29:19    268s] Current (total cpu=0:04:28, real=1:16:20, peak res=1395.5M, current mem=1307.0M)
+[04/11 12:29:19    268s] INFO (CTE): Constraints read successfully.
+[04/11 12:29:19    268s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1307.0M, current mem=1287.2M)
+[04/11 12:29:19    268s] Current (total cpu=0:04:28, real=1:16:20, peak res=1395.5M, current mem=1287.2M)
+[04/11 12:29:22    268s] <CMD> report_clock_gating_check 
+[04/11 12:29:22    268s] #################################################################################
+[04/11 12:29:22    268s] # Design Name: vorca
+[04/11 12:29:22    268s] # Design Mode: 65nm
+[04/11 12:29:22    268s] # Analysis Mode: MMMC OCV 
+[04/11 12:29:22    268s] # Parasitics Mode: No SPEF/RCDB 
+[04/11 12:29:22    268s] # Signoff Settings: SI Off 
+[04/11 12:29:22    268s] #################################################################################
+[04/11 12:29:22    268s] Topological Sorting (REAL = 0:00:00.0, MEM = 1482.7M, InitMEM = 1482.7M)
+[04/11 12:29:22    268s] Start delay calculation (fullDC) (1 T). (MEM=1482.69)
+[04/11 12:29:22    268s] End AAE Lib Interpolated Model. (MEM=1482.69 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/11 12:29:22    268s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/11 12:29:22    268s] End delay calculation. (MEM=1533.39 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/11 12:29:22    268s] End delay calculation (fullDC). (MEM=1533.39 CPU=0:00:00.1 REAL=0:00:00.0)
+[04/11 12:29:22    268s] *** CDM Built up (cpu=0:00:00.2  real=0:00:00.0  mem= 1533.4M) ***
+[04/11 12:39:35    303s] **ERROR: (TCLCMD-923):	Specified argument '[0x95]' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '$' is not a valid collection
+<CMD> selectObject Module clk_gate_data
+[04/11 12:51:38    345s] <CMD> deselectObject Module clk_gate_data
+[04/11 12:51:38    345s] <CMD> selectObject Module clk_gate_data
+[04/11 12:52:04    347s] <CMD> deselectObject Module clk_gate_data
+[04/11 12:52:04    347s] <CMD> selectObject Module clk_gate_data
+[04/11 12:52:13    347s] <CMD> deselectObject Module clk_gate_data
+[04/11 12:52:22    348s] <CMD> selectObject Module clk_gate_data
+[04/11 12:52:30    348s] <CMD> deselectObject Module clk_gate_data
+[04/11 12:52:30    348s] <CMD> selectObject Module clk_gate_data
+[04/11 12:52:30    348s] Loading clk_gate_data (ICGX1)
+[04/11 12:52:30    348s] Traverse HInst clk_gate_data(ICGX1)
+[04/11 13:06:53    398s] <CMD> selectInst clk_gate_data/g15__2398
+[04/11 13:06:56    398s] <CMD> deselectInst clk_gate_data/g15__2398
+[04/11 13:06:56    398s] <CMD> selectInst clk_gate_data/g15__2398
+[04/11 13:06:57    398s] <CMD> deselectInst clk_gate_data/g15__2398
+[04/11 13:06:57    398s] <CMD> selectInst clk_gate_data/g17__5107
+[04/11 13:06:57    398s] <CMD> deselectInst clk_gate_data/g17__5107
+[04/11 13:06:57    398s] <CMD> selectInst clk_gate_data/g17__5107
+[04/11 13:07:02    398s] <CMD> deselectInst clk_gate_data/g17__5107
+[04/11 13:07:02    398s] <CMD> selectInst clk_gate_data/lat_reg
+[04/11 13:07:09    399s] <CMD> deselectInst clk_gate_data/lat_reg
+[04/11 13:07:09    399s] <CMD> selectInst clk_gate_data/g15__2398
+[04/11 13:07:30    400s] <CMD_INTERNAL> redraw
+[04/11 13:07:31    400s] <CMD> deselectInst clk_gate_data/g15__2398
+[04/11 13:07:31    400s] <CMD> selectInst clk_gate_data/g15__2398
+[04/11 14:15:54    637s] can't read "t": no such variable
+[04/11 14:16:27    639s] can't read "t": no such variable
+[04/11 14:30:31    682s] **INFO (INTERRUPT): One more Ctrl-C to exit Tempus Timing Signoff Solution ...
+[04/11 14:32:11    682s] **INFO (INTERRUPT): One more Ctrl-C to exit Tempus Timing Signoff Solution ...
+[04/11 14:35:56    682s] **INFO (INTERRUPT): One more Ctrl-C to exit Tempus Timing Signoff Solution ...
