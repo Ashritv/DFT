@@ -1,0 +1,48 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+Options:	
+Date:		Fri Apr 11 18:46:44 2025
+Host:		APL7.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_151359_HbkytX'.
+<CMD> read_lib ../lib/slow.lib
+<CMD> read_verilog ../netlist/vorca_fixed.v
+<CMD> set_top_module
+#% Begin Load MMMC data ... (date=04/11 18:47:30, mem=758.1M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=04/11 18:47:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=758.2M, current mem=758.2M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_151359.tcl
+Reading default_emulate_libset_max timing library '/home/01fe21bec241/DFT/Work/Vorca_explore_tempus/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=28.0M, fe_cpu=0.16min, fe_real=0.77min, fe_mem=804.8M) ***
+#% Begin Load netlist data ... (date=04/11 18:47:30, mem=765.9M)
+*** Begin netlist parsing (mem=804.8M) ***
+Reading verilog netlist '../netlist/vorca_fixed.v'
+Module BUFX1 is not defined and will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 956.879M, initial mem = 299.711M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=956.9M) ***
+#% End Load netlist data ... (date=04/11 18:47:30, total cpu=0:00:00.2, real=0:00:00.0, peak res=872.7M, current mem=864.8M)
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'BUFX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**ERROR: (UI-49):	Undefined cells in the design are not allowed, exiting.  Review the log file for undefined cell warning messages.  Provide the cell definitions or set load_netlist_ignore_undefined_cell to true and re-run.
+
+<CMD> exit
+
+*** Memory Usage v#1 (Current mem = 946.879M, initial mem = 299.711M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     UI-49                1  Undefined cells in the design are not al...
+WARNING   IMPDB-2504           1  Unable to find netlist cell in the desig...
+*** Message Summary: 1 warning(s), 1 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:00:10.1, real=0:00:55.0, mem=946.9M) ---
