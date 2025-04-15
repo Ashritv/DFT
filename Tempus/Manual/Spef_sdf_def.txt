@@ -2,7 +2,6 @@
 
 Parasitics are the non-ideal, unintended electrical characteristics inherent in a circuit’s physical structure and these elements, which are not explicitly designed into the circuit, arise from the layout and manufacturing process.
 
-
 Incorporating Parasitic Data
 SPEF files contain detailed information about parasitic capacitances, resistances, and sometimes inductances extracted from the physical layout. When you run read_spef, Tempus uses this data to update the netlist with accurate parasitic parameters. This ensures that the computed delays on interconnects are much closer to what is observed in silicon.
 
