@@ -15,3 +15,6 @@ report_scan_enable > ./output/mcrb_scan_enable.txt
 write_design -output_file ./output/mcrb_tessent_scan_net.v -replace
 set_system_mode setup
 open_visualizer
+
+insert_test_logic -write_in_tsdb on 
+

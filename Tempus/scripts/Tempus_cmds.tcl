@@ -1,7 +1,7 @@
 read_lib ../lib/slow.lib
 read_lib -lef ../lef/examp.lef
 read_verilog ../netlist/examp.v
-read_sdf ../sdf/examp.sdf
+read_sdf ../sdf/examp.sdf          # Standard delay format 
 
 # means that only user-defined constraints will be considered for primary inputs, and no automatic assumptions will be made by the tool
 set_global timing_apply_default_primary_input_assertion false .
@@ -10,9 +10,9 @@ set_global timing_apply_default_primary_input_assertion false .
 set load_netlist_ignore_undefined_cell true 
 
 set_top_module
-read_spef ../spef/examp.spef
+read_spef ../spef/examp.spef     #Standard parasitic extraction format
 read_def ../def/examp.def or read_design -physical data  ---> #read_def should be only used after reading the lef file
-read_sdc ../sdc/examp.sdc
+read_sdc ../sdc/examp.sdc       #Synopsys Design constraint
 set_global report_timing_format {hpin cell slew delay arrival}
 
 #Setup check
@@ -32,4 +32,3 @@ report_constraint -all_violators > REPORTS/tempus_report_allViolators.rpt
 #You use commands like [read_view_definition] to load definitions for various analysis views.
 #Commands like [set_analysis_mode] allow you to switch between these environments.
 #Through commands like [read_spef -rc_corner] and using specific libraries for early, late, and other corners, Tempus builds separate timing graphs for each condition.
-S

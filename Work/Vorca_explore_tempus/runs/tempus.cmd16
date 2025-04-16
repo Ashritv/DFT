@@ -1,0 +1,175 @@
+#######################################################
+#                                                     
+#  Tempus Timing Signoff Solution Command Logging File                     
+#  Created on Fri Apr 11 18:53:28 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+#@(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+#@(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+#@(#)CDS: CPE v20.20-p009
+
+read_lib ../lib/slow.lib
+read_verilog ../netlist/vorca_fixed.v
+set_top_module
+read_sdc ../sdc/simple_sdc.sdc
+load_timing_debug_report -name default_report top.mtarpt
+selectObject Pin f32_mux_0_data_reg_1_/D
+selectObject Pin f32_mux_0_data_reg_1_/D
+deselectInst U92
+selectInst U92
+deselectInst U92
+selectInst U92
+deselectInst U92
+selectObject Pin U92/A
+selectObject Pin U92/A
+deselectInst U46
+selectInst U46
+deselectInst U46
+selectObject Pin U46/B0
+deselectObject Pin U46/B0
+selectObject Pin U46/A0
+selectObject Pin U46/A0
+deselectInst U264
+selectInst U264
+deselectInst U264
+selectInst U264
+deselectInst U264
+selectObject Pin U264/B0
+deselectObject Pin U264/B0
+selectObject Pin U264/B0
+selectObject Pin U264/B0
+deselectObject Pin U264_INV/A
+selectObject Pin U264_INV/A
+deselectObject Pin U264_INV/A
+selectObject Pin U264_INV/A
+selectObject Pin U264_INV/A
+deselectInst U263
+selectInst U263
+deselectInst U263
+selectObject Pin U263/A0
+deselectObject Pin U263/A0
+selectObject Pin U263/A0
+deselectObject Pin U263/A0
+selectObject Pin U263/A0
+selectObject Pin U263/A0
+deselectInst U33
+selectInst U33
+deselectInst U33
+selectInst U33
+deselectInst U33
+selectObject Pin U33/A
+selectObject Pin U33/A
+deselectInst U232
+selectObject Pin U232/A
+selectObject Pin U232/A
+deselectInst o_reg_addr_reg_4__scan_iso_or
+selectInst o_reg_addr_reg_4__scan_iso_or
+deselectInst o_reg_addr_reg_4__scan_iso_or
+selectObject Pin o_reg_addr_reg_4__scan_iso_or/B
+selectObject Pin o_reg_addr_reg_4__scan_iso_or/B
+deselectObject Pin o_reg_addr_reg_4__scan_iso_or/B
+selectObject Pin U232/B
+selectObject Pin U232/B
+deselectObject Net n153
+selectInst U33
+deselectInst U33
+selectInst U33
+deselectInst U33
+selectObject Pin U33/B
+deselectObject Pin U33/B
+selectObject Pin U33/B
+selectObject Pin U33/B
+deselectObject Pin U33/B
+selectObject Pin U33/B
+deselectObject Pin U33/B
+selectInst U264_INV
+deselectInst U264_INV
+selectObject Net n153
+selectObject Net n393
+selectObject Net n385
+deselectObject Net n153
+deselectObject Net n393
+deselectObject Net n385
+selectInst U33
+selectObject Net test_se
+selectObject Net n153
+selectObject Net scan_iso_or2
+selectInst U64
+selectInst o_reg_addr_reg_4__scan_iso_or
+selectObject IO_Pin test_se
+selectObject Net n393
+selectObject Net n385
+selectInst U41
+selectInst U232
+selectObject Pin U263/A1
+selectObject Pin U263/A1
+deselectObject Pin U263/A1
+selectObject Net n839
+selectObject Net clk
+selectObject IO_Pin clk
+selectObject IO_Pin scan_enable
+selectInst U92
+deselectInst U92
+selectObject Net {i_hb_sup[1]}
+selectObject Net n188
+selectObject Net n188_inv
+selectObject Net n194
+selectObject Net n198
+selectObject Net scan_enable
+selectObject Net N423
+selectObject Net net121966
+selectInst U263
+selectInst U264_INV
+selectInst U264
+selectInst U46
+selectInst U92
+selectObject IO_Pin {i_hb_sup[1]}
+deselectObject Net {i_hb_sup[1]}
+deselectObject Net n188
+deselectObject Net n188_inv
+deselectObject Net n194
+deselectObject Net n198
+deselectObject Net scan_enable
+deselectObject Net N423
+deselectObject Net net121966
+deselectInst U263
+deselectInst U264_INV
+deselectInst U264
+deselectInst U46
+deselectInst U92
+deselectObject IO_Pin {i_hb_sup[1]}
+selectObject Net {i_hb_sup[1]}
+selectObject Net n188
+selectObject Net n188_inv
+selectObject Net n194
+selectObject Net n198
+selectObject Net scan_enable
+selectObject Net N423
+selectObject Net net121966
+selectInst U263
+selectInst U264_INV
+selectInst U264
+selectInst U46
+selectInst U92
+selectObject IO_Pin {i_hb_sup[1]}
+deselectObject Net {i_hb_sup[1]}
+deselectObject Net n188
+deselectObject Net n188_inv
+deselectObject Net n194
+deselectObject Net n198
+deselectObject Net scan_enable
+deselectObject Net N423
+deselectObject Net net121966
+deselectInst U263
+deselectInst U264_INV
+deselectInst U264
+deselectInst U46
+deselectInst U92
+deselectObject IO_Pin {i_hb_sup[1]}
+selectObject Net n188_inv
+stop_gui
+exit
