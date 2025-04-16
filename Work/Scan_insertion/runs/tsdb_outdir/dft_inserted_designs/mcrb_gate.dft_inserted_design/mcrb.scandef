@@ -1,0 +1,45 @@
+#
+#    DESC: ScanDEF written by Tessent Shell on Wed Apr 16 16:29:31 IST 2025
+#
+
+VERSION 5.7 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN mcrb ;
+UNITS DISTANCE MICRONS 1000 ;
+
+SCANCHAINS 3 ;
+
+- scan_segment_0
+  + START tessent_persistent_cell_buf_extsi6_i Z
+  + FLOATING 
+      \skew_addr_cntr_reg[4]  ( IN SI ) ( OUT Q )
+      \skew_addr_cntr_reg[1]  ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc1_intno1_i D
+  # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
+  + PARTITION partition_1  MAXBITS 2 ;
+
+
+- scan_segment_1
+  + START tessent_persistent_cell_buf_extsi7_i Z
+  + FLOATING 
+      \skew_addr_cntr_reg[3]  ( IN SI ) ( OUT Q )
+      \skew_addr_cntr_reg[2]  ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc2_intno3_i D
+  # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
+  + PARTITION partition_1  MAXBITS 2 ;
+
+
+- scan_segment_2
+  + START tessent_persistent_cell_buf_extsi8_i Z
+  + FLOATING 
+      \skew_addr_cntr_reg[0]  ( IN SI ) ( OUT Q )
+      mc_rb_fuse_vld_q_reg ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc3_intno5_i D
+  # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
+  + PARTITION partition_1  MAXBITS 2 ;
+
+
+END SCANCHAINS 
+
+END DESIGN
