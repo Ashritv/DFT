@@ -1,0 +1,217 @@
+/home/Mentor/tessent/bin/tessent -shell -logfile log_Apr22_4 -replace
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Tue Apr 22 16:21:03 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: set_context dft -scan
+//  command: read_verilog ../netlist/mcrb_netlist.v 
+//  command: read_cell_library ../mdt/test_Nangate.mdt 
+//  Reading DFT Library file ../mdt/test_Nangate.mdt
+//  Finished reading file ../mdt/test_Nangate.mdt
+//  command: set_current_design 
+//  Note: Top design is 'mcrb'.
+//  command: set_design_level top
+//  command: analyze_control_signals -auto
+//  Warning: Rule FN1 violation occurs 1 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=52, PIs=4, POs=5, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin control signals identification analysis.
+//  ---------------------------------------------------------------------------
+//  Identified 1 clock control primary inputs.
+//     '/mc_rb_ef1_sclk_i' (4) with off-state = 0.
+//  Identified 0 set control primary inputs.
+//  Identified 1 reset control primary inputs.
+//     '/gctl_rclk_orst_n_i' (2) with off-state = 1.
+//  Identified 0 read control primary inputs.
+//  Identified 0 write control primary inputs.
+//  ---------------------------------------------------------------------------
+//  Total number of internal lines is 18 (6 clocks, 6 sets , 6 resets, 0 reads, 0 writes).
+//  Total number of potentially clockable internal lines is 12 (6 clocks, 0 sets , 6 resets, 0 reads, 0 writes).
+//  Total number of not clockable internal lines is 6 (0 clocks, 6 sets , 0 resets, 0 reads, 0 writes).
+//  Total number of added primary input controls 2 (1 clocks, 0 sets , 1 resets, 0 reads, 0 writes).
+//  ---------------------------------------------------------------------------
+//  Warning: Flattened model deleted.
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 1 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=52, PIs=4, POs=5, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 6,
+//  sequential library cells = 6.
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Begin scannability rules checking for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  6 sequential library cells identified as scannable.
+//  ---------------------------------------------------------------------------
+//  Begin scan clock rules checking.
+//  ---------------------------------------------------------------------------
+//  2 scan clock/set/reset lines have been identified.
+//  All scan clocks successfully passed off-state check.
+//  6 sequential cells passed clock stability checking.
+//  ---------------------------------------------------------------------------
+//  Begin shift register identification for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  No shift registers identified.
+//  Number of targeted sequential library cells = 6
+//  Warning: The tool may require a shift-capture clock during insertion, 
+//           but no 'shift_capture_clock' DFT signal was identified 
+//           and no TCLK source was specified using the command 'set_scan_signals -tclk'.
+//  Note: The system clock 'mc_rb_ef1_sclk_i' will be used as the shift-capture clock, if needed.
+//  command: set_scan_insertion_options -chain_count 0
+//  Error: '-chain_count 0' out of range 1..16777216 | 'unlimited'
+//  command: set_scan_insertion_options -chain_length 1
+//  command: analyze_scan_chains 
+//  Chain allocation of 'unwrapped' mode completed:
+//         6 distributed chains of size 1
+//  command: set_system_mode insertion
+//  command: create_port si -on_module mcrb -dir input
+{si}
+//  command: create_port so -on_module mcrb -dir output
+{so}
+//  command: create_connections si skew_addr_cntr_reg/SI
+//  Error: 'skew_addr_cntr_reg/SI' is not a known pin, port, net, pin_bundle, port_bundle or net_bundle object.
+//  command: create_connections si skew_addr_cntr_reg[4]/SI
+//  Error: 'skew_addr_cntr_reg[4]/SI' is not a known pin, port, net, pin_bundle, port_bundle or net_bundle object.
+//  command: create_connections -help
+create_connections <obj_list1>  { <obj_list2> | -constant { 0 | 1 } } 
+                   [ -net_name <net_name> ] [ -net_uniquification_suffix <suffix> ] 
+                   [ -treat_common_ancestor_as_unique { on | off } ] 
+                   [ -silent ] 
+//  command: report_scan_cells 
+Scan mode 'unwrapped' scan cells:
+--------------------------------------------------------------------------------------------------------
+CellNo  ChainName  GroupName  Pathname                CellName  ScanOut  Clock             ClockPolarity
+--------------------------------------------------------------------------------------------------------
+-       chain0     dummy      /[lockup-after-chain]   [LAT]              mc_rb_ef1_sclk_i  (-)          
+0       chain0     dummy      /skew_addr_cntr_reg[4]  DFFR_X2   Q        mc_rb_ef1_sclk_i  (+)          
+-       chain1     dummy      /[lockup-after-chain]   [LAT]              mc_rb_ef1_sclk_i  (-)          
+0       chain1     dummy      /skew_addr_cntr_reg[1]  DFFR_X2   Q        mc_rb_ef1_sclk_i  (+)          
+-       chain2     dummy      /[lockup-after-chain]   [LAT]              mc_rb_ef1_sclk_i  (-)          
+0       chain2     dummy      /skew_addr_cntr_reg[3]  DFFR_X2   Q        mc_rb_ef1_sclk_i  (+)          
+-       chain3     dummy      /[lockup-after-chain]   [LAT]              mc_rb_ef1_sclk_i  (-)          
+0       chain3     dummy      /skew_addr_cntr_reg[2]  DFFR_X2   Q        mc_rb_ef1_sclk_i  (+)          
+-       chain4     dummy      /[lockup-after-chain]   [LAT]              mc_rb_ef1_sclk_i  (-)          
+0       chain4     dummy      /skew_addr_cntr_reg[0]  DFFR_X2   Q        mc_rb_ef1_sclk_i  (+)          
+-       chain5     dummy      /[lockup-after-chain]   [LAT]              mc_rb_ef1_sclk_i  (-)          
+0       chain5     dummy      /mc_rb_fuse_vld_q_reg   DFFR_X2   Q        mc_rb_ef1_sclk_i  (+)          
+--------------------------------------------------------------------------------------------------------
+
+//  command: report_scan_chains 
+
+===============================
+Scan Chains Created by the Tool
+===============================
+
+   Scan mode 'unwrapped' scan chains:
+   ----------------------------------
+      chain = chain0   group = dummy  input = /ts_si[0]  output = /ts_so[0]  length = 1
+      chain = chain1   group = dummy  input = /ts_si[1]  output = /ts_so[1]  length = 1
+      chain = chain2   group = dummy  input = /ts_si[2]  output = /ts_so[2]  length = 1
+      chain = chain3   group = dummy  input = /ts_si[3]  output = /ts_so[3]  length = 1
+      chain = chain4   group = dummy  input = /ts_si[4]  output = /ts_so[4]  length = 1
+      chain = chain5   group = dummy  input = /ts_si[5]  output = /ts_so[5]  length = 1
+
+//  command: report_scan_elements 
+===============================================================================================
+name                      type       length  si_so_clocks       state   is_non_scannable_reason
+------------------------  ---------  ------  -----------------  ------  -----------------------
+/\skew_addr_cntr_reg[4]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable  --                     
+/\skew_addr_cntr_reg[1]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable  --                     
+/\skew_addr_cntr_reg[3]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable  --                     
+/\skew_addr_cntr_reg[2]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable  --                     
+/\skew_addr_cntr_reg[0]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable  --                     
+/mc_rb_fuse_vld_q_reg     leaf_cell  1       +mc_rb_ef1_sclk_i  usable  --                     
+//  command: set_system_mode analysis
+//  Error: Changing system mode from insertion mode to analysis mode is prohibited.
+//         You have to switch to setup mode first.
+//  command: set_system_mode setup
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 2 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=55, PIs=5, POs=6, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 6,
+//  sequential library cells = 6.
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Begin scannability rules checking for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  6 sequential library cells identified as scannable.
+//  ---------------------------------------------------------------------------
+//  Begin scan clock rules checking.
+//  ---------------------------------------------------------------------------
+//  2 scan clock/set/reset lines have been identified.
+//  All scan clocks successfully passed off-state check.
+//  6 sequential cells passed clock stability checking.
+//  ---------------------------------------------------------------------------
+//  Begin shift register identification for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  No shift registers identified.
+//  Number of targeted sequential library cells = 6
+//  Warning: The tool may require a shift-capture clock during insertion, 
+//           but no 'shift_capture_clock' DFT signal was identified 
+//           and no TCLK source was specified using the command 'set_scan_signals -tclk'.
+//  Note: The system clock 'mc_rb_ef1_sclk_i' will be used as the shift-capture clock, if needed.
+//  command: set_scan_insertion_options -chain_length 1
+//  command: analyze_scan_chains 
+//  Chain allocation of 'unwrapped' mode completed:
+//         6 distributed chains of size 1
+//  command: insert_test_logic -write_in_tsdb on
+=============================
+Test Logic Insertion Summary:
+=============================
+
+  Structural Data:
+  ----------------
+                           Added top-level port count:           3
+                                 Added instance count:          12
+
+  Logical Data:
+  -------------
+                           Added retiming logic count:           6
+                   Added scan chain count (unwrapped):           6
+
+//  Warning: Flattened model deleted.
+//  
+//  Writing out netlist and related files in ./tsdb_outdir/dft_inserted_designs/mcrb_gate.dft_inserted_design
+//  command: create_connections si skew_addr_cntr_reg[4]/SI
+//  Error: '/\skew_addr_cntr_reg[4] /SI' has an existing connection to '/tessent_persistent_cell_buf_extsi6_i/Z'. Connections cannot be made to input pin that already has a connected source. If this connection was intended, first delete the connection to '/\skew_addr_cntr_reg[4] /SI' using the command "delete_connections".
+//  command: get_pins 
+{{\skew_addr_cntr_reg[0] /CK} {\skew_addr_cntr_reg[0] /D} {\skew_addr_cntr_reg[0] /RN} {\skew_addr_cntr_reg[0] /SE} {\skew_addr_cntr_reg[0] /SI} {\skew_addr_cntr_reg[0] /Q} {\skew_addr_cntr_reg[0] /QN} {\skew_addr_cntr_reg[1] /CK} {\skew_addr_cntr_reg[1] /D} {\skew_addr_cntr_reg[1] /RN} {\skew_addr_cntr_reg[1] /SE} {\skew_addr_cntr_reg[1] /SI} {\skew_addr_cntr_reg[1] /Q} {\skew_addr_cntr_reg[1] /QN} {\skew_addr_cntr_reg[2] /CK} {\skew_addr_cntr_reg[2] /D} {\skew_addr_cntr_reg[2] /RN} {\skew_addr_cntr_reg[2] /SE} {\skew_addr_cntr_reg[2] /SI} {\skew_addr_cntr_reg[2] /Q} {\skew_addr_cntr_reg[2] /QN} {\skew_addr_cntr_reg[3] /CK} {\skew_addr_cntr_reg[3] /D} {\skew_addr_cntr_reg[3] /RN} {\skew_addr_cntr_reg[3] /SE} {\skew_addr_cntr_reg[3] /SI} {\skew_addr_cntr_reg[3] /Q} {\skew_addr_cntr_reg[3] /QN} {\skew_addr_cntr_reg[4] /CK} {\skew_addr_cntr_reg[4] /D} {\skew_addr_cntr_reg[4] /RN} {\skew_addr_cntr_reg[4] /SE} {\skew_addr_cntr_reg[4] /SI} {\skew_addr_cntr_reg[4] /Q} {\skew_addr_cntr_reg[4] /QN} g478__2398/A1 g478__2398/A2 g478__2398/ZN g480__5526/A g480__5526/B g480__5526/ZN g483__8428/A1 g483__8428/A2 g483__8428/ZN g485__5107/A1 g485__5107/A2 g485__5107/ZN g486__6260/A1 g486__6260/A2 g486__6260/ZN ...}
+//  command: delete_connections -help
+delete_connections <obj_spec> [ -within ] [ -silent ] 
+//  command: delete_connections INSERTION> create_connections si skew_addr_cntr_reg[4]/SI
+//  Error: Unrecognized argument 'create_connections'. ( help delete_connections )
+//  command: delete_connections tessent_persistent_cell_buf_extsi6_i/Z
+{}
+//  command: create_connections si skew_addr_cntr_reg[4]/SI
+//  command: create_connections skew_addr_cntr_reg[4]/Q skew_addr_cntr_reg[1]/SI
+//  Error: '/\skew_addr_cntr_reg[1] /SI' has an existing connection to '/tessent_persistent_cell_buf_extsi7_i/Z'. Connections cannot be made to input pin that already has a connected source. If this connection was intended, first delete the connection to '/\skew_addr_cntr_reg[1] /SI' using the command "delete_connections".
+//  command: delete_connections skew_addr_cntr_reg[1]/SI
+{}
+//  command: create_connections skew_addr_cntr_reg[4]/Q skew_addr_cntr_reg[1]/SI
+//  command: write_design -output_file scan_net.v 

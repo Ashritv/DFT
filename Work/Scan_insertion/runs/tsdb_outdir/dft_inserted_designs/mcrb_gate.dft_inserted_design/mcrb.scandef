@@ -1,5 +1,5 @@
 #
-#    DESC: ScanDEF written by Tessent Shell on Thu Apr 17 17:33:36 IST 2025
+#    DESC: ScanDEF written by Tessent Shell on Tue Apr 22 16:49:56 IST 2025
 #
 
 VERSION 5.7 ;
@@ -8,36 +8,60 @@ BUSBITCHARS "[]" ;
 DESIGN mcrb ;
 UNITS DISTANCE MICRONS 1000 ;
 
-SCANCHAINS 3 ;
+SCANCHAINS 6 ;
 
 - scan_segment_0
   + START tessent_persistent_cell_buf_extsi6_i Z
   + FLOATING 
       \skew_addr_cntr_reg[4]  ( IN SI ) ( OUT Q )
-      \skew_addr_cntr_reg[1]  ( IN SI ) ( OUT Q )
-  + STOP ts_lockup_latchn_clkc1_intno1_i D
+  + STOP ts_lockup_latchn_clkc1_intno0_i D
   # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
-  + PARTITION partition_1  MAXBITS 2 ;
+  + PARTITION partition_1  MAXBITS 1 ;
 
 
 - scan_segment_1
   + START tessent_persistent_cell_buf_extsi7_i Z
   + FLOATING 
-      \skew_addr_cntr_reg[3]  ( IN SI ) ( OUT Q )
-      \skew_addr_cntr_reg[2]  ( IN SI ) ( OUT Q )
-  + STOP ts_lockup_latchn_clkc2_intno3_i D
+      \skew_addr_cntr_reg[1]  ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc2_intno1_i D
   # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
-  + PARTITION partition_1  MAXBITS 2 ;
+  + PARTITION partition_1  MAXBITS 1 ;
 
 
 - scan_segment_2
   + START tessent_persistent_cell_buf_extsi8_i Z
   + FLOATING 
-      \skew_addr_cntr_reg[0]  ( IN SI ) ( OUT Q )
-      mc_rb_fuse_vld_q_reg ( IN SI ) ( OUT Q )
-  + STOP ts_lockup_latchn_clkc3_intno5_i D
+      \skew_addr_cntr_reg[3]  ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc3_intno2_i D
   # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
-  + PARTITION partition_1  MAXBITS 2 ;
+  + PARTITION partition_1  MAXBITS 1 ;
+
+
+- scan_segment_3
+  + START tessent_persistent_cell_buf_extsi9_i Z
+  + FLOATING 
+      \skew_addr_cntr_reg[2]  ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc4_intno3_i D
+  # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
+  + PARTITION partition_1  MAXBITS 1 ;
+
+
+- scan_segment_4
+  + START tessent_persistent_cell_buf_extsi10_i Z
+  + FLOATING 
+      \skew_addr_cntr_reg[0]  ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc5_intno4_i D
+  # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
+  + PARTITION partition_1  MAXBITS 1 ;
+
+
+- scan_segment_5
+  + START tessent_persistent_cell_buf_extsi11_i Z
+  + FLOATING 
+      mc_rb_fuse_vld_q_reg ( IN SI ) ( OUT Q )
+  + STOP ts_lockup_latchn_clkc6_intno5_i D
+  # Partition constraints - clock domain: mc_rb_ef1_sclk_i(+); chain type: core; scan mode(s): unwrapped
+  + PARTITION partition_1  MAXBITS 1 ;
 
 
 END SCANCHAINS 

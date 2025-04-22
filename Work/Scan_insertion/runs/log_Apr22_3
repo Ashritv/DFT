@@ -1,0 +1,195 @@
+/home/Mentor/tessent/bin/tessent -shell -logfile log_Apr22_3
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Tue Apr 22 14:04:25 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: set_context dft -scan
+//  command: read_cell_library ../mdt/test_Nangate.mdt
+//  Reading DFT Library file ../mdt/test_Nangate.mdt
+//  Finished reading file ../mdt/test_Nangate.mdt
+//  command: read_verilog ../netlist/mcrb_netlist.v
+//  command: set_current_design 
+//  Note: Top design is 'mcrb'.
+//  command: set_design_level top
+//  command: analyze_control_signals -auto
+//  Warning: Rule FN1 violation occurs 1 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=52, PIs=4, POs=5, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin control signals identification analysis.
+//  ---------------------------------------------------------------------------
+//  Identified 1 clock control primary inputs.
+//     '/mc_rb_ef1_sclk_i' (4) with off-state = 0.
+//  Identified 0 set control primary inputs.
+//  Identified 1 reset control primary inputs.
+//     '/gctl_rclk_orst_n_i' (2) with off-state = 1.
+//  Identified 0 read control primary inputs.
+//  Identified 0 write control primary inputs.
+//  ---------------------------------------------------------------------------
+//  Total number of internal lines is 18 (6 clocks, 6 sets , 6 resets, 0 reads, 0 writes).
+//  Total number of potentially clockable internal lines is 12 (6 clocks, 0 sets , 6 resets, 0 reads, 0 writes).
+//  Total number of not clockable internal lines is 6 (0 clocks, 6 sets , 0 resets, 0 reads, 0 writes).
+//  Total number of added primary input controls 2 (1 clocks, 0 sets , 1 resets, 0 reads, 0 writes).
+//  ---------------------------------------------------------------------------
+//  Warning: Flattened model deleted.
+//  command: add_nonscan_instances {skew_addr_cntr_reg[1] skew_addr_cntr_reg[2]}
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 1 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=52, PIs=4, POs=5, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 6,
+//  sequential library cells = 6.
+//  ---------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------
+//  2 sequential library cells are treated as non-scan.
+//  ------------------------------------------------------------------------------
+//    2 sequential library cells defined non-scan.
+//  ---------------------------------------------------------------------------
+//  Begin scannability rules checking for 4 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  4 sequential library cells identified as scannable.
+//  ---------------------------------------------------------------------------
+//  Begin scan clock rules checking.
+//  ---------------------------------------------------------------------------
+//  2 scan clock/set/reset lines have been identified.
+//  All scan clocks successfully passed off-state check.
+//  6 sequential cells passed clock stability checking.
+//  ---------------------------------------------------------------------------
+//  2 non-scan memory elements are identified.
+//  ---------------------------------------------------------------------------
+//  2 non-scan memory elements are identified as INIT-X. (D5)
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Begin shift register identification for 4 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  No shift registers identified.
+//  Number of targeted sequential library cells = 4
+//  Warning: The tool may require a shift-capture clock during insertion, 
+//           but no 'shift_capture_clock' DFT signal was identified 
+//           and no TCLK source was specified using the command 'set_scan_signals -tclk'.
+//  Note: The system clock 'mc_rb_ef1_sclk_i' will be used as the shift-capture clock, if needed.
+//  command: set_scan_insertion_options -chain_count 2
+//  command: analyze_scan_chains 
+//  Chain allocation of 'unwrapped' mode completed:
+//         2 distributed chains of size 2
+//  command: insert_test_logic -write_in_tsdb on
+=============================
+Test Logic Insertion Summary:
+=============================
+
+  Structural Data:
+  ----------------
+                           Added top-level port count:           3
+                                 Added instance count:           4
+
+  Logical Data:
+  -------------
+                           Added retiming logic count:           2
+                   Added scan chain count (unwrapped):           2
+
+//  Warning: Flattened model deleted.
+//  
+//  Writing out netlist and related files in ./tsdb_outdir/dft_inserted_designs/mcrb_gate.dft_inserted_design
+//  command: report_scan_chains 
+
+===============================
+Scan Chains Created by the Tool
+===============================
+
+   Scan mode 'unwrapped' scan chains:
+   ----------------------------------
+      chain = chain0   group = dummy  input = /ts_si[0]  output = /ts_so[0]  length = 2
+      chain = chain1   group = dummy  input = /ts_si[1]  output = /ts_so[1]  length = 2
+
+//  command: report_scan_cells 
+Scan mode 'unwrapped' scan cells:
+------------------------------------------------------------------------------------------------------------------
+CellNo  ChainName  GroupName  Pathname                          CellName  ScanOut  Clock             ClockPolarity
+------------------------------------------------------------------------------------------------------------------
+-       chain0     dummy      /ts_lockup_latchn_clkc1_intno2_i  DLL_X2             mc_rb_ef1_sclk_i  (-)          
+0       chain0     dummy      /skew_addr_cntr_reg[3]            SDFFR_X2  Q        mc_rb_ef1_sclk_i  (+)          
+1       chain0     dummy      /skew_addr_cntr_reg[4]            SDFFR_X2  Q        mc_rb_ef1_sclk_i  (+)          
+-       chain1     dummy      /ts_lockup_latchn_clkc2_intno5_i  DLL_X2             mc_rb_ef1_sclk_i  (-)          
+0       chain1     dummy      /mc_rb_fuse_vld_q_reg             SDFFR_X2  Q        mc_rb_ef1_sclk_i  (+)          
+1       chain1     dummy      /skew_addr_cntr_reg[0]            SDFFR_X2  Q        mc_rb_ef1_sclk_i  (+)          
+------------------------------------------------------------------------------------------------------------------
+
+//  command: report_scan_segments 
+//  Warning: No valid scan segments specified.
+//  command: report_scan_elements 
+================================================================================================
+name                      type       length  si_so_clocks       state    is_non_scannable_reason
+------------------------  ---------  ------  -----------------  -------  -----------------------
+/\skew_addr_cntr_reg[4]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable   --                     
+/\skew_addr_cntr_reg[1]   leaf_cell  1       +mc_rb_ef1_sclk_i  ignored  --                     
+/\skew_addr_cntr_reg[3]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable   --                     
+/\skew_addr_cntr_reg[2]   leaf_cell  1       +mc_rb_ef1_sclk_i  ignored  --                     
+/\skew_addr_cntr_reg[0]   leaf_cell  1       +mc_rb_ef1_sclk_i  usable   --                     
+/mc_rb_fuse_vld_q_reg     leaf_cell  1       +mc_rb_ef1_sclk_i  usable   --                     
+//  command: set_system_mode setup
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 3 times
+//  Warning: Rule FN4 violation occurs 8 times
+//  Flattening process completed, cell instances=26, gates=84, PIs=7, POs=7, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 8,
+//  sequential library cells = 8.
+//  ---------------------------------------------------------------------------
+//  Warning: Model 'DLL_X2' has no muxscan scan equivalent and is treated as nonscan model
+//  ------------------------------------------------------------------------------
+//  2 sequential library cells are treated as non-scan.
+//  ------------------------------------------------------------------------------
+//    2 sequential library cells missing mux-scan equivalent.
+//  ---------------------------------------------------------------------------
+//  Begin scannability rules checking for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  0 sequential library cells identified as scannable.
+//  Warning: Scan chains may not be inserted due to memory elements without scan equivalent library models.
+//  Error: There were 4 S6 violations (driven scan-in pin of a sub chain or of a scan cell in unspecified scan chain).
+//         For failed scan cells, use "add_scan_chains" or "add_scan_segment" commands to declare previously inserted scan chains.
+//  Error: Rules checking unsuccessful, cannot exit SETUP mode.
+//  command: add_scan_chains -help
+add_scan_chains [ -internal | -load_only ] <chain_specification>...
+
+DESCRIPTION 
+   <chain_specification>: chain_name group_name input_pin output_pin
+//  command: add_scan_groups -help
+Usage:  add_scan_groups  { group_name test_procedure_filename } ...
+//  command: add_scan_chains chain0 dummy ts_si[0] ts_so[0]
+//  Error: Invalid chain group name 'dummy'.
+//  command: add_scan_chains chain0 grp1 ts_si[0] ts_so[0]
+//  Error: Invalid chain group name 'grp1'.
+//  command: get_context -design_identifier 
+gate
+//  command: add_scan_chains -help
+add_scan_chains [ -internal | -load_only ] <chain_specification>...
+
+DESCRIPTION 
+   <chain_specification>: chain_name group_name input_pin output_pin
+//  command: add_scan_chains -internal chain0 grp1 ts_si[0] ts_so[0]
+//  Error: Invalid chain group name 'grp1'.
+//  command: set_system_mode insertion 
+//  command: exit 
