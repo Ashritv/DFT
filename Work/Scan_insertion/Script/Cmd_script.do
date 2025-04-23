@@ -1,14 +1,16 @@
 
 
-# 1. Invoke Tessent in “legacy” scan insertion mode
+# 1. Invoke Tessent in “legacy” scan insertion mode -- Update legacy mode is not available it was removed in 2020
 % tessent -shell
-SETUP> set_context dft -scan -legacy
+SETUP> set_context dft -scan 
 # This turns off hierarchical scan insertion, so you control everything manually 
 
 # 2. Read in your design and libraries
 SETUP> read_verilog    <path_to_netlist>.v
 SETUP> read_cell_library <path_to_tcelllib1>.tcelllib <path_to_tcelllib2>.tcelllib
 SETUP> set_current_design <design_name>
+SETUP> set_design_level {top chip physical_block sub_block}
+SETUP> analyze_control_signals -auto
 
 # 3. Declare your clock domains
 SETUP> add_clock 0 <clk1_name>
@@ -37,6 +39,12 @@ SETUP> set_system_mode analysis
 ANALYSIS> analyze_scan_chains
 ANALYSIS> report_scan_elements        > scan_elements.rpt
 ANALYSIS> report_scan_chains          > scan_chains.rpt
+
+# 10. Stitch in the scan logic, Inserts the SE/SI/SO ports and connects them; writes out the TCD for ATPG 
+INSERTION> delete_connections skew_addr_cntr_reg[1]/SI
+{}
+INSERTION> create_connections skew_addr_cntr_reg[4]/Q skew_addr_cntr_reg[1]/SI
+INSERTION> write_design -output_file scan_net.v 
 
 # 10. Stitch in the scan logic, Inserts the SE/SI/SO ports and connects them; writes out the TCD for ATPG 
 ANALYSIS> insert_test_logic -write_in_tsdb On
