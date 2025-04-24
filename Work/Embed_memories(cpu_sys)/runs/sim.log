@@ -1,0 +1,530 @@
+ 
+//  Note: -no_scan_rams   Will invoke FastScan ATPG with PI/PO harness even if ram primitives exist.
+//
+//  Note: -no_atpg_prims    Will invoke Verilog simulation without ATPG library primitives file included.
+//
+//  Note: Invoking fastscan with :
+//      <mgc_dft_tree>/bin/fastscan  -dof fastscan.do.cat -lib libcomp.atpglib  -load_warnings -sensitive  -model all 
+//
+//  Warning: Tessent user documentation not found
+//  Tessent FastScan  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Wed Apr 23 13:56:11 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  Compiling library  ...
+//  Reading DFT Library file libcomp.atpglib
+//  Finished reading file libcomp.atpglib
+//  Reading Model 'all' ...
+//  command: set_dofile_abort off 
+//  command: set_dofile_abort off
+//  command: set_tied_signals X
+//  command: set_pattern_type -clock_po off
+//  Settings :
+//             -SEQuential     0
+//             -MULtiple_load  OFF
+//  command: set_flat_model_options -remove_unused_library_pins off
+//  command: create_flat_model 
+//  Flattening process completed, cell instances=3, gates=163, PIs=86, POs=37, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  command: echo "//  Report the post flattened primitive gate types."
+//  Report the post flattened primitive gate types. 
+//  command: report_gates -type histogram
+//  ---------------------------------------------------------------------------
+//  List of histogram of gates
+//  ---------------------------------------------------------------------------
+//  PI    86         **************************************************
+//  PO    37         *********************
+//  TIEX  40         ***********************
+//  Total gate types = 3, total flatten gates = 163
+//  command: set_z_handling external z
+//  command: set_possible_credit 0
+//  command: add_black_boxes -auto
+//  Warning: Flattened model deleted.
+//  command: analyze_control_signals -add_clocks -constrain_pis_that_drive_nothing -nofault_clock_stuck_inactive
+//  Flattening process completed, cell instances=3, gates=163, PIs=86, POs=37, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  The following PIs drive nothing and were constrained to C0 :
+//    Constrained pin : '/DPRAM_16x4_Port__a_state[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__a_state[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__a_state[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__a_state[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__ck_state' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__web_state' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__oeb_state' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__csb_state' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__i_state[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__i_state[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__i_state[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__i_state[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__sh_a_error' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__sh_web_error' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__sh_ba_error' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__sh_ck_error' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__sh_csb_error' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__sh_i_error' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__memoryOut[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__memoryOut[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__memoryOut[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__memoryOut[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_Port__numOfPort' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__read1write2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__write1read2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__write1write2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state1[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state1[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state1[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state1[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__ck_state1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__web_state1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__oeb_state1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__csb_state1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state1[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state1[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state1[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state1[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state2[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state2[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state2[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__a_state2[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__ck_state2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__web_state2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__oeb_state2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__csb_state2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state2[3]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state2[2]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state2[1]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__i_state2[0]' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_a_error_in1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_web_error_in1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_ba_error_in1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_ck_error_in1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_csb_error_in1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_a_error_in2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_web_error_in2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_ba_error_in2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_ck_error_in2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_csb_error_in2' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_i_error_in1' to C0
+//    Constrained pin : '/DPRAM_16x4_behave__sh_i_error_in2' to C0
+//    Constrained pin : '/DPRAM_16x4__A1[3]' to C0
+//    Constrained pin : '/DPRAM_16x4__A1[2]' to C0
+//    Constrained pin : '/DPRAM_16x4__A1[1]' to C0
+//    Constrained pin : '/DPRAM_16x4__A1[0]' to C0
+//    Constrained pin : '/DPRAM_16x4__A2[3]' to C0
+//    Constrained pin : '/DPRAM_16x4__A2[2]' to C0
+//    Constrained pin : '/DPRAM_16x4__A2[1]' to C0
+//    Constrained pin : '/DPRAM_16x4__A2[0]' to C0
+//    Constrained pin : '/DPRAM_16x4__CE1' to C0
+//    Constrained pin : '/DPRAM_16x4__CE2' to C0
+//    Constrained pin : '/DPRAM_16x4__WEB1' to C0
+//    Constrained pin : '/DPRAM_16x4__WEB2' to C0
+//    Constrained pin : '/DPRAM_16x4__OEB1' to C0
+//    Constrained pin : '/DPRAM_16x4__OEB2' to C0
+//    Constrained pin : '/DPRAM_16x4__CSB1' to C0
+//    Constrained pin : '/DPRAM_16x4__CSB2' to C0
+//    Constrained pin : '/DPRAM_16x4__I1[3]' to C0
+//    Constrained pin : '/DPRAM_16x4__I1[2]' to C0
+//    Constrained pin : '/DPRAM_16x4__I1[1]' to C0
+//    Constrained pin : '/DPRAM_16x4__I1[0]' to C0
+//    Constrained pin : '/DPRAM_16x4__I2[3]' to C0
+//    Constrained pin : '/DPRAM_16x4__I2[2]' to C0
+//    Constrained pin : '/DPRAM_16x4__I2[1]' to C0
+//    Constrained pin : '/DPRAM_16x4__I2[0]' to C0
+//  Warning: Flattened model deleted.
+//  Flattening process completed, cell instances=3, gates=163, PIs=86, POs=37, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//
+//  After flattening, "analyze_control_signals -add_clocks" analysis shows that :
+//    No RAM primitives exist.  No ram clocks, read controls, or write controls need be added.
+//    No DFF or Latch ATPG primitives exist.  No clocks need to be added.
+//  Warning: Flattened model deleted.
+//  command: report_pin_constraints 
+//  Primary Input                        C-Type  
+//  -----------------------------------  ------  
+//  DPRAM_16x4_Port__a_state[3]            CT0   
+//  DPRAM_16x4_Port__a_state[2]            CT0   
+//  DPRAM_16x4_Port__a_state[1]            CT0   
+//  DPRAM_16x4_Port__a_state[0]            CT0   
+//  DPRAM_16x4_Port__ck_state              CT0   
+//  DPRAM_16x4_Port__web_state             CT0   
+//  DPRAM_16x4_Port__oeb_state             CT0   
+//  DPRAM_16x4_Port__csb_state             CT0   
+//  DPRAM_16x4_Port__i_state[3]            CT0   
+//  DPRAM_16x4_Port__i_state[2]            CT0   
+//  DPRAM_16x4_Port__i_state[1]            CT0   
+//  DPRAM_16x4_Port__i_state[0]            CT0   
+//  DPRAM_16x4_Port__sh_a_error            CT0   
+//  DPRAM_16x4_Port__sh_web_error          CT0   
+//  DPRAM_16x4_Port__sh_ba_error           CT0   
+//  DPRAM_16x4_Port__sh_ck_error           CT0   
+//  DPRAM_16x4_Port__sh_csb_error          CT0   
+//  DPRAM_16x4_Port__sh_i_error            CT0   
+//  DPRAM_16x4_Port__memoryOut[3]          CT0   
+//  DPRAM_16x4_Port__memoryOut[2]          CT0   
+//  DPRAM_16x4_Port__memoryOut[1]          CT0   
+//  DPRAM_16x4_Port__memoryOut[0]          CT0   
+//  DPRAM_16x4_Port__numOfPort             CT0   
+//  DPRAM_16x4_behave__read1write2         CT0   
+//  DPRAM_16x4_behave__write1read2         CT0   
+//  DPRAM_16x4_behave__write1write2        CT0   
+//  DPRAM_16x4_behave__a_state1[3]         CT0   
+//  DPRAM_16x4_behave__a_state1[2]         CT0   
+//  DPRAM_16x4_behave__a_state1[1]         CT0   
+//  DPRAM_16x4_behave__a_state1[0]         CT0   
+//  DPRAM_16x4_behave__ck_state1           CT0   
+//  DPRAM_16x4_behave__web_state1          CT0   
+//  DPRAM_16x4_behave__oeb_state1          CT0   
+//  DPRAM_16x4_behave__csb_state1          CT0   
+//  DPRAM_16x4_behave__i_state1[3]         CT0   
+//  DPRAM_16x4_behave__i_state1[2]         CT0   
+//  DPRAM_16x4_behave__i_state1[1]         CT0   
+//  DPRAM_16x4_behave__i_state1[0]         CT0   
+//  DPRAM_16x4_behave__a_state2[3]         CT0   
+//  DPRAM_16x4_behave__a_state2[2]         CT0   
+//  DPRAM_16x4_behave__a_state2[1]         CT0   
+//  DPRAM_16x4_behave__a_state2[0]         CT0   
+//  DPRAM_16x4_behave__ck_state2           CT0   
+//  DPRAM_16x4_behave__web_state2          CT0   
+//  DPRAM_16x4_behave__oeb_state2          CT0   
+//  DPRAM_16x4_behave__csb_state2          CT0   
+//  DPRAM_16x4_behave__i_state2[3]         CT0   
+//  DPRAM_16x4_behave__i_state2[2]         CT0   
+//  DPRAM_16x4_behave__i_state2[1]         CT0   
+//  DPRAM_16x4_behave__i_state2[0]         CT0   
+//  DPRAM_16x4_behave__sh_a_error_in1      CT0   
+//  DPRAM_16x4_behave__sh_web_error_in1    CT0   
+//  DPRAM_16x4_behave__sh_ba_error_in1     CT0   
+//  DPRAM_16x4_behave__sh_ck_error_in1     CT0   
+//  DPRAM_16x4_behave__sh_csb_error_in1    CT0   
+//  DPRAM_16x4_behave__sh_a_error_in2      CT0   
+//  DPRAM_16x4_behave__sh_web_error_in2    CT0   
+//  DPRAM_16x4_behave__sh_ba_error_in2     CT0   
+//  DPRAM_16x4_behave__sh_ck_error_in2     CT0   
+//  DPRAM_16x4_behave__sh_csb_error_in2    CT0   
+//  DPRAM_16x4_behave__sh_i_error_in1      CT0   
+//  DPRAM_16x4_behave__sh_i_error_in2      CT0   
+//  DPRAM_16x4__A1[3]                      CT0   
+//  DPRAM_16x4__A1[2]                      CT0   
+//  DPRAM_16x4__A1[1]                      CT0   
+//  DPRAM_16x4__A1[0]                      CT0   
+//  DPRAM_16x4__A2[3]                      CT0   
+//  DPRAM_16x4__A2[2]                      CT0   
+//  DPRAM_16x4__A2[1]                      CT0   
+//  DPRAM_16x4__A2[0]                      CT0   
+//  DPRAM_16x4__CE1                        CT0   
+//  DPRAM_16x4__CE2                        CT0   
+//  DPRAM_16x4__WEB1                       CT0   
+//  DPRAM_16x4__WEB2                       CT0   
+//  DPRAM_16x4__OEB1                       CT0   
+//  DPRAM_16x4__OEB2                       CT0   
+//  DPRAM_16x4__CSB1                       CT0   
+//  DPRAM_16x4__CSB2                       CT0   
+//  DPRAM_16x4__I1[3]                      CT0   
+//  DPRAM_16x4__I1[2]                      CT0   
+//  DPRAM_16x4__I1[1]                      CT0   
+//  DPRAM_16x4__I1[0]                      CT0   
+//  DPRAM_16x4__I2[3]                      CT0   
+//  DPRAM_16x4__I2[2]                      CT0   
+//  DPRAM_16x4__I2[1]                      CT0   
+//  DPRAM_16x4__I2[0]                      CT0   
+//  
+//  command: report_clocks 
+//  No clocks have been defined.
+//  command: report_write_controls 
+//  Warning: No write controls have been identified.
+//  command: report_read_controls 
+//  Warning: No read controls have been identified.
+//  command: set_drc_handling C2 Warning
+//  command: set_drc_handling D5 Note
+//  command: set_drc_handling D6 Note
+//  command: set_drc_handling assert1 Note
+//  command: set_drc_handling assert2 Note
+//  command: set_drc_handling assert3 Note
+//  command: set_pulse_generators off
+//  command: set_split_capture_cycle on
+//  command: set_clock_off_simulation on
+//  command: set_system_mode atpg
+//  Flattening process completed, cell instances=3, gates=163, PIs=86, POs=37, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 0.
+//  ---------------------------------------------------------------------------
+//  Circuit has no memory elements.
+//  largest sequential test depth = 0, largest controllability depth = 0, largest observability depth = 0
+//  command: echo ""
+ 
+//  command: echo ""
+ 
+//  command: echo "*** ASSERT VIOLATIONS ***"
+*** ASSERT VIOLATIONS *** 
+//  command: report_drc_rules assert1 -verbose
+//  command: report_drc_rules assert2 -verbose
+//  command: report_drc_rules assert3 -verbose
+//  command: echo ""
+ 
+//  command: echo ""
+ 
+//  command: echo "*** CLOCK VIOLATIONS ***"
+*** CLOCK VIOLATIONS *** 
+//  command: report_drc_rules C2 -verbose
+//  command: report_drc_rules C7 -verbose
+//  command: echo ""
+ 
+//  command: echo ""
+ 
+//  command: echo "*** MEMORY VIOLATIONS ***"
+*** MEMORY VIOLATIONS *** 
+//  command: echo "Following violations due to control off analysis."
+Following violations due to control off analysis. 
+//  command: echo "Report write ports not controlled when write controls all off."
+Report write ports not controlled when write controls all off. 
+//  command: report_drc_rules A1 -verbose
+//  command: echo "Report read ports with Hold not controlled when read controls all off."
+Report read ports with Hold not controlled when read controls all off. 
+//  command: report_drc_rules A7 -verbose
+//  command: echo "Following violations due to load_unload procedure analysis."
+Following violations due to load_unload procedure analysis. 
+//  command: echo "Report write ports and Hold read ports not controlled before shift."
+Report write ports and Hold read ports not controlled before shift. 
+//  command: report_drc_rules A6 -verbose
+//  command: echo "Following violations due to unobservable rams."
+Following violations due to unobservable rams. 
+//  command: report_drc_rules A14 -verbose
+//  command: echo "Following violations due to read controls constrained inactive."
+Following violations due to read controls constrained inactive. 
+//  command: report_drc_rules A15 -verbose
+//  command: echo "Following violations due to write controls constrained inactive."
+Following violations due to write controls constrained inactive. 
+//  command: report_drc_rules A16 -verbose
+//  command: echo "Following reports all Unstable RAM ports. ROM ports are always stable."
+Following reports all Unstable RAM ports. ROM ports are always stable. 
+//  command: report_gates -type ram -unstable
+//  ---------------------------------------------------------------------------
+//  List of RAM (Unstable) gates
+//  ---------------------------------------------------------------------------
+//  Total number of ram gates reported = 0
+
+//  command: set_pattern_type -sequential 5 -multiple_load on
+//  Settings :
+//             -SEQuential     5
+//             -MULtiple_load  ON
+//  command: set_abort_limit 500
+//  command: add_faults -all
+//  command: delete_faults -cl ti
+//  Warning: No faults were deleted.
+//  command: delete_faults -clock_cone
+//  command: set_contention_check on -atpg
+//  command: create_patterns 
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                             Analyzing the design                                                   |
+// |                                                                                                                    |
+// |      Current clock restriction setting:     Domain_clock (edge interaction)                                        |
+// |                                             (optimal)                                                              |
+// |                                                                                                                    |
+// |       Current contention check setting:     On -atpg                                                               |
+// |                                Warning:     ATPG run time may increase.                                            |
+// |                                                                                                                    |
+// |            Current abort limit setting:     500                                                                    |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |               Current sequential depth:     5                                                                      |
+// |               Optimal sequential depth:     0                                                                      |
+// |                                Warning:     Unnecessarily large depth may increase run time.                       |
+// |                                                                                                                    |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |                        Checking faults:     No undetected faults available. Exit.                                  |
+// | ------------------------------------------------------------------------------------------------------------------ |
+//  command: reset_au_faults 
+//  command: update_implication_detections 
+//  command: run 
+//  No active faults in current fault list.
+//  command: delete_faults -cl re
+//  Warning: No faults were deleted.
+//  command: compress_patterns -reset_au
+//  Warning: No patterns in test pattern set.
+//  command: report_environment 
+abort limit =             500
+atpg compression =        OFF
+atpg limits =             none
+bist initialization =     X
+bus simulation method =   global
+capture clock =           none
+checkpoint =              OFF
+clock restriction =       domain_clocks (same-edge interaction)
+clock_off simulation =    ON
+contention check =        ON,   mode = bus,   handling = warning   -atpg
+DRC transient detection = ON -NOVerbose
+fails report =            OFF
+fault mode =              uncollapsed
+fault type =              stuck
+gate level =              design
+gate report =             normal
+iddq checks =             none,   handling = warning
+iddq strobe =             label
+learn reporting =         OFF
+logfile handling =        OFF
+net dominance =           WIRE
+net resolution =          WIRE
+observation point =       master
+pattern classification =  ON
+pattern source =          internal
+pattern type =            sequential_depth = 5,  multiple_load = ON
+possible credit =         0%
+pulse generators =        OFF
+RAM initialization =      uninitialized
+RAM test mode   =         static_pass_thru
+random atpg =             ON
+random clocks =           none
+random patterns =         1024
+screen display =          ON
+shadow checking =         ON
+skew load =               OFF
+split capture cycle =     ON
+stability check =         ON
+system mode =             atpg
+TLA loop handling =       ON
+trace report =            OFF
+Z handling =              int=X  ext=Z
+Zhold behavior =          ON
+//  command: echo " "
+  
+//  command: echo " "
+  
+//  command: echo "// *** FINAL COVERAGE STATISTICS ***"
+// *** FINAL COVERAGE STATISTICS *** 
+//  command: report_statistics 
+          Statistics Report          
+           Stuck-at Faults           
+-------------------------------------
+Fault Classes             #faults    
+                          (total)    
+--------------------  ---------------
+  FU (full)                 492      
+  ------------------  ---------------
+  UU (unused)           492 (100.00%)
+-------------------------------------
+Coverage                             
+  ------------------                 
+  test_coverage                0.00% 
+  fault_coverage               0.00% 
+  atpg_effectiveness         100.00% 
+-------------------------------------
+#test_patterns                     0 
+#simulated_patterns                0 
+CPU_time (secs)                  1.2 
+-------------------------------------
+
+//  command: write netlist design.v -verilog -rep -positional
+//  Writing VERILOG netlist ...
+//  command: write_patterns pat.v -verilog -rep
+//  Warning: No scan patterns in internal test pattern set.
+//  Warning: No procedure file with user defined timeplates has been loaded.
+//           Default internally generated timeplates are being used in patterns.
+//           This default timing may cause problems in simulation or tester environments.
+//  command: write_patterns pat.ascii -Ascii -rep
+//  Warning: No scan patterns in internal test pattern set.
+//  command: report_statistics -model all
+
+  report_statistics -Instance DPRAM_16x4_Port
+          Statistics Report          
+           Stuck-at Faults           
+-------------------------------------
+Fault Classes             #faults    
+                          (total)    
+--------------------  ---------------
+  FU (full)                  80      
+  ------------------  ---------------
+  UU (unused)            80 (100.00%)
+-------------------------------------
+Coverage                             
+  ------------------                 
+  test_coverage                0.00% 
+  fault_coverage               0.00% 
+  atpg_effectiveness         100.00% 
+-------------------------------------
+#test_patterns                     0 
+#simulated_patterns                0 
+CPU_time (secs)                  1.2 
+-------------------------------------
+
+
+  report_statistics -Instance DPRAM_16x4_behave
+          Statistics Report          
+           Stuck-at Faults           
+-------------------------------------
+Fault Classes             #faults    
+                          (total)    
+--------------------  ---------------
+  FU (full)                 102      
+  ------------------  ---------------
+  UU (unused)           102 (100.00%)
+-------------------------------------
+Coverage                             
+  ------------------                 
+  test_coverage                0.00% 
+  fault_coverage               0.00% 
+  atpg_effectiveness         100.00% 
+-------------------------------------
+#test_patterns                     0 
+#simulated_patterns                0 
+CPU_time (secs)                  1.2 
+-------------------------------------
+
+
+  report_statistics -Instance DPRAM_16x4
+          Statistics Report          
+           Stuck-at Faults           
+-------------------------------------
+Fault Classes             #faults    
+                          (total)    
+--------------------  ---------------
+  FU (full)                  64      
+  ------------------  ---------------
+  UU (unused)            64 (100.00%)
+-------------------------------------
+Coverage                             
+  ------------------                 
+  test_coverage                0.00% 
+  fault_coverage               0.00% 
+  atpg_effectiveness         100.00% 
+-------------------------------------
+#test_patterns                     0 
+#simulated_patterns                0 
+CPU_time (secs)                  1.2 
+-------------------------------------
+
+//  command: echo "*** WRITING all AU UC and UO FAULTS to file ./au_uc_uo_faults.libcomp ***"
+*** WRITING all AU UC and UO FAULTS to file ./au_uc_uo_faults.libcomp *** 
+//  command: write_faults ./au_uc_uo_faults.libcomp -cl au -cl uc -cl uo -rep
+//  Warning: No faults written into file ./au_uc_uo_faults.libcomp.
+//  command: exit -d
+//
+//  Note: Invoking vlog with :
+//      vlog    pat.v design.v  +libext+.v+.udp +librescan
+//
+//
+//  Note: Invoking vsim with :
+//      vsim -voptargs=+acc MGC_DFT_LIB_ALL_pat_v_ctl -t 1ns -c -do "run -all; quit" +nospecify +nowarnTSCALE
+//

@@ -1,0 +1,16 @@
+/home/Mentor/tessent/bin/tessent -shell -logfile log_Apr23
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Wed Apr 23 13:58:06 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: exit 

@@ -1,0 +1,161 @@
+//
+//  Tessent FastScan  2022.4
+//
+//  Design  = all
+//  Created = Wed Apr 23 13:56:12 IST 2025
+//
+//  Statistics:
+//      Test Coverage   =  0.00%
+//      Total Faults    =  492
+//          UU (unused)            =  492
+//      Total            Patterns  =  0
+//
+//  Settings:
+//      Simulation Mode =  combinational, seq_depth = 5
+//      Fault Type      =  stuck
+//      Fault Mode      =  uncollapsed
+//      Pos_Det Credit  =  0%
+//      Z external      =  Z
+//      Z internal      =  X
+//      wired_net       =  WIRE
+//
+//  Warnings:
+//      Pins held :  /DPRAM_16x4_Port__a_state[3] = TIE0  /DPRAM_16x4_Port__a_state[2] = TIE0  /DPRAM_16x4_Port__a_state[1] = TIE0  /DPRAM_16x4_Port__a_state[0] = TIE0  /DPRAM_16x4_Port__ck_state = TIE0
+//      Pins held :  /DPRAM_16x4_Port__web_state = TIE0  /DPRAM_16x4_Port__oeb_state = TIE0  /DPRAM_16x4_Port__csb_state = TIE0  /DPRAM_16x4_Port__i_state[3] = TIE0  /DPRAM_16x4_Port__i_state[2] = TIE0
+//      Pins held :  /DPRAM_16x4_Port__i_state[1] = TIE0  /DPRAM_16x4_Port__i_state[0] = TIE0  /DPRAM_16x4_Port__sh_a_error = TIE0  /DPRAM_16x4_Port__sh_web_error = TIE0  /DPRAM_16x4_Port__sh_ba_error = TIE0
+//      Pins held :  /DPRAM_16x4_Port__sh_ck_error = TIE0  /DPRAM_16x4_Port__sh_csb_error = TIE0  /DPRAM_16x4_Port__sh_i_error = TIE0  /DPRAM_16x4_Port__memoryOut[3] = TIE0  /DPRAM_16x4_Port__memoryOut[2] = TIE0
+//      Pins held :  /DPRAM_16x4_Port__memoryOut[1] = TIE0  /DPRAM_16x4_Port__memoryOut[0] = TIE0  /DPRAM_16x4_Port__numOfPort = TIE0  /DPRAM_16x4_behave__read1write2 = TIE0  /DPRAM_16x4_behave__write1read2 = TIE0
+//      Pins held :  /DPRAM_16x4_behave__write1write2 = TIE0  /DPRAM_16x4_behave__a_state1[3] = TIE0  /DPRAM_16x4_behave__a_state1[2] = TIE0  /DPRAM_16x4_behave__a_state1[1] = TIE0  /DPRAM_16x4_behave__a_state1[0] = TIE0
+//      Pins held :  /DPRAM_16x4_behave__ck_state1 = TIE0  /DPRAM_16x4_behave__web_state1 = TIE0  /DPRAM_16x4_behave__oeb_state1 = TIE0  /DPRAM_16x4_behave__csb_state1 = TIE0  /DPRAM_16x4_behave__i_state1[3] = TIE0
+//      Pins held :  /DPRAM_16x4_behave__i_state1[2] = TIE0  /DPRAM_16x4_behave__i_state1[1] = TIE0  /DPRAM_16x4_behave__i_state1[0] = TIE0  /DPRAM_16x4_behave__a_state2[3] = TIE0  /DPRAM_16x4_behave__a_state2[2] = TIE0
+//      Pins held :  /DPRAM_16x4_behave__a_state2[1] = TIE0  /DPRAM_16x4_behave__a_state2[0] = TIE0  /DPRAM_16x4_behave__ck_state2 = TIE0  /DPRAM_16x4_behave__web_state2 = TIE0  /DPRAM_16x4_behave__oeb_state2 = TIE0
+//      Pins held :  /DPRAM_16x4_behave__csb_state2 = TIE0  /DPRAM_16x4_behave__i_state2[3] = TIE0  /DPRAM_16x4_behave__i_state2[2] = TIE0  /DPRAM_16x4_behave__i_state2[1] = TIE0  /DPRAM_16x4_behave__i_state2[0] = TIE0
+//      Pins held :  /DPRAM_16x4_behave__sh_a_error_in1 = TIE0  /DPRAM_16x4_behave__sh_web_error_in1 = TIE0  /DPRAM_16x4_behave__sh_ba_error_in1 = TIE0  /DPRAM_16x4_behave__sh_ck_error_in1 = TIE0  /DPRAM_16x4_behave__sh_csb_error_in1 = TIE0
+//      Pins held :  /DPRAM_16x4_behave__sh_a_error_in2 = TIE0  /DPRAM_16x4_behave__sh_web_error_in2 = TIE0  /DPRAM_16x4_behave__sh_ba_error_in2 = TIE0  /DPRAM_16x4_behave__sh_ck_error_in2 = TIE0  /DPRAM_16x4_behave__sh_csb_error_in2 = TIE0
+//      Pins held :  /DPRAM_16x4_behave__sh_i_error_in1 = TIE0  /DPRAM_16x4_behave__sh_i_error_in2 = TIE0  /DPRAM_16x4__A1[3] = TIE0  /DPRAM_16x4__A1[2] = TIE0  /DPRAM_16x4__A1[1] = TIE0
+//      Pins held :  /DPRAM_16x4__A1[0] = TIE0  /DPRAM_16x4__A2[3] = TIE0  /DPRAM_16x4__A2[2] = TIE0  /DPRAM_16x4__A2[1] = TIE0  /DPRAM_16x4__A2[0] = TIE0
+//      Pins held :  /DPRAM_16x4__CE1 = TIE0  /DPRAM_16x4__CE2 = TIE0  /DPRAM_16x4__WEB1 = TIE0  /DPRAM_16x4__WEB2 = TIE0  /DPRAM_16x4__OEB1 = TIE0
+//      Pins held :  /DPRAM_16x4__OEB2 = TIE0  /DPRAM_16x4__CSB1 = TIE0  /DPRAM_16x4__CSB2 = TIE0  /DPRAM_16x4__I1[3] = TIE0  /DPRAM_16x4__I1[2] = TIE0
+//      Pins held :  /DPRAM_16x4__I1[1] = TIE0  /DPRAM_16x4__I1[0] = TIE0  /DPRAM_16x4__I2[3] = TIE0  /DPRAM_16x4__I2[2] = TIE0  /DPRAM_16x4__I2[1] = TIE0
+//      Pins held :  /DPRAM_16x4__I2[0] = TIE0
+//
+
+ASCII_PATTERN_FILE_VERSION = 3;
+
+
+SETUP = 
+
+    declare input bus "PI" = "/DPRAM_16x4_Port__a_state[3]", "/DPRAM_16x4_Port__a_state[2]", "/DPRAM_16x4_Port__a_state[1]", "/DPRAM_16x4_Port__a_state[0]", "/DPRAM_16x4_Port__ck_state",
+         "/DPRAM_16x4_Port__web_state", "/DPRAM_16x4_Port__oeb_state", "/DPRAM_16x4_Port__csb_state", "/DPRAM_16x4_Port__i_state[3]", "/DPRAM_16x4_Port__i_state[2]", "/DPRAM_16x4_Port__i_state[1]",
+         "/DPRAM_16x4_Port__i_state[0]", "/DPRAM_16x4_Port__sh_a_error", "/DPRAM_16x4_Port__sh_web_error", "/DPRAM_16x4_Port__sh_ba_error", "/DPRAM_16x4_Port__sh_ck_error", "/DPRAM_16x4_Port__sh_csb_error",
+         "/DPRAM_16x4_Port__sh_i_error", "/DPRAM_16x4_Port__memoryOut[3]", "/DPRAM_16x4_Port__memoryOut[2]", "/DPRAM_16x4_Port__memoryOut[1]", "/DPRAM_16x4_Port__memoryOut[0]", "/DPRAM_16x4_Port__numOfPort",
+         "/DPRAM_16x4_behave__read1write2", "/DPRAM_16x4_behave__write1read2", "/DPRAM_16x4_behave__write1write2", "/DPRAM_16x4_behave__a_state1[3]", "/DPRAM_16x4_behave__a_state1[2]", "/DPRAM_16x4_behave__a_state1[1]",
+         "/DPRAM_16x4_behave__a_state1[0]", "/DPRAM_16x4_behave__ck_state1", "/DPRAM_16x4_behave__web_state1", "/DPRAM_16x4_behave__oeb_state1", "/DPRAM_16x4_behave__csb_state1", "/DPRAM_16x4_behave__i_state1[3]",
+         "/DPRAM_16x4_behave__i_state1[2]", "/DPRAM_16x4_behave__i_state1[1]", "/DPRAM_16x4_behave__i_state1[0]", "/DPRAM_16x4_behave__a_state2[3]", "/DPRAM_16x4_behave__a_state2[2]", "/DPRAM_16x4_behave__a_state2[1]",
+         "/DPRAM_16x4_behave__a_state2[0]", "/DPRAM_16x4_behave__ck_state2", "/DPRAM_16x4_behave__web_state2", "/DPRAM_16x4_behave__oeb_state2", "/DPRAM_16x4_behave__csb_state2", "/DPRAM_16x4_behave__i_state2[3]",
+         "/DPRAM_16x4_behave__i_state2[2]", "/DPRAM_16x4_behave__i_state2[1]", "/DPRAM_16x4_behave__i_state2[0]", "/DPRAM_16x4_behave__sh_a_error_in1", "/DPRAM_16x4_behave__sh_web_error_in1", "/DPRAM_16x4_behave__sh_ba_error_in1",
+         "/DPRAM_16x4_behave__sh_ck_error_in1", "/DPRAM_16x4_behave__sh_csb_error_in1", "/DPRAM_16x4_behave__sh_a_error_in2", "/DPRAM_16x4_behave__sh_web_error_in2", "/DPRAM_16x4_behave__sh_ba_error_in2", "/DPRAM_16x4_behave__sh_ck_error_in2",
+         "/DPRAM_16x4_behave__sh_csb_error_in2", "/DPRAM_16x4_behave__sh_i_error_in1", "/DPRAM_16x4_behave__sh_i_error_in2", "/DPRAM_16x4__A1[3]", "/DPRAM_16x4__A1[2]", "/DPRAM_16x4__A1[1]",
+         "/DPRAM_16x4__A1[0]", "/DPRAM_16x4__A2[3]", "/DPRAM_16x4__A2[2]", "/DPRAM_16x4__A2[1]", "/DPRAM_16x4__A2[0]", "/DPRAM_16x4__CE1",
+         "/DPRAM_16x4__CE2", "/DPRAM_16x4__WEB1", "/DPRAM_16x4__WEB2", "/DPRAM_16x4__OEB1", "/DPRAM_16x4__OEB2", "/DPRAM_16x4__CSB1",
+         "/DPRAM_16x4__CSB2", "/DPRAM_16x4__I1[3]", "/DPRAM_16x4__I1[2]", "/DPRAM_16x4__I1[1]", "/DPRAM_16x4__I1[0]", "/DPRAM_16x4__I2[3]",
+         "/DPRAM_16x4__I2[2]", "/DPRAM_16x4__I2[1]", "/DPRAM_16x4__I2[0]";
+
+    declare output bus "PO" = "/DPRAM_16x4_Port__o_state[3]", "/DPRAM_16x4_Port__o_state[2]", "/DPRAM_16x4_Port__o_state[1]", "/DPRAM_16x4_Port__o_state[0]", "/DPRAM_16x4_Port__ena_state",
+         "/DPRAM_16x4_Port__blockIsSelected", "/DPRAM_16x4_Port__WE", "/DPRAM_16x4_Port__CS", "/DPRAM_16x4_Port__memoryAddr[3]", "/DPRAM_16x4_Port__memoryAddr[2]", "/DPRAM_16x4_Port__memoryAddr[1]",
+         "/DPRAM_16x4_Port__memoryAddr[0]", "/DPRAM_16x4_Port__memoryIn[3]", "/DPRAM_16x4_Port__memoryIn[2]", "/DPRAM_16x4_Port__memoryIn[1]", "/DPRAM_16x4_Port__memoryIn[0]", "/DPRAM_16x4_Port__int_clk",
+         "/DPRAM_16x4_behave__o_state1[3]", "/DPRAM_16x4_behave__o_state1[2]", "/DPRAM_16x4_behave__o_state1[1]", "/DPRAM_16x4_behave__o_state1[0]", "/DPRAM_16x4_behave__o_state2[3]", "/DPRAM_16x4_behave__o_state2[2]",
+         "/DPRAM_16x4_behave__o_state2[1]", "/DPRAM_16x4_behave__o_state2[0]", "/DPRAM_16x4_behave__enable1", "/DPRAM_16x4_behave__blockIsSelected1", "/DPRAM_16x4_behave__enable2", "/DPRAM_16x4_behave__blockIsSelected2",
+         "/DPRAM_16x4__O1[3]", "/DPRAM_16x4__O1[2]", "/DPRAM_16x4__O1[1]", "/DPRAM_16x4__O1[0]", "/DPRAM_16x4__O2[3]", "/DPRAM_16x4__O2[2]",
+         "/DPRAM_16x4__O2[1]", "/DPRAM_16x4__O2[0]";
+
+    procedure test_setup "test_setup" =
+        force "/DPRAM_16x4_Port__a_state[3]" 0 0;
+        force "/DPRAM_16x4_Port__a_state[2]" 0 0;
+        force "/DPRAM_16x4_Port__a_state[1]" 0 0;
+        force "/DPRAM_16x4_Port__a_state[0]" 0 0;
+        force "/DPRAM_16x4_Port__ck_state" 0 0;
+        force "/DPRAM_16x4_Port__web_state" 0 0;
+        force "/DPRAM_16x4_Port__oeb_state" 0 0;
+        force "/DPRAM_16x4_Port__csb_state" 0 0;
+        force "/DPRAM_16x4_Port__i_state[3]" 0 0;
+        force "/DPRAM_16x4_Port__i_state[2]" 0 0;
+        force "/DPRAM_16x4_Port__i_state[1]" 0 0;
+        force "/DPRAM_16x4_Port__i_state[0]" 0 0;
+        force "/DPRAM_16x4_Port__sh_a_error" 0 0;
+        force "/DPRAM_16x4_Port__sh_web_error" 0 0;
+        force "/DPRAM_16x4_Port__sh_ba_error" 0 0;
+        force "/DPRAM_16x4_Port__sh_ck_error" 0 0;
+        force "/DPRAM_16x4_Port__sh_csb_error" 0 0;
+        force "/DPRAM_16x4_Port__sh_i_error" 0 0;
+        force "/DPRAM_16x4_Port__memoryOut[3]" 0 0;
+        force "/DPRAM_16x4_Port__memoryOut[2]" 0 0;
+        force "/DPRAM_16x4_Port__memoryOut[1]" 0 0;
+        force "/DPRAM_16x4_Port__memoryOut[0]" 0 0;
+        force "/DPRAM_16x4_Port__numOfPort" 0 0;
+        force "/DPRAM_16x4_behave__read1write2" 0 0;
+        force "/DPRAM_16x4_behave__write1read2" 0 0;
+        force "/DPRAM_16x4_behave__write1write2" 0 0;
+        force "/DPRAM_16x4_behave__a_state1[3]" 0 0;
+        force "/DPRAM_16x4_behave__a_state1[2]" 0 0;
+        force "/DPRAM_16x4_behave__a_state1[1]" 0 0;
+        force "/DPRAM_16x4_behave__a_state1[0]" 0 0;
+        force "/DPRAM_16x4_behave__ck_state1" 0 0;
+        force "/DPRAM_16x4_behave__web_state1" 0 0;
+        force "/DPRAM_16x4_behave__oeb_state1" 0 0;
+        force "/DPRAM_16x4_behave__csb_state1" 0 0;
+        force "/DPRAM_16x4_behave__i_state1[3]" 0 0;
+        force "/DPRAM_16x4_behave__i_state1[2]" 0 0;
+        force "/DPRAM_16x4_behave__i_state1[1]" 0 0;
+        force "/DPRAM_16x4_behave__i_state1[0]" 0 0;
+        force "/DPRAM_16x4_behave__a_state2[3]" 0 0;
+        force "/DPRAM_16x4_behave__a_state2[2]" 0 0;
+        force "/DPRAM_16x4_behave__a_state2[1]" 0 0;
+        force "/DPRAM_16x4_behave__a_state2[0]" 0 0;
+        force "/DPRAM_16x4_behave__ck_state2" 0 0;
+        force "/DPRAM_16x4_behave__web_state2" 0 0;
+        force "/DPRAM_16x4_behave__oeb_state2" 0 0;
+        force "/DPRAM_16x4_behave__csb_state2" 0 0;
+        force "/DPRAM_16x4_behave__i_state2[3]" 0 0;
+        force "/DPRAM_16x4_behave__i_state2[2]" 0 0;
+        force "/DPRAM_16x4_behave__i_state2[1]" 0 0;
+        force "/DPRAM_16x4_behave__i_state2[0]" 0 0;
+        force "/DPRAM_16x4_behave__sh_a_error_in1" 0 0;
+        force "/DPRAM_16x4_behave__sh_web_error_in1" 0 0;
+        force "/DPRAM_16x4_behave__sh_ba_error_in1" 0 0;
+        force "/DPRAM_16x4_behave__sh_ck_error_in1" 0 0;
+        force "/DPRAM_16x4_behave__sh_csb_error_in1" 0 0;
+        force "/DPRAM_16x4_behave__sh_a_error_in2" 0 0;
+        force "/DPRAM_16x4_behave__sh_web_error_in2" 0 0;
+        force "/DPRAM_16x4_behave__sh_ba_error_in2" 0 0;
+        force "/DPRAM_16x4_behave__sh_ck_error_in2" 0 0;
+        force "/DPRAM_16x4_behave__sh_csb_error_in2" 0 0;
+        force "/DPRAM_16x4_behave__sh_i_error_in1" 0 0;
+        force "/DPRAM_16x4_behave__sh_i_error_in2" 0 0;
+        force "/DPRAM_16x4__A1[3]" 0 0;
+        force "/DPRAM_16x4__A1[2]" 0 0;
+        force "/DPRAM_16x4__A1[1]" 0 0;
+        force "/DPRAM_16x4__A1[0]" 0 0;
+        force "/DPRAM_16x4__A2[3]" 0 0;
+        force "/DPRAM_16x4__A2[2]" 0 0;
+        force "/DPRAM_16x4__A2[1]" 0 0;
+        force "/DPRAM_16x4__A2[0]" 0 0;
+        force "/DPRAM_16x4__CE1" 0 0;
+        force "/DPRAM_16x4__CE2" 0 0;
+        force "/DPRAM_16x4__WEB1" 0 0;
+        force "/DPRAM_16x4__WEB2" 0 0;
+        force "/DPRAM_16x4__OEB1" 0 0;
+        force "/DPRAM_16x4__OEB2" 0 0;
+        force "/DPRAM_16x4__CSB1" 0 0;
+        force "/DPRAM_16x4__CSB2" 0 0;
+        force "/DPRAM_16x4__I1[3]" 0 0;
+        force "/DPRAM_16x4__I1[2]" 0 0;
+        force "/DPRAM_16x4__I1[1]" 0 0;
+        force "/DPRAM_16x4__I1[0]" 0 0;
+        force "/DPRAM_16x4__I2[3]" 0 0;
+        force "/DPRAM_16x4__I2[2]" 0 0;
+        force "/DPRAM_16x4__I2[1]" 0 0;
+        force "/DPRAM_16x4__I2[0]" 0 0;
+    end;
+end;
+

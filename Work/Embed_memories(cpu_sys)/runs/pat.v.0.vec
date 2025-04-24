@@ -1,0 +1,24 @@
+//
+// Verilog format test patterns produced by Tessent FastScan 2022.4
+// Filename       : pat.v.0.vec
+// Idstamp        : 2022.4:d213:192c:0:0000
+// Fault          : STUCK
+// Coverage       : 0.00(TC) 0.00(FC)
+// Date           : Wed Apr 23 13:56:12 2025
+//
+// Format of broadside vector:
+//   PI_bits PO_bits MASK_bits Increment_bit Timeplate_bits(1) PatType_bits(3)
+//   VecType_bits(4)
+//   Increment_bit  - indicates when to increment pattern count
+//   Timeplate_bits - encodes timeplate number to use
+//   PatType_bits   - encodes pattern type
+//   VecType_bits   - encodes vector type
+
+// Scan test block
+
+// Pattern 0 Cycle 0 Timestamp 0 ns 
+// Simulation Cycle 0  Timestamp 0 ns
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX0000000000000000000000000000000000000Z10100001
+000000000000000000000000000001000110000 // Start Pattern (0) MSG
+// end of Vec file MSG
+000000000000000000000000000000110110000

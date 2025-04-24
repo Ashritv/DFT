@@ -1,7 +1,7 @@
 //-------------------------------------------------
 //  File created by: Tessent Shell
 //          Version: 2022.4
-//       Created on: Tue Apr 22 16:49:56 IST 2025
+//       Created on: Wed Apr 23 14:01:12 IST 2025
 //-------------------------------------------------
 
 
@@ -16,46 +16,11 @@ Core(mcrb) {
       traceable : 1;
       make_active_automatically : 1;
       ScanChain {
-        length : 1;
+        length : 6;
         scan_in_clock : mc_rb_ef1_sclk_i;
         scan_out_clock : ~mc_rb_ef1_sclk_i;
         scan_in_port : ts_si[0];
         scan_out_port : ts_so[0];
-      }
-      ScanChain {
-        length : 1;
-        scan_in_clock : mc_rb_ef1_sclk_i;
-        scan_out_clock : ~mc_rb_ef1_sclk_i;
-        scan_in_port : ts_si[1];
-        scan_out_port : ts_so[1];
-      }
-      ScanChain {
-        length : 1;
-        scan_in_clock : mc_rb_ef1_sclk_i;
-        scan_out_clock : ~mc_rb_ef1_sclk_i;
-        scan_in_port : ts_si[2];
-        scan_out_port : ts_so[2];
-      }
-      ScanChain {
-        length : 1;
-        scan_in_clock : mc_rb_ef1_sclk_i;
-        scan_out_clock : ~mc_rb_ef1_sclk_i;
-        scan_in_port : ts_si[3];
-        scan_out_port : ts_so[3];
-      }
-      ScanChain {
-        length : 1;
-        scan_in_clock : mc_rb_ef1_sclk_i;
-        scan_out_clock : ~mc_rb_ef1_sclk_i;
-        scan_in_port : ts_si[4];
-        scan_out_port : ts_so[4];
-      }
-      ScanChain {
-        length : 1;
-        scan_in_clock : mc_rb_ef1_sclk_i;
-        scan_out_clock : ~mc_rb_ef1_sclk_i;
-        scan_in_port : ts_si[5];
-        scan_out_port : ts_so[5];
       }
       ScanEn(scan_en) {
         pipeline_count : 0;

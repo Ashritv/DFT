@@ -1,0 +1,39 @@
+/home/Mentor/tessent/bin/tessent -shell -logfile log_Apr23_2
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Wed Apr 23 15:39:22 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: set_context dft -pattern -scan
+//  Error: Unrecognized argument '-pattern'. ( help set_context )
+//  command: set_context dft -pattern
+//  Error: Unrecognized argument '-pattern'. ( help set_context )
+//  command: help set_context
+set_context 
+Usage: 
+set_context dft [ -scan ] [ -test_points ] [ -edt ] [ -logic_bist ] [ -rtl | 
+-no_rtl ] [ -design_identifier <design_identifier> ] [ -license <license> ] 
+[ -force ] 
+set_context patterns [ -ijtag | -scan | -scan_retargeting | -scan_diagnosis | 
+-failure_mapping ] [ -silicon_insight ] [ -rtl | -no_rtl ] [ -design_identifier <design_identifier> ] 
+[ -license <license> ] [ -force ] 
+//  command: set_context patterns -scan
+//  command: read_core_descriptions -format cdl my
+//  Error: Unrecognized argument '-format'. ( help read_core_descriptions )
+//  command: help read_core_descriptions 
+read_core_descriptions <file_names>
+//  command: read_core_descriptions /home/01fe21bec241/Memory/memory/dpram/4M1L/DPRAM_16x4/DPRAM_16x4.cdl
+//  Error: File /home/01fe21bec241/Memory/memory/dpram/4M1L/DPRAM_16x4/DPRAM_16x4.cdl, line 4 near (*): Syntax error
+//  Error: Error occurred while parsing core description file '/home/01fe21bec241/Memory/memory/dpram/4M1L/DPRAM_16x4/DPRAM_16x4.cdl'.
+//  command: set_system_mode insertion
+//  Error: The system mode insertion is not available in the current context.
+//         It is available in the following contexts: dft.

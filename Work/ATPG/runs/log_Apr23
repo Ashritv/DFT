@@ -1,0 +1,67 @@
+/home/Mentor/tessent/bin/tessent -shell -logfile log_Apr23 -replace
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Wed Apr 23 16:45:52 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: set_context patterns -scan
+//  command: read_verilog ../netlist/mcrb_netlist.v 
+//  command: read_cell_library ../ATPG_lib/libcomp.atpglib 
+//  Reading DFT Library file ../ATPG_lib/libcomp.atpglib
+//  Finished reading file ../ATPG_lib/libcomp.atpglib
+//  command: set_current_design 
+//  Error: Model 'AND2_X4' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'DFFR_X2' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR4_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR3_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'XNOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'AND2_X4' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'XNOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'OAI22_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'AND2_X4' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'XNOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'XNOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'NOR2_X1' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'DFFR_X2' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'DFFR_X2' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'DFFR_X2' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'DFFR_X2' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Error: Model 'DFFR_X2' referenced in model 'mcrb' is not found.
+//         line 22 file '../ATPG_lib/libcomp.atpglib'.
+//  Note: All cell library information has been deleted.
+//        Fix errors then reread all library files using the 'read_cell_library' command.
