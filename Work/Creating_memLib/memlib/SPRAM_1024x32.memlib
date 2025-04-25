@@ -1,0 +1,56 @@
+MemoryTemplate (SRAM_1024x36) {
+  cellname : SRAM_1024x36;
+  algorithm : MARCH_C_MINUS; // BIST algorithm
+  logicalports : 1RW; 
+  number_of_words : 1024;
+  minhold : 0.5; // Hold time in ns
+  transparent_mode : NONE;
+
+  port (rw_port) {
+    direction : input;
+    function : {
+      clock;     // CLK
+      Name;      // CE (Chip Enable)
+      Select;    // CS (Chip Select)
+      WriteEnable; // WE
+      Address;   // A[9:0]
+      Data;      // D[35:0]/Q[35:0]
+    }
+  }
+
+  safevalue : 0; // Default safe value
+
+  address_counter {
+    function (Address) {
+      logicalAddressMap : Address[9:0]; // 10-bit address
+      rowAddress[5:0] : Address[9:4];   // 6-bit row address
+      colAddress[3:0] : Address[3:0];   // 4-bit column address
+    }
+  }
+
+  function (RowAddress) {
+    countRange [0 : 1023]; // Full address range
+  }
+
+  redundancy_analysis {
+    columnSegment (CALL) {
+      shiftIORange : a[9:0]; // Address bus width
+    }
+    fuseSet {
+      fuseMap[0] : 0'b0;     // No fuse programming
+      shiftedIO[0] : 7'b0;   // Default state
+      shiftedIO (CFW) : 7'b0; // No column repair
+    }
+  }
+
+  pinmap {
+    spareElement {
+      fuseMap[0] : RepairPin0;
+      fuseMap[9] : RepairRow;
+      Repairable : RepairEn0; // Disabled repair
+    }
+  }
+
+  operationSet : SYNCWR;     // Synchronous write/read
+  bitStepping : 1;           // Single-bit stepping
+}

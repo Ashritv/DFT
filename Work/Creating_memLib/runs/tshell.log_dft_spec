@@ -1,0 +1,31 @@
+/home/Mentor/tessent/bin/tessent -shell -dofile dft_spec.do -log tshell.log_dft_spec -replace
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Fri Apr 25 17:58:48 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: #-----------------------------------------------------------
+//  command: # This file created by : memlibCertify
+//  command: #     Software version : 2022.4
+//  command: #           Created on : 04/25/25 17:58:46
+//  command: #-----------------------------------------------------------
+//  command: # --
+//  command: # -- Dft Insertion
+//  command: # --
+//  command: set bist_clk_period 10ns
+//  command: set design_name memlibc_memory_bist_assembly
+//  command: set_context dft -rtl
+//  command: read_core_descriptions ../memlib/hello.memlib
+//  Error: File ../memlib/hello.memlib, line 6, path /MemoryTemplate(SRAM_1024x36)/WordWidth:
+//         Unknown property WordWidth inside wrapper /MemoryTemplate(SRAM_1024x36).
+//  Error: Error occurred while parsing core description file '../memlib/hello.memlib'.
+// 'DOFile dft_spec.do' aborted at line 13
