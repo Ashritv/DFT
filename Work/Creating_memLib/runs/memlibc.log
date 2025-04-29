@@ -9,15 +9,17 @@
 Command-line: 
 
   /home/Mentor/tessent/bin/memlibc  \
-    -memlib ../memlib/hello.memlib  \
+    -memlib ../memlib/SPRAM_1024x36_3.memlib  \
     -extension v:vg  \
-    -SimModelDir ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36
+    -simModelDir ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/  \
+    -tshell  \
+    -verilogOptionFile VerilogOptions
 
-  -Found memory template: [SRAM_1024x36]
-  -Memory algorithm : MARCH_C_MINUS
-  -CellName : SRAM_1024x36
+  -Found memory template: [SPRAM_1024x36]
   -MemoryType : SRAM
-  -OperationSet : SyncWR
+  -CellName : SPRAM_1024x36
+  -OperationSet : Sync
+  -Memory algorithm : SMARCH
 
 Generating MemoryBist configuration files
 Generating Tessent Shell Do Files

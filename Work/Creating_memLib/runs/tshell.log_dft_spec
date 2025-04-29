@@ -9,14 +9,14 @@
 //     information is strictly limited as set forth in the Customer's 
 //                   applicable agreements with SISW. 
 //
-//  Siemens software executing under x86-64 Linux on Fri Apr 25 17:58:48 IST 2025.
+//  Siemens software executing under x86-64 Linux on Mon Apr 28 12:58:45 IST 2025.
 //  64 bit version
 //  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
 //
 //  command: #-----------------------------------------------------------
 //  command: # This file created by : memlibCertify
 //  command: #     Software version : 2022.4
-//  command: #           Created on : 04/25/25 17:58:46
+//  command: #           Created on : 04/28/25 12:58:44
 //  command: #-----------------------------------------------------------
 //  command: # --
 //  command: # -- Dft Insertion
@@ -24,8 +24,75 @@
 //  command: set bist_clk_period 10ns
 //  command: set design_name memlibc_memory_bist_assembly
 //  command: set_context dft -rtl
-//  command: read_core_descriptions ../memlib/hello.memlib
-//  Error: File ../memlib/hello.memlib, line 6, path /MemoryTemplate(SRAM_1024x36)/WordWidth:
-//         Unknown property WordWidth inside wrapper /MemoryTemplate(SRAM_1024x36).
-//  Error: Error occurred while parsing core description file '../memlib/hello.memlib'.
-// 'DOFile dft_spec.do' aborted at line 13
+//  command: read_core_descriptions ../memlib/SPRAM_1024x36_3.memlib
+//  command: foreach ext [list vb v vg] {
+//             foreach fname [lsort [glob -nocomplain -directory ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/ *.$ext]] {
+//               read_verilog $fname -exclude_from_file_dictionary
+//             }
+//           }
+//  sub-command: read_verilog ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/SPRAM_1024x36.v -exclude_from_file_dictionary 
+//  command: set assembly_file_path  [get_tsdb_output_directory]/memory_bist_assemblies/${design_name}.[get_defaults_value DftSpecification/rtl_extension]
+//  command: set dft_spec_file_path  [get_tsdb_output_directory]/dft_inserted_designs/${design_name}_rtl.dft_spec
+//  command: if { [file exists $assembly_file_path] } {
+//             file delete $assembly_file_path
+//           }
+//  command: create_memory_certification_design -design_name $design_name -clock_period $bist_clk_period
+//  Warning: File: ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/SPRAM_1024x36.v, Line: 599:  Module 'SPRAM_1024x36_behave' contains unsupported net 'memoryError'.
+//  Writing design ./tsdb_outdir/memory_bist_assemblies/memlibc_memory_bist_assembly.v
+//  Warning: File: /home/01fe21bec241/DFT/Work/Creating_memLib/runs/../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/SPRAM_1024x36.v, Line: 599:  Module 'SPRAM_1024x36_behave' contains unsupported net 'memoryError'.
+//  Error: /Core(SPRAM_1024x36)/Memory/PhysicalToLogicalMapping(PHYS_SPRAM)/PinMappings
+//         Read from file: ../memlib/SPRAM_1024x36_3.memlib, line number: 77
+//         The wrapper specifies 'PhysicalMemoryLogicalPort' property with value 'LogicalMemoryLogicalPort(1RW)',
+//         but the memory library does not include a logical port with id '1RW'.
+//  Error: /Core(SPRAM_1024x36)/Memory
+//         Read from file: ../memlib/SPRAM_1024x36_3.memlib, line number: 1
+//         'PhysicalToLogicalMapping/PinMappings/PhysicalMemoryLogicalPort' properties are defined.
+//         The memory cluster BIST interface ports with the following function(s) must therefore have
+//         the 'LogicalPort' property defined:
+//         address, data, writeenable
+//  Error: Stack trace for callback proc '::instr_types::mentor::memory_bist::MembistCallBacks::module_matching.post' in callbacks for 'module_matching.post'
+//         key "I" not known in dictionary
+//             while executing
+//         "dict get $port_2_obj_map_dict $port_name"
+//             (object "::mentor::MemoryLibraryUtilities::memoryTemplateClass0" method "::mentor::MemoryLibraryUtilities::MemoryTemplateClass::get_port_itcl_obj_from_expanded_port_name" body line 10)
+//             invoked from within
+//         "[get_parent 2] get_port_itcl_obj_from_expanded_port_name $port_name"
+//             (object "::mentor::MemoryLibraryUtilities::dataInPortClass0" method "::mentor::MemoryLibraryUtilities::iclport_class::validate_iclports" body line 2)
+//             invoked from within
+//         "chain "
+//             (object "::mentor::MemoryLibraryUtilities::dataInPortClass0" method "::mentor::MemoryLibraryUtilities::DataInPortClass::validate_iclports" body line 7)
+//             invoked from within
+//         "$this $command_name {*}[lrange $args 1 end]"
+//             (object "::mentor::MemoryLibraryUtilities::dataInPortClass0" method "::mentor::MemoryLibraryUtilities::validate_base_cl::validate" body line 23)
+//             invoked from within
+//         "$child_cl_obj validate {*}$args"
+//             (object "::mentor::MemoryLibraryUtilities::iclPortsClass0" method "::mentor::MemoryLibraryUtilities::validate_base_cl::validate" body line 14)
+//             invoked from within
+//         "$iclports_wrap_itcl_obj validate validate_iclports"
+//             (object "::mentor::MemoryLibraryUtilities::memoryTemplateClass0" method "::mentor::MemoryLibraryUtilities::MemoryTemplateClass::validate.body" body line 419)
+//             invoked from within
+//         "validate.body"
+//             (object "::mentor::MemoryLibraryUtilities::memoryTemplateClass0" method "::mentor::MemoryLibraryUtilities::validate_base_cl::validate" body line 18)
+//             invoked from within
+//         "$mt_obj validate"
+//             invoked from within
+//         "catch_error {$mt_obj validate}"
+//             (procedure "validate_tcd_memory" line 10)
+//             invoked from within
+//         "validate_tcd_memory $root_obj"
+//             (procedure "get_itcl_object_pointer" line 30)
+//             invoked from within
+//         "get_itcl_object_pointer -config_object $cfg_obj"
+//             invoked from within
+//         "foreach_in_collection mem $memory_pv_module_coll {
+//               set mem_name [get_name_list $mem]
+//               set memlib_name [lindex [get_attribute_value_list $me..."
+//             (procedure "module_matching.post.body" line 57)
+//             invoked from within
+//         "module_matching.post.body {*}$args"
+//             (procedure "::instr_types::mentor::memory_bist::MembistCallBacks::module..." line 5)
+//             invoked from within
+//         "::instr_types::mentor::memory_bist::MembistCallBacks::module_matching.post"
+//             invoked from within
+//         "callback dispatcher"
+// 'DOFile dft_spec.do' aborted at line 25

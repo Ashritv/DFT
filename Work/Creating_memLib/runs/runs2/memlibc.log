@@ -1,0 +1,31 @@
+
+********************************************************************************
+*                                                                              *
+*                                 memlibCertify                                *
+*                               Version: 2022.4                                *
+*                                                                              *
+********************************************************************************
+
+Command-line: 
+
+  /home/Mentor/tessent/bin/memlibc  \
+    -memlib ../../memlib/spram4096.memlib .memlib  \
+    -extension v:vg  \
+    -simModelDir ../../../../../Memory/memory/spram/6M1L/SP_SRAM_spram_4096_6/  \
+    -tshell  \
+    -verilogOptionFile VerilogOptions
+
+  -Found memory template: [SPRAM_4096x6]
+  -MemoryType : SRAM
+  -CellName : SPRAM_4096x6
+  -OperationSet : Sync
+  -Memory algorithm : SMARCH
+
+Generating MemoryBist configuration files
+Generating Tessent Shell Do Files
+
+Info: Type 'make all' to execute the memory library certification process
+      or execute the particular certification process phases with
+        make gen       # Create/Process DFT specification
+        make testbench # Create/Process Patterns specification
+        make sim_rtl   # Run testbench simulations

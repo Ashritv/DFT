@@ -1,7 +1,7 @@
 #-----------------------------------------------------------
 # This file created by : memlibCertify
 #     Software version : 2022.4
-#           Created on : 04/25/25 17:58:46
+#           Created on : 04/28/25 12:58:44
 #-----------------------------------------------------------
 
 # --
@@ -10,10 +10,10 @@
 set bist_clk_period 10ns
 set design_name memlibc_memory_bist_assembly
 set_context dft -rtl
-read_core_descriptions ../memlib/hello.memlib
+read_core_descriptions ../memlib/SPRAM_1024x36_3.memlib
 
 foreach ext [list vb v vg] {
-  foreach fname [lsort [glob -nocomplain -directory ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36 *.$ext]] {
+  foreach fname [lsort [glob -nocomplain -directory ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/ *.$ext]] {
     read_verilog $fname -exclude_from_file_dictionary
   }
 }

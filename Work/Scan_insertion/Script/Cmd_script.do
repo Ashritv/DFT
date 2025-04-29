@@ -40,13 +40,19 @@ ANALYSIS> analyze_scan_chains
 ANALYSIS> report_scan_elements        > scan_elements.rpt
 ANALYSIS> report_scan_chains          > scan_chains.rpt
 
-# 10. Stitch in the scan logic, Inserts the SE/SI/SO ports and connects them; writes out the TCD for ATPG 
+INSERTION>create_port si -on_module <value> //If not given adds port to current design
+
+# Stitch in the scan logic, Inserts the SE/SI/SO ports and connects them; writes out the TCD for ATPG 
 INSERTION> delete_connections skew_addr_cntr_reg[1]/SI
 {}
+
+#
 INSERTION> create_connections skew_addr_cntr_reg[4]/Q skew_addr_cntr_reg[1]/SI
+
+#
 INSERTION> write_design -output_file scan_net.v 
 
-# 10. Stitch in the scan logic, Inserts the SE/SI/SO ports and connects them; writes out the TCD for ATPG 
+# Stitch in the scan logic, Inserts the SE/SI/SO ports and connects them; writes out the TCD for ATPG 
 ANALYSIS> insert_test_logic -write_in_tsdb On
 
 # 11. Review final chain configuration

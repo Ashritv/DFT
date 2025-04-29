@@ -1,0 +1,100 @@
+/home/Mentor/tessent/bin/tessent -shell -logfile log_Apr29
+//  Warning: Tessent user documentation not found
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Tue Apr 29 14:47:37 IST 2025.
+//  64 bit version
+//  Host: APL2.kletech.ac.in (31644 MB RAM, 61034 MB Swap)
+//
+//  command: set_context dft -scan
+//  command: read_verilog ../netlist/mcrb_netlist.v 
+//  command: read_cell_library ../mdt/test_Nangate.mdt 
+//  Reading DFT Library file ../mdt/test_Nangate.mdt
+//  Finished reading file ../mdt/test_Nangate.mdt
+//  command: set_current_design 
+//  Note: Top design is 'mcrb'.
+//  command: set_design_level top
+//  command: analyze_control_signals -auto
+//  Warning: Rule FN1 violation occurs 1 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=52, PIs=4, POs=5, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin control signals identification analysis.
+//  ---------------------------------------------------------------------------
+//  Identified 1 clock control primary inputs.
+//     '/mc_rb_ef1_sclk_i' (4) with off-state = 0.
+//  Identified 0 set control primary inputs.
+//  Identified 1 reset control primary inputs.
+//     '/gctl_rclk_orst_n_i' (2) with off-state = 1.
+//  Identified 0 read control primary inputs.
+//  Identified 0 write control primary inputs.
+//  ---------------------------------------------------------------------------
+//  Total number of internal lines is 18 (6 clocks, 6 sets , 6 resets, 0 reads, 0 writes).
+//  Total number of potentially clockable internal lines is 12 (6 clocks, 0 sets , 6 resets, 0 reads, 0 writes).
+//  Total number of not clockable internal lines is 6 (0 clocks, 6 sets , 0 resets, 0 reads, 0 writes).
+//  Total number of added primary input controls 2 (1 clocks, 0 sets , 1 resets, 0 reads, 0 writes).
+//  ---------------------------------------------------------------------------
+//  Warning: Flattened model deleted.
+//  command: set_scan_insertion_options -chain_length 1
+//  command: get_instances 
+{{\skew_addr_cntr_reg[0] } {\skew_addr_cntr_reg[1] } {\skew_addr_cntr_reg[2] } {\skew_addr_cntr_reg[3] } {\skew_addr_cntr_reg[4] } g478__2398 g480__5526 g483__8428 g485__5107 g486__6260 g487__4319 g488__6783 g489__3680 g490__1617 g491__2802 g492__6131 g493__1705 g494__5122 g495__7098 g496__8246 g498__1881 mc_rb_fuse_vld_q_reg}
+//  command: get_instances 
+{{\skew_addr_cntr_reg[0] } {\skew_addr_cntr_reg[1] } {\skew_addr_cntr_reg[2] } {\skew_addr_cntr_reg[3] } {\skew_addr_cntr_reg[4] } g478__2398 g480__5526 g483__8428 g485__5107 g486__6260 g487__4319 g488__6783 g489__3680 g490__1617 g491__2802 g492__6131 g493__1705 g494__5122 g495__7098 g496__8246 g498__1881 mc_rb_fuse_vld_q_reg}
+//  command: get_context 
+dft
+//  command: add_scan_instances -instances {skew_addr_cntr_reg[1] skew_addr_cntr_reg[3]}
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 1 times
+//  Warning: Rule FN4 violation occurs 6 times
+//  Flattening process completed, cell instances=22, gates=52, PIs=4, POs=5, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 6,
+//  sequential library cells = 6.
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Begin scannability rules checking for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  6 sequential library cells identified as scannable.
+//  ---------------------------------------------------------------------------
+//  Begin scan clock rules checking.
+//  ---------------------------------------------------------------------------
+//  2 scan clock/set/reset lines have been identified.
+//  All scan clocks successfully passed off-state check.
+//  6 sequential cells passed clock stability checking.
+//  ---------------------------------------------------------------------------
+//  Begin shift register identification for 6 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  No shift registers identified.
+//  Number of targeted sequential library cells = 4
+//  Warning: The tool may require a shift-capture clock during insertion, 
+//           but no 'shift_capture_clock' DFT signal was identified 
+//           and no TCLK source was specified using the command 'set_scan_signals -tclk'.
+//  Note: The system clock 'mc_rb_ef1_sclk_i' will be used as the shift-capture clock, if needed.
+//  command: set_scan_insertion_options -chain_length 1
+//  command: analyze_scan_chains 
+//  Chain allocation of 'unwrapped' mode completed:
+//         6 distributed chains of size 1
+//  command: set_system_mode insertion
+//  command: create_port si so
+//  Error: Unrecognized argument 'so'. ( help create_port )
+//  command: create_port si 
+{si}
+//  command: create_port so
+{so}
+//  command: create_connections si skew_addr_cntr_reg[1]/SI
+//  Error: 'skew_addr_cntr_reg[1]/SI' is not a known pin, port, net, pin_bundle, port_bundle or net_bundle object.

@@ -1,0 +1,87 @@
+MemoryTemplate(SPRAM_1024x36) {
+  // ---- Memory Characteristics ----
+  MemoryType             : SRAM;
+  CellName               : SPRAM_1024x36;
+  LogicalPorts           : 1RW;
+  OperationSet           : Sync;
+  Algorithm              : SMarch;
+  BitGrouping            : 1;
+  NumberOfWords          : 1024;
+  NumberOfBits           : 36;
+  ObservationLogic       : Off;
+  InternalScanLogic      : Off;
+  ShadowRead             : Off;
+  TransparentMode        : None;
+  MinHold                : 0.00;
+  MilliWattsPerMegaHertz : 0.0;
+
+  // ---- Address Counter Configuration ----
+  AddressCounter {
+    Function(Address) {
+      LogicalAddressMap {
+        ColumnAddress[4:0] : Address[0:4];
+        RowAddress[4:0]    : Address[5:9];
+      }
+    }
+    Function(RowAddress)    { CountRange [0:31]; }
+    Function(ColumnAddress) { CountRange [0:31]; }
+  }
+
+  // ---- Physical Pin Mapping ----
+  PhysicalAddressMap {
+    ColumnAddress[0] : c[0];
+    ColumnAddress[1] : c[1];
+    ColumnAddress[2] : c[2];
+    ColumnAddress[3] : c[3];
+    ColumnAddress[4] : c[4];
+    RowAddress[0]    : r[0];
+    RowAddress[1]    : r[1];
+    RowAddress[2]    : r[2];
+    RowAddress[3]    : r[3];
+    RowAddress[4]    : r[4];
+  }
+
+  // ---- Port Definitions ----
+  Port(A[9:0])  { Direction : Input;  Function : Address; }
+  Port(CE)     { Direction : Input;  Function : Clock;  Polarity : ActiveHigh; }
+  Port(WEB)    { Direction : Input;  Function : WriteEnable;  Polarity : ActiveLow; }
+  Port(OEB)    { Direction : Input;  Function : OutputEnable; Polarity : ActiveLow; }
+  Port(CSB)    { Direction : Input;  Function : Select;     Polarity : ActiveLow; }
+  Port(I[35:0]){ Direction : Input;  Function : Data; }
+  Port(O[35:0]){ Direction : Output; Function : Data; }
+
+  // ---- Added ICL Ports Section ----
+  IclPorts {
+    DataInPort(I) {
+      Attribute(Direction) : "input";
+      Attribute(Width) : 36;
+      Attribute(Edge) : "rising";
+    }
+    DataOutPort(O) {
+      Attribute(Direction) : "output";
+      Attribute(Width) : 36;
+      Attribute(Edge) : "rising";
+    }
+  }
+
+  MemoryGroupAddressDecoding(Address[9:0]) {
+  Code(10'bxxxxxxxxxx) : PHYS_SPRAM;  // Wildcard for all 1024 addresses
+}
+
+  // ---- Physical-to-Logical Mapping ----
+  PhysicalToLogicalMapping(PHYS_SPRAM) {
+    MemoryTemplate     : SPRAM_1024x36;
+    ParentModuleName   : "TOP";
+    MemoryInstanceName : "SPRAM_1024x36_inst";
+    
+    PinMappings {
+  PhysicalMemoryLogicalPort(0) : LogicalMemoryLogicalPort(1RW);
+  PhysicalMemoryDataInput[35:0]: LogicalMemoryDataInput[35:0];
+  PhysicalMemoryDataOutput[35:0] : LogicalMemoryDataOutput[35:0];
+  PhysicalMemoryAddress[9:0] : LogicalMemoryAddress[9:0];
+  PhysicalMemoryWriteAddress[9:0] : LogicalMemoryWriteAddress[9:0];
+  PhysicalMemoryReadAddress[9:0] : LogicalMemoryReadAddress[9:0];
+  PhysicalMemoryGroupWriteEnable[0] : LogicalMemoryGroupWriteEnable[0];
+}
+  }
+}

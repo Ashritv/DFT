@@ -1,0 +1,55 @@
+MemoryTemplate(SRAM_1024x36) {
+  Algorithm             : "MARCH_C_MINUS";
+  CellName              : "SRAM_1024x36";
+  LogicalPorts          : "1RW";
+  NumberOfWords         : 1024;
+  NumberOfBits          : 36;
+  MinHold               : 0.5ns;
+  TransparentMode       : "None";
+  OperationSet          : "SYNCWR";
+  BitGrouping           : 1;
+
+  Port(rw_port) {
+    Direction           : "input";
+    Function            : Clock;        // CLK
+    Function            : Select;       // CS
+    Function            : WriteEnable;  // WE
+    Function            : Address;      // A[9:0]
+    BusRange            : [9:0];
+    Function            : Data;         // D[35:0]
+    BusRange            : [35:0];
+    Function            : OutputEnable; // Q[35:0] (assuming bidirectional port)
+    BusRange            : [35:0];
+    LogicalPort         : "rw_port";
+  }
+
+  // SafeValue             : 0;
+
+  AddressCounter {
+    Function(address) {
+      LogicalAddressMap {
+        RowAddress[5:0]    : Address[9:4];
+        ColumnAddress[3:0] : Address[3:0];
+      }
+      //CountRange            : [0:1023];
+    }
+  }
+
+  RedundancyAnalysis {
+    ColumnSegment(CALL) {
+      ShiftedIORange        : rw_port.Address[9:0];
+      FuseSet {
+        FuseMap[0]        : "0'b0";
+        ShiftedIO[0]     : "7'b0";
+        ShiftedIO(CFW)      : "7'b0";
+      }
+      PinMap {
+        SpareElement {
+          FuseMap[0]      : RepairPin0;
+          FuseMap[9]      : RepairRow;
+          RepairEnable      : RepairEn0;
+        }
+      }
+    }
+  }
+}

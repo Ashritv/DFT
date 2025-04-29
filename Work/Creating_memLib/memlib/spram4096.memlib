@@ -1,0 +1,54 @@
+MemoryTemplate(SPRAM_4096x6) {
+  // ---- Memory Characteristics ----
+  MemoryType             : SRAM;               // Type of memory (SRAM)
+  CellName               : SPRAM_4096x6;      // Unique identifier
+  LogicalPorts           : 1RW;                // One read/write port
+  OperationSet           : Sync;               // Synchronous operations
+  Algorithm              : SMarch;             // Built-in self-test algorithm
+  BitGrouping            : 1;                  // Single-bit grouping
+  NumberOfWords          : 4096;               // 1024 addressable words
+  NumberOfBits           : 6;                 // 36-bit data width
+  ObservationLogic       : Off;                // No observation logic
+  InternalScanLogic      : Off;                // No internal scan
+  ShadowRead             : Off;                // No shadow read
+  TransparentMode        : None;               // No transparent mode
+  MinHold                : 0.00;               // 0ns minimum hold time
+  MilliWattsPerMegaHertz : 0.0;                // Power consumption
+
+  // ---- Address Counter Configuration ----
+  AddressCounter {
+    Function(Address) {
+      LogicalAddressMap {
+        ColumnAddress[5:0] : Address[0:5];     // Lower 5 bits -> column
+        RowAddress[5:0]    : Address[6:11];     // Upper 5 bits -> row
+      }
+    }
+    Function(RowAddress)    { CountRange [0:63]; } // 32 rows (5-bit)
+    Function(ColumnAddress) { CountRange [0:63]; } // 32 columns (5-bit)
+  }
+
+  // ---- Physical Pin Mapping ----
+  PhysicalAddressMap {
+    ColumnAddress[0] : c[0];                  // Column address pins
+    ColumnAddress[1] : c[1];
+    ColumnAddress[2] : c[2];
+    ColumnAddress[3] : c[3];
+    ColumnAddress[4] : c[4];
+    ColumnAddress[5] : c[5];
+    RowAddress[0]    : r[0];                  // Row address pins
+    RowAddress[1]    : r[1];
+    RowAddress[2]    : r[2];
+    RowAddress[3]    : r[3];
+    RowAddress[4]    : r[4];
+    RowAddress[5]    : r[5];
+  }
+
+  // ---- Port Definitions ----
+  Port(A[11:0])  { Direction : Input;  Function : Address;     } // 10-bit address
+  Port(CE)     { Direction : Input;  Function : Clock;  Polarity : ActiveHigh; }
+  Port(WEB)    { Direction : Input;  Function : WriteEnable;  Polarity : ActiveLow; }
+  Port(OEB)    { Direction : Input;  Function : OutputEnable; Polarity : ActiveLow; }
+  Port(CSB)    { Direction : Input;  Function : Select;     Polarity : ActiveLow; }
+  Port(I[5:0]){ Direction : Input;  Function : Data;        } // 36-bit input
+  Port(O[5:0]){ Direction : Output; Function : Data;        } // 36-bit output
+}

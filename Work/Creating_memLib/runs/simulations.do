@@ -1,7 +1,7 @@
 #-----------------------------------------------------------
 # This file created by : memlibCertify
 #     Software version : 2022.4
-#           Created on : 04/25/25 17:58:46
+#           Created on : 04/28/25 12:58:44
 #-----------------------------------------------------------
 
 # --
@@ -9,7 +9,7 @@
 # --
 set_context patterns -ijtag
 set design_name memlibc_memory_bist_assembly
-set_simulation_library_sources -y ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36 -extension {vb v vg} -f VerilogOptions 
+set_simulation_library_sources -y ../../../../Memory/memory/spram/6M1L/SPRAM_1024x36/ -extension {vb v vg} -f VerilogOptions 
 # Add the following run_testbench_simulations option(s) to capture
 # the simulation waveforms:
 #  -store_simulation_waveforms on

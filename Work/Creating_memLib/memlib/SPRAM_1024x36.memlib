@@ -1,55 +1,52 @@
-MemoryTemplate(SRAM_1024x36) {
-  Algorithm             : "MARCH_C_MINUS";
-  CellName              : "SRAM_1024x36";
-  LogicalPorts          : "1RW";
-  NumberOfWords         : 1024;
-  NumberOfBits          : 36;
-  MinHold               : 0.5ns;
-  TransparentMode       : "None";
-  OperationSet          : "SYNCWR";
-  BitGrouping           : 1;
+MemoryTemplate(SPRAM_1024x36) {
+  // ---- Memory Characteristics ----
+  MemoryType             : SRAM;               // Type of memory (SRAM)
+  CellName               : SPRAM_1024x36;      // Unique identifier
+  LogicalPorts           : 1RW;                // One read/write port
+  OperationSet           : Sync;               // Synchronous operations
+  Algorithm              : SMarch;             // Built-in self-test algorithm
+  BitGrouping            : 1;                  // Single-bit grouping
+  NumberOfWords          : 1024;               // 1024 addressable words
+  NumberOfBits           : 36;                 // 36-bit data width
+  ObservationLogic       : Off;                // No observation logic
+  InternalScanLogic      : Off;                // No internal scan
+  ShadowRead             : Off;                // No shadow read
+  TransparentMode        : None;               // No transparent mode
+  MinHold                : 0.00;               // 0ns minimum hold time
+  MilliWattsPerMegaHertz : 0.0;                // Power consumption
 
-  Port(rw_port) {
-    Direction           : "input";
-    Function            : Clock;        // CLK
-    Function            : Select;       // CS
-    Function            : WriteEnable;  // WE
-    Function            : Address;      // A[9:0]
-    BusRange            : [9:0];
-    Function            : Data;         // D[35:0]
-    BusRange            : [35:0];
-    Function            : OutputEnable; // Q[35:0] (assuming bidirectional port)
-    BusRange            : [35:0];
-    LogicalPort         : "rw_port";
-  }
-
-  // SafeValue             : 0;
-
+  // ---- Address Counter Configuration ----
   AddressCounter {
-    Function(address) {
+    Function(Address) {
       LogicalAddressMap {
-        RowAddress[5:0]    : Address[9:4];
-        ColumnAddress[3:0] : Address[3:0];
+        ColumnAddress[4:0] : Address[0:4];     // Lower 5 bits -> column
+        RowAddress[4:0]    : Address[5:9];     // Upper 5 bits -> row
       }
-      //CountRange            : [0:1023];
     }
+    Function(RowAddress)    { CountRange [0:31]; } // 32 rows (5-bit)
+    Function(ColumnAddress) { CountRange [0:31]; } // 32 columns (5-bit)
   }
 
-  RedundancyAnalysis {
-    ColumnSegment(CALL) {
-      ShiftedIORange        : rw_port.Address[9:0];
-      FuseSet {
-        FuseMap[0]        : "0'b0";
-        ShiftedIO[0]     : "7'b0";
-        ShiftedIO(CFW)      : "7'b0";
-      }
-      PinMap {
-        SpareElement {
-          FuseMap[0]      : RepairPin0;
-          FuseMap[9]      : RepairRow;
-          RepairEnable      : RepairEn0;
-        }
-      }
-    }
+  // ---- Physical Pin Mapping ----
+  PhysicalAddressMap {
+    ColumnAddress[0] : c[0];                  // Column address pins
+    ColumnAddress[1] : c[1];
+    ColumnAddress[2] : c[2];
+    ColumnAddress[3] : c[3];
+    ColumnAddress[4] : c[4];
+    RowAddress[0]    : r[0];                  // Row address pins
+    RowAddress[1]    : r[1];
+    RowAddress[2]    : r[2];
+    RowAddress[3]    : r[3];
+    RowAddress[4]    : r[4];
   }
+
+  // ---- Port Definitions ----
+  Port(A[9:0])  { Direction : Input;  Function : Address;     } // 10-bit address
+  Port(CE)     { Direction : Input;  Function : Clock;  Polarity : ActiveHigh; }
+  Port(WEB)    { Direction : Input;  Function : WriteEnable;  Polarity : ActiveLow; }
+  Port(OEB)    { Direction : Input;  Function : OutputEnable; Polarity : ActiveLow; }
+  Port(CSB)    { Direction : Input;  Function : Select;     Polarity : ActiveLow; }
+  Port(I[35:0]){ Direction : Input;  Function : Data;        } // 36-bit input
+  Port(O[35:0]){ Direction : Output; Function : Data;        } // 36-bit output
 }
